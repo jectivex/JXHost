@@ -68,35 +68,36 @@ class di orange
 
 ```mermaid
 flowchart TB
-    HostApp((Host App)) -.-> PetStoreModule(Pet Store)
-    HostApp -.-> AboutMeModule(About Me)
-    HostApp -.-> DatePlannerModule(Date Planner)
+    HostApp -.-> HeadlessModule
+    HostApp((Host App)) -.-> PetStoreModule
+    HostApp -.-> DatePlannerModule
     
     HostApp --> JXHost
     
     subgraph Modules
-      PetStoreModule
-      AboutMeModule
-      DatePlannerModule
+      HeadlessModule(Headless Module)
+      PetStoreModule(Pet Store)
+      DatePlannerModule(Date Planner)
     end
 
-    PetStoreModule --> JXBridge
-    AboutMeModule --> JXBridge
-    DatePlannerModule --> JXBridge
+    HeadlessModule --> JXBridge
+
+    PetStoreModule --> SwiftUIPod
+    
+    DatePlannerModule --> SwiftUIPod
+    DatePlannerModule -.-> FilePod
+    DatePlannerModule -.-> NetPod
+    DatePlannerModule -.-> OtherPod
 
     JXHost --> JXPod
     JXPod --> JXBridge
     
-    HostApp -.-> FilePod[(FilePod)]
-    HostApp -.-> NetPod[(NetPod)]
-    HostApp -.-> SwiftUIPod[(SwiftUIPod)]
-    HostApp -.-> OtherPod[(OtherPod)]
     
     subgraph Pods
-      FilePod
-      NetPod
-      SwiftUIPod
-      OtherPod
+      FilePod[(FilePod)]
+      NetPod[(NetPod)]
+      SwiftUIPod[(SwiftUIPod)]
+      OtherPod[(OtherPod)]
     end
 
     FilePod --> JXPod
@@ -111,13 +112,13 @@ flowchart TB
 classDef HostApp fill:white,stroke:#333,stroke-width:4px
 class HostApp HostApp
 
-classDef gray fill:lightgray,stroke:#333,stroke-width:0.5px
-classDef yellow fill:lightyellow,stroke:#333,stroke-width:0.5px
-classDef blue fill:lightblue,stroke:#333,stroke-width:0.5px
+classDef PetStoreModule fill:lightgray,stroke:#333,stroke-width:0.5px
+classDef HeadlessModule fill:lightbrown,stroke:#333,stroke-width:0.5px
+classDef DatePlannerModule fill:lightblue,stroke:#333,stroke-width:0.5px
 
-class PetStoreModule gray
-class AboutMeModule yellow
-class DatePlannerModule blue
+class PetStoreModule PetStoreModule
+class HeadlessModule HeadlessModule
+class DatePlannerModule DatePlannerModule
 
 classDef OtherPod fill:lightblue,stroke:#333,stroke-width:0.5px
 class OtherPod OtherPod
