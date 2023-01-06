@@ -4,14 +4,14 @@
 ```mermaid
 flowchart TB
     HostApp -.-> HeadlessModule
-    HostApp((Host App)) -.-> PetStoreModule
-    HostApp -.-> DatePlannerModule
+    HostApp((Host App)) -.-> BasicUIModule
+    HostApp -.-> ComplexModule
             
     subgraph JXHost
       subgraph Modules[Dynamic Modules]
         HeadlessModule(Headless Module)
-        PetStoreModule(Pet Store)
-        DatePlannerModule(Date Planner)
+        BasicUIModule(Basic Visual Module)
+        ComplexModule(Complex Module)
       end
       
       subgraph Pods[Native Pods]
@@ -26,12 +26,12 @@ flowchart TB
     
     HeadlessModule --> JXBridge
 
-    PetStoreModule -.-> SwiftUIPod
+    BasicUIModule -.-> SwiftUIPod
     
-    DatePlannerModule -.-> SwiftUIPod
-    DatePlannerModule -.-> FilePod
-    DatePlannerModule -.-> NetPod
-    DatePlannerModule -.-> CustomPod
+    ComplexModule -.-> SwiftUIPod
+    ComplexModule -.-> FilePod
+    ComplexModule -.-> NetPod
+    ComplexModule -.-> CustomPod
 
     FilePod --> JXBridge
     NetPod --> JXBridge
@@ -45,13 +45,14 @@ flowchart TB
 classDef HostApp fill:white,stroke:#333,stroke-width:4px
 class HostApp HostApp
 
-classDef PetStoreModule fill:lightgray,stroke:#333,stroke-width:0.5px
-classDef HeadlessModule fill:lightgreen,stroke:#333,stroke-width:0.5px
-classDef DatePlannerModule fill:lightsalmon,stroke:#333,stroke-width:0.5px
+classDef BasicUIModule fill:lightgray,stroke:#333,stroke-width:0.5px
+class BasicUIModule BasicUIModule
 
-class PetStoreModule PetStoreModule
+classDef HeadlessModule fill:lightgreen,stroke:#333,stroke-width:0.5px
 class HeadlessModule HeadlessModule
-class DatePlannerModule DatePlannerModule
+
+classDef ComplexModule fill:lightsalmon,stroke:#333,stroke-width:0.5px
+class ComplexModule ComplexModule
 
 classDef CustomPod fill:lightsalmon,stroke:#333,stroke-width:0.5px
 class CustomPod CustomPod
