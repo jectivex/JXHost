@@ -5,21 +5,28 @@ flowchart TB
     HostApp[Host App] -.-> PetStoreModule(Pet Store)
     HostApp -.-> AboutMeModule(About Me)
     HostApp -.-> DatePlannerModule(Date Planner)
+    
     HostApp --> JXHost
+    
     PetStoreModule --> JXSwiftUI
     AboutMeModule --> JXSwiftUI
     DatePlannerModule --> JXSwiftUI
+    
     JXHost --> JXSwiftUI
     JXHost --> JXPod
     JXPod --> JXBridge
+    
     HostApp -.-> FilePod[(FilePod)]
     HostApp -.-> NetPod[(NetPod)]
     HostApp -.-> OtherPod[(OtherPod)]
+    
     FilePod --> JXPod
+    NetPod --> JXPod
     OtherPod --> JXPod
-    FilePod --> JXPod
+    
     JXSwiftUI --> JXBridge
     JXBridge --> JXKit
+    
     JXKit --> JavaScriptCore[JavaScriptCore]
 
 classDef HostApp fill:steelblue,stroke:#333,stroke-width:0.5px
