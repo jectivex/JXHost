@@ -5,9 +5,7 @@ let package = Package(
     name: "JXHost",
     platforms: [ .macOS(.v12), .iOS(.v15), .tvOS(.v15) ],
     products: [
-        .library(
-            name: "JXHost",
-            targets: ["JXHost"]),
+        .library(name: "JXHost", targets: ["JXHost"]),
     ],
     dependencies: [
         .package(url: "https://github.com/jectivex/JXPod.git", from: "0.0.0"),
@@ -21,7 +19,7 @@ let package = Package(
             dependencies: [
                 .product(name: "JXPod", package: "JXPod"),
                 .product(name: "JXBridge", package: "JXBridge"),
-                .product(name: "JXSwiftUI", package: "JXSwiftUI"),
+                .product(name: "JXSwiftUI", package: "JXSwiftUI", condition: .when(platforms: [.iOS, .macOS, .macCatalyst, .tvOS])),
                 .product(name: "FairCore", package: "Fair"),
             ],
             resources: [.process("Resources")]),
