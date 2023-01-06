@@ -91,8 +91,7 @@ flowchart TB
 
     JXHost --> JXPod
     JXPod --> JXBridge
-    
-    
+
     subgraph Pods
       FilePod[(FilePod)]
       NetPod[(NetPod)]
@@ -113,7 +112,7 @@ classDef HostApp fill:white,stroke:#333,stroke-width:4px
 class HostApp HostApp
 
 classDef PetStoreModule fill:lightgray,stroke:#333,stroke-width:0.5px
-classDef HeadlessModule fill:lightbrown,stroke:#333,stroke-width:0.5px
+classDef HeadlessModule fill:lightred,stroke:#333,stroke-width:0.5px
 classDef DatePlannerModule fill:lightblue,stroke:#333,stroke-width:0.5px
 
 class PetStoreModule PetStoreModule
