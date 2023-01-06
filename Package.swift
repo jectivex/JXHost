@@ -10,14 +10,18 @@ let package = Package(
             targets: ["JXHost"]),
     ],
     dependencies: [
+        .package(url: "https://github.com/jectivex/JXPod.git", from: "0.0.0"),
         .package(url: "https://github.com/jectivex/JXBridge.git", from: "0.1.14"),
+        .package(url: "https://github.com/jectivex/JXSwiftUI.git", from: "0.0.0"),
         .package(url: "https://github.com/fair-ground/Fair.git", from: "0.8.26"),
     ],
     targets: [
         .target(
             name: "JXHost",
             dependencies: [
+                .product(name: "JXPod", package: "JXPod"),
                 .product(name: "JXBridge", package: "JXBridge"),
+                .product(name: "JXSwiftUI", package: "JXSwiftUI"),
                 .product(name: "FairCore", package: "Fair"),
             ],
             resources: [.process("Resources")]),
