@@ -1,0 +1,441 @@
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/JXHost\/documentation\/JXHost",
+        "doc:\/\/JXHost\/documentation\/JXHost\/MonitoringScriptLoader"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/JXHost\/documentation\/JXHost\/MonitoringScriptLoader\/JXScriptLoader-Implementations"
+  },
+  "kind" : "article",
+  "metadata" : {
+    "modules" : [
+      {
+        "name" : "JXHost"
+      }
+    ],
+    "role" : "collectionGroup",
+    "title" : "JXScriptLoader Implementations"
+  },
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/JXHost\/documentation\/JXHost\/MonitoringScriptLoader\/didChange-hesd"
+      ],
+      "title" : "Instance Properties"
+    },
+    {
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/JXHost\/documentation\/JXHost\/MonitoringScriptLoader\/defaultLoadScript(from:)",
+        "doc:\/\/JXHost\/documentation\/JXHost\/MonitoringScriptLoader\/defaultScriptURL(resource:relativeTo:root:)",
+        "doc:\/\/JXHost\/documentation\/JXHost\/MonitoringScriptLoader\/scriptURL(resource:relativeTo:root:)"
+      ],
+      "title" : "Instance Methods"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/jxhost\/monitoringscriptloader\/jxscriptloader-implementations"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://JXHost/documentation/JXHost": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "JXHost",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost"
+},
+"doc://JXHost/documentation/JXHost/MonitoringScriptLoader": {
+  "abstract" : [
+    {
+      "text" : "Script loader that attempts to locate source files for loaded JavaScript and monitor those files for changes.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "class"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "MonitoringScriptLoader"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/MonitoringScriptLoader",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "MonitoringScriptLoader"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "MonitoringScriptLoader",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/monitoringscriptloader"
+},
+"doc://JXHost/documentation/JXHost/MonitoringScriptLoader/defaultLoadScript(from:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "defaultLoadScript"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "from"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation3URLV",
+      "text" : "URL"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> (url"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation3URLV",
+      "text" : "URL"
+    },
+    {
+      "kind" : "text",
+      "text" : ", script"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/MonitoringScriptLoader\/defaultLoadScript(from:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "defaultLoadScript(from:)",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/monitoringscriptloader\/defaultloadscript(from:)"
+},
+"doc://JXHost/documentation/JXHost/MonitoringScriptLoader/defaultScriptURL(resource:relativeTo:root:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "defaultScriptURL"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "resource"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "relativeTo"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation3URLV",
+      "text" : "URL"
+    },
+    {
+      "kind" : "text",
+      "text" : "?, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "root"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation3URLV",
+      "text" : "URL"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation3URLV",
+      "text" : "URL"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/MonitoringScriptLoader\/defaultScriptURL(resource:relativeTo:root:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "defaultScriptURL(resource:relativeTo:root:)",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/monitoringscriptloader\/defaultscripturl(resource:relativeto:root:)"
+},
+"doc://JXHost/documentation/JXHost/MonitoringScriptLoader/didChange-hesd": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "didChange"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5JXKit20JXListenerCollectionC",
+      "text" : "JXListenerCollection"
+    },
+    {
+      "kind" : "text",
+      "text" : "<("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sh",
+      "text" : "Set"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation3URLV",
+      "text" : "URL"
+    },
+    {
+      "kind" : "text",
+      "text" : ">) -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s4Voida",
+      "text" : "Void"
+    },
+    {
+      "kind" : "text",
+      "text" : ">?"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/MonitoringScriptLoader\/didChange-hesd",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "didChange",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/monitoringscriptloader\/didchange-hesd"
+},
+"doc://JXHost/documentation/JXHost/MonitoringScriptLoader/scriptURL(resource:relativeTo:root:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "scriptURL"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "resource"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "relativeTo"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation3URLV",
+      "text" : "URL"
+    },
+    {
+      "kind" : "text",
+      "text" : "?, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "root"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation3URLV",
+      "text" : "URL"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation3URLV",
+      "text" : "URL"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/MonitoringScriptLoader\/scriptURL(resource:relativeTo:root:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "scriptURL(resource:relativeTo:root:)",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/monitoringscriptloader\/scripturl(resource:relativeto:root:)"
+}
+}
+}

@@ -1,0 +1,485 @@
+{
+  "abstract" : [
+    {
+      "text" : "Script loader that attempts to locate source files for loaded JavaScript and monitor those files for changes.",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/JXHost\/documentation\/JXHost"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/JXHost\/documentation\/JXHost\/MonitoringScriptLoader"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:6JXHost22MonitoringScriptLoaderC",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "class"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "MonitoringScriptLoader"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "JXHost"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "MonitoringScriptLoader"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Class",
+    "symbolKind" : "class",
+    "title" : "MonitoringScriptLoader"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "class"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "MonitoringScriptLoader"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "relationshipsSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/JXHost\/5JXKit14JXScriptLoaderP"
+      ],
+      "kind" : "relationships",
+      "title" : "Conforms To",
+      "type" : "conformsTo"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/JXHost\/documentation\/JXHost\/MonitoringScriptLoader\/init(updateInterval:log:)"
+      ],
+      "title" : "Initializers"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/JXHost\/documentation\/JXHost\/MonitoringScriptLoader\/didChange-94suj",
+        "doc:\/\/JXHost\/documentation\/JXHost\/MonitoringScriptLoader\/sourceDirectories",
+        "doc:\/\/JXHost\/documentation\/JXHost\/MonitoringScriptLoader\/updateInterval"
+      ],
+      "title" : "Instance Properties"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/JXHost\/documentation\/JXHost\/MonitoringScriptLoader\/loadScript(from:)"
+      ],
+      "title" : "Instance Methods"
+    },
+    {
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/JXHost\/documentation\/JXHost\/MonitoringScriptLoader\/JXScriptLoader-Implementations"
+      ],
+      "title" : "Default Implementations"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/jxhost\/monitoringscriptloader"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://JXHost/5JXKit14JXScriptLoaderP": {
+  "identifier" : "doc:\/\/JXHost\/5JXKit14JXScriptLoaderP",
+  "title" : "JXKit.JXScriptLoader",
+  "type" : "unresolvable"
+},
+"doc://JXHost/documentation/JXHost": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "JXHost",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost"
+},
+"doc://JXHost/documentation/JXHost/MonitoringScriptLoader": {
+  "abstract" : [
+    {
+      "text" : "Script loader that attempts to locate source files for loaded JavaScript and monitor those files for changes.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "class"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "MonitoringScriptLoader"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/MonitoringScriptLoader",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "MonitoringScriptLoader"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "MonitoringScriptLoader",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/monitoringscriptloader"
+},
+"doc://JXHost/documentation/JXHost/MonitoringScriptLoader/JXScriptLoader-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/MonitoringScriptLoader\/JXScriptLoader-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "JXScriptLoader Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/monitoringscriptloader\/jxscriptloader-implementations"
+},
+"doc://JXHost/documentation/JXHost/MonitoringScriptLoader/didChange-94suj": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "didChange"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5JXKit20JXListenerCollectionC",
+      "text" : "JXListenerCollection"
+    },
+    {
+      "kind" : "text",
+      "text" : "<("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sh",
+      "text" : "Set"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation3URLV",
+      "text" : "URL"
+    },
+    {
+      "kind" : "text",
+      "text" : ">) -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s4Voida",
+      "text" : "Void"
+    },
+    {
+      "kind" : "text",
+      "text" : ">?"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/MonitoringScriptLoader\/didChange-94suj",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "didChange",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/monitoringscriptloader\/didchange-94suj"
+},
+"doc://JXHost/documentation/JXHost/MonitoringScriptLoader/init(updateInterval:log:)": {
+  "abstract" : [
+    {
+      "text" : "Create a monitoring script loader.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "updateInterval"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "c:@T@NSTimeInterval",
+      "text" : "TimeInterval"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "log"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s4Voida",
+      "text" : "Void"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/MonitoringScriptLoader\/init(updateInterval:log:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(updateInterval:log:)",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/monitoringscriptloader\/init(updateinterval:log:)"
+},
+"doc://JXHost/documentation/JXHost/MonitoringScriptLoader/loadScript(from:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "loadScript"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "from"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation3URLV",
+      "text" : "URL"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/MonitoringScriptLoader\/loadScript(from:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "loadScript(from:)",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/monitoringscriptloader\/loadscript(from:)"
+},
+"doc://JXHost/documentation/JXHost/MonitoringScriptLoader/sourceDirectories": {
+  "abstract" : [
+    {
+      "text" : "The set of root source directories to search for ",
+      "type" : "text"
+    },
+    {
+      "code" : ".js",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " source files corresponding to loaded resources.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "sourceDirectories"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation3URLV",
+      "text" : "URL"
+    },
+    {
+      "kind" : "text",
+      "text" : "]"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/MonitoringScriptLoader\/sourceDirectories",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "sourceDirectories",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/monitoringscriptloader\/sourcedirectories"
+},
+"doc://JXHost/documentation/JXHost/MonitoringScriptLoader/updateInterval": {
+  "abstract" : [
+    {
+      "text" : "The interval at which updates are sent after a change is detected. Defaults to 0.2 seconds.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "updateInterval"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "c:@T@NSTimeInterval",
+      "text" : "TimeInterval"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/MonitoringScriptLoader\/updateInterval",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "updateInterval",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/monitoringscriptloader\/updateinterval"
+}
+}
+}

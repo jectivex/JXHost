@@ -1,0 +1,148 @@
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/JXHost\/documentation\/JXHost",
+        "doc:\/\/JXHost\/documentation\/JXHost\/JXHost"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/JXHost\/documentation\/JXHost\/JXHost\/init()"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:6JXHostAAVABycfc",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "init"
+      },
+      {
+        "kind" : "text",
+        "text" : "()"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "JXHost"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Initializer",
+    "symbolKind" : "init",
+    "title" : "init()"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "init"
+            },
+            {
+              "kind" : "text",
+              "text" : "()"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/jxhost\/jxhost\/init()"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://JXHost/documentation/JXHost": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "JXHost",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost"
+},
+"doc://JXHost/documentation/JXHost/JXHost": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "JXHost"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/JXHost",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "JXHost"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "JXHost",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/jxhost"
+},
+"doc://JXHost/documentation/JXHost/JXHost/init()": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "()"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/JXHost\/init()",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init()",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/jxhost\/init()"
+}
+}
+}

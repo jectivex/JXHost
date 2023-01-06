@@ -1,0 +1,581 @@
+{
+  "abstract" : [
+    {
+      "text" : "A module source that uses a git repository’s tags and zipball archive URL for checking versions.",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/JXHost\/documentation\/JXHost"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:6JXHost15HubModuleSourceV",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "struct"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "HubModuleSource"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "JXHost"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "HubModuleSource"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Structure",
+    "symbolKind" : "struct",
+    "title" : "HubModuleSource"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "struct"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "HubModuleSource"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "relationshipsSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/JXHost\/5JXPod21JXDynamicModuleSourceP"
+      ],
+      "kind" : "relationships",
+      "title" : "Conforms To",
+      "type" : "conformsTo"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/init(repository:)"
+      ],
+      "title" : "Initializers"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/localPath",
+        "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/refs",
+        "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/repository",
+        "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/tagVersions"
+      ],
+      "title" : "Instance Properties"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/archiveURL(for:)",
+        "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/versionManager(for:refName:)"
+      ],
+      "title" : "Instance Methods"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/Ref"
+      ],
+      "title" : "Enumerations"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/jxhost\/hubmodulesource"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://JXHost/5JXPod21JXDynamicModuleSourceP": {
+  "identifier" : "doc:\/\/JXHost\/5JXPod21JXDynamicModuleSourceP",
+  "title" : "JXPod.JXDynamicModuleSource",
+  "type" : "unresolvable"
+},
+"doc://JXHost/documentation/JXHost": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "JXHost",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost"
+},
+"doc://JXHost/documentation/JXHost/HubModuleSource": {
+  "abstract" : [
+    {
+      "text" : "A module source that uses a git repository’s tags and zipball archive URL for checking versions.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "HubModuleSource"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "HubModuleSource"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "HubModuleSource",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/hubmodulesource"
+},
+"doc://JXHost/documentation/JXHost/HubModuleSource/Ref": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "enum"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Ref"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/Ref",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Ref"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "HubModuleSource.Ref",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/hubmodulesource\/ref"
+},
+"doc://JXHost/documentation/JXHost/HubModuleSource/archiveURL(for:)": {
+  "abstract" : [
+    {
+      "text" : "Returns the URL for the zipball of the repository at the given tag or branch.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "archiveURL"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "for"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:6JXHost15HubModuleSourceV",
+      "text" : "HubModuleSource"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:6JXHost15HubModuleSourceV3RefO",
+      "text" : "Ref"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation3URLV",
+      "text" : "URL"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/archiveURL(for:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "archiveURL(for:)",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/hubmodulesource\/archiveurl(for:)"
+},
+"doc://JXHost/documentation/JXHost/HubModuleSource/init(repository:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "repository"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation3URLV",
+      "text" : "URL"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/init(repository:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(repository:)",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/hubmodulesource\/init(repository:)"
+},
+"doc://JXHost/documentation/JXHost/HubModuleSource/localPath": {
+  "abstract" : [
+    {
+      "text" : "The local cache folder for the given hub module.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "localPath"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation3URLV",
+      "text" : "URL"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/localPath",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "localPath",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/hubmodulesource\/localpath"
+},
+"doc://JXHost/documentation/JXHost/HubModuleSource/refs": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "refs"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:6JXHost15HubModuleSourceV",
+      "text" : "HubModuleSource"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5JXPod21JXDynamicModuleSourceP7RefInfoa",
+      "text" : "RefInfo"
+    },
+    {
+      "kind" : "text",
+      "text" : "]"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/refs",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "refs",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/hubmodulesource\/refs"
+},
+"doc://JXHost/documentation/JXHost/HubModuleSource/repository": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "repository"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation3URLV",
+      "text" : "URL"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/repository",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "repository",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/hubmodulesource\/repository"
+},
+"doc://JXHost/documentation/JXHost/HubModuleSource/tagVersions": {
+  "abstract" : [
+    {
+      "text" : "All the tags that can be parsed as a ",
+      "type" : "text"
+    },
+    {
+      "code" : "SemVer",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : ".",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "tagVersions"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8FairCore6SemVerV",
+      "text" : "SemVer"
+    },
+    {
+      "kind" : "text",
+      "text" : "]"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/tagVersions",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "tagVersions",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/hubmodulesource\/tagversions"
+},
+"doc://JXHost/documentation/JXHost/HubModuleSource/versionManager(for:refName:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "versionManager"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "Module"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "for"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Module"
+    },
+    {
+      "kind" : "text",
+      "text" : ".Type, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "refName"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : "?) -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:6JXHost13ModuleManagerC",
+      "text" : "ModuleManager"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:6JXHost15HubModuleSourceV",
+      "text" : "HubModuleSource"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/versionManager(for:refName:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "versionManager(for:refName:)",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/hubmodulesource\/versionmanager(for:refname:)"
+}
+}
+}

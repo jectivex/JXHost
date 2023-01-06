@@ -1,0 +1,1194 @@
+{
+  "abstract" : [
+    {
+      "text" : "The manager for a local cache of individual refs (e.g. tags and branches for a ",
+      "type" : "text"
+    },
+    {
+      "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource",
+      "isActive" : true,
+      "type" : "reference"
+    },
+    {
+      "text" : ") of a certain repository.",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/JXHost\/documentation\/JXHost"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleManager"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:6JXHost13ModuleManagerC",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "class"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "ModuleManager"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "JXHost"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "ModuleManager"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Class",
+    "symbolKind" : "class",
+    "title" : "ModuleManager"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "class"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "ModuleManager"
+            },
+            {
+              "kind" : "text",
+              "text" : "<"
+            },
+            {
+              "kind" : "genericParameter",
+              "text" : "Source"
+            },
+            {
+              "kind" : "text",
+              "text" : "> "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "where"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "text" : "Source"
+            },
+            {
+              "kind" : "text",
+              "text" : " : "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:5JXPod21JXDynamicModuleSourceP",
+              "text" : "JXDynamicModuleSource"
+            },
+            {
+              "kind" : "text",
+              "text" : ", "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "text" : "Source"
+            },
+            {
+              "kind" : "text",
+              "text" : "."
+            },
+            {
+              "kind" : "typeIdentifier",
+              "text" : "Ref"
+            },
+            {
+              "kind" : "text",
+              "text" : " : "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:5JXPod8NamedRefP",
+              "text" : "NamedRef"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "relationshipsSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/JXHost\/7Combine16ObservableObjectP",
+        "doc:\/\/JXHost\/s8SendableP"
+      ],
+      "kind" : "relationships",
+      "title" : "Conforms To",
+      "type" : "conformsTo"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/JXHost\/documentation\/JXHost\/ModuleManager\/init(source:relativePath:installedVersion:fileManager:localPath:)"
+      ],
+      "title" : "Initializers"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/JXHost\/documentation\/JXHost\/ModuleManager\/fileManager",
+        "doc:\/\/JXHost\/documentation\/JXHost\/ModuleManager\/installedVersion",
+        "doc:\/\/JXHost\/documentation\/JXHost\/ModuleManager\/latestCompatableVersion",
+        "doc:\/\/JXHost\/documentation\/JXHost\/ModuleManager\/localPath",
+        "doc:\/\/JXHost\/documentation\/JXHost\/ModuleManager\/localVersions",
+        "doc:\/\/JXHost\/documentation\/JXHost\/ModuleManager\/refs",
+        "doc:\/\/JXHost\/documentation\/JXHost\/ModuleManager\/relativePath",
+        "doc:\/\/JXHost\/documentation\/JXHost\/ModuleManager\/source"
+      ],
+      "title" : "Instance Properties"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/JXHost\/documentation\/JXHost\/ModuleManager\/downloadArchive(for:overwrite:)",
+        "doc:\/\/JXHost\/documentation\/JXHost\/ModuleManager\/localDynamicPath(for:)",
+        "doc:\/\/JXHost\/documentation\/JXHost\/ModuleManager\/localRootPath(for:)",
+        "doc:\/\/JXHost\/documentation\/JXHost\/ModuleManager\/localRootPathExists(for:)",
+        "doc:\/\/JXHost\/documentation\/JXHost\/ModuleManager\/refreshModules()",
+        "doc:\/\/JXHost\/documentation\/JXHost\/ModuleManager\/removeLocalFolder(for:)",
+        "doc:\/\/JXHost\/documentation\/JXHost\/ModuleManager\/scanModuleFolder()"
+      ],
+      "title" : "Instance Methods"
+    },
+    {
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/JXHost\/documentation\/JXHost\/ModuleManager\/ObservableObject-Implementations"
+      ],
+      "title" : "Default Implementations"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/jxhost\/modulemanager"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://JXHost/7Combine16ObservableObjectP": {
+  "identifier" : "doc:\/\/JXHost\/7Combine16ObservableObjectP",
+  "title" : "Combine.ObservableObject",
+  "type" : "unresolvable"
+},
+"doc://JXHost/documentation/JXHost": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "JXHost",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost"
+},
+"doc://JXHost/documentation/JXHost/HubModuleSource": {
+  "abstract" : [
+    {
+      "text" : "A module source that uses a git repository’s tags and zipball archive URL for checking versions.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "HubModuleSource"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "HubModuleSource"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "HubModuleSource",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/hubmodulesource"
+},
+"doc://JXHost/documentation/JXHost/ModuleManager": {
+  "abstract" : [
+    {
+      "text" : "The manager for a local cache of individual refs (e.g. tags and branches for a ",
+      "type" : "text"
+    },
+    {
+      "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource",
+      "isActive" : true,
+      "type" : "reference"
+    },
+    {
+      "text" : ") of a certain repository.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "class"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "ModuleManager"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleManager",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "ModuleManager"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "ModuleManager",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/modulemanager"
+},
+"doc://JXHost/documentation/JXHost/ModuleManager/ObservableObject-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleManager\/ObservableObject-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "ObservableObject Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/modulemanager\/observableobject-implementations"
+},
+"doc://JXHost/documentation/JXHost/ModuleManager/downloadArchive(for:overwrite:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "downloadArchive"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "for"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Source"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Ref"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "overwrite"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation3URLV",
+      "text" : "URL"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleManager\/downloadArchive(for:overwrite:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "downloadArchive(for:overwrite:)",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/modulemanager\/downloadarchive(for:overwrite:)"
+},
+"doc://JXHost/documentation/JXHost/ModuleManager/fileManager": {
+  "abstract" : [
+    {
+      "text" : "The ",
+      "type" : "text"
+    },
+    {
+      "code" : "FileManager",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " for operations on the local file system",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "fileManager"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "c:objc(cs)NSFileManager",
+      "text" : "FileManager"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleManager\/fileManager",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "fileManager",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/modulemanager\/filemanager"
+},
+"doc://JXHost/documentation/JXHost/ModuleManager/init(source:relativePath:installedVersion:fileManager:localPath:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "source"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Source"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "relativePath"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : "?, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "installedVersion"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8FairCore6SemVerV",
+      "text" : "SemVer"
+    },
+    {
+      "kind" : "text",
+      "text" : "?, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "fileManager"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "c:objc(cs)NSFileManager",
+      "text" : "FileManager"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "localPath"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation3URLV",
+      "text" : "URL"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleManager\/init(source:relativePath:installedVersion:fileManager:localPath:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(source:relativePath:installedVersion:fileManager:localPath:)",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/modulemanager\/init(source:relativepath:installedversion:filemanager:localpath:)"
+},
+"doc://JXHost/documentation/JXHost/ModuleManager/installedVersion": {
+  "abstract" : [
+    {
+      "text" : "The currently-active version of the local module",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "installedVersion"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8FairCore6SemVerV",
+      "text" : "SemVer"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleManager\/installedVersion",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "installedVersion",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/modulemanager\/installedversion"
+},
+"doc://JXHost/documentation/JXHost/ModuleManager/latestCompatableVersion": {
+  "abstract" : [
+    {
+      "text" : "Returns the most recent available version that is compatible with this version",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "latestCompatableVersion"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Source"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5JXPod21JXDynamicModuleSourceP7RefInfoa",
+      "text" : "RefInfo"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleManager\/latestCompatableVersion",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "latestCompatableVersion",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/modulemanager\/latestcompatableversion"
+},
+"doc://JXHost/documentation/JXHost/ModuleManager/localDynamicPath(for:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "localDynamicPath"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "for"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Source"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Ref"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation3URLV",
+      "text" : "URL"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleManager\/localDynamicPath(for:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "localDynamicPath(for:)",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/modulemanager\/localdynamicpath(for:)"
+},
+"doc://JXHost/documentation/JXHost/ModuleManager/localPath": {
+  "abstract" : [
+    {
+      "text" : "The base path to the local folder that will keep the ref downloads.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "localPath"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation3URLV",
+      "text" : "URL"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleManager\/localPath",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "localPath",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/modulemanager\/localpath"
+},
+"doc://JXHost/documentation/JXHost/ModuleManager/localRootPath(for:)": {
+  "abstract" : [
+    {
+      "text" : "The local extraction path for the given ref.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "localRootPath"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "for"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Source"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Ref"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation3URLV",
+      "text" : "URL"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleManager\/localRootPath(for:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "localRootPath(for:)",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/modulemanager\/localrootpath(for:)"
+},
+"doc://JXHost/documentation/JXHost/ModuleManager/localRootPathExists(for:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "localRootPathExists"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "for"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Source"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Ref"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleManager\/localRootPathExists(for:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "localRootPathExists(for:)",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/modulemanager\/localrootpathexists(for:)"
+},
+"doc://JXHost/documentation/JXHost/ModuleManager/localVersions": {
+  "abstract" : [
+    {
+      "text" : "All the local versions that have been downloaded. This will be (re-)populated by the ",
+      "type" : "text"
+    },
+    {
+      "code" : "scanModuleFolder()",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " function.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "localVersions"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Source"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Ref"
+    },
+    {
+      "kind" : "text",
+      "text" : " : "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation3URLV",
+      "text" : "URL"
+    },
+    {
+      "kind" : "text",
+      "text" : "]"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleManager\/localVersions",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "localVersions",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/modulemanager\/localversions"
+},
+"doc://JXHost/documentation/JXHost/ModuleManager/refreshModules()": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "refreshModules"
+    },
+    {
+      "kind" : "text",
+      "text" : "() "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "async"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleManager\/refreshModules()",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "refreshModules()",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/modulemanager\/refreshmodules()"
+},
+"doc://JXHost/documentation/JXHost/ModuleManager/refs": {
+  "abstract" : [
+    {
+      "text" : "All the available refs and their dates for the module",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "refs"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Source"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5JXPod21JXDynamicModuleSourceP7RefInfoa",
+      "text" : "RefInfo"
+    },
+    {
+      "kind" : "text",
+      "text" : "]"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleManager\/refs",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "refs",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/modulemanager\/refs"
+},
+"doc://JXHost/documentation/JXHost/ModuleManager/relativePath": {
+  "abstract" : [
+    {
+      "text" : "The relative path to the remove module for resolving references",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "relativePath"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleManager\/relativePath",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "relativePath",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/modulemanager\/relativepath"
+},
+"doc://JXHost/documentation/JXHost/ModuleManager/removeLocalFolder(for:)": {
+  "abstract" : [
+    {
+      "text" : "Remove the local cached folder for the given ref.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "removeLocalFolder"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "for"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Source"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Ref"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleManager\/removeLocalFolder(for:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "removeLocalFolder(for:)",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/modulemanager\/removelocalfolder(for:)"
+},
+"doc://JXHost/documentation/JXHost/ModuleManager/scanModuleFolder()": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "scanModuleFolder"
+    },
+    {
+      "kind" : "text",
+      "text" : "()"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleManager\/scanModuleFolder()",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "scanModuleFolder()",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/modulemanager\/scanmodulefolder()"
+},
+"doc://JXHost/documentation/JXHost/ModuleManager/source": {
+  "abstract" : [
+    {
+      "text" : "The JXDynamicModuleSource",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "source"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Source"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleManager\/source",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "source",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/modulemanager\/source"
+},
+"doc://JXHost/s8SendableP": {
+  "identifier" : "doc:\/\/JXHost\/s8SendableP",
+  "title" : "Swift.Sendable",
+  "type" : "unresolvable"
+}
+}
+}

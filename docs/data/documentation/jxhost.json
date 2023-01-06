@@ -1,0 +1,305 @@
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/JXHost\/documentation\/JXHost"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "JXHost",
+    "modules" : [
+      {
+        "name" : "JXHost"
+      }
+    ],
+    "role" : "collection",
+    "roleHeading" : "Framework",
+    "symbolKind" : "module",
+    "title" : "JXHost"
+  },
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/JXHost\/documentation\/JXHost\/ModuleManager",
+        "doc:\/\/JXHost\/documentation\/JXHost\/MonitoringScriptLoader"
+      ],
+      "title" : "Classes"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource",
+        "doc:\/\/JXHost\/documentation\/JXHost\/JXHost",
+        "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView"
+      ],
+      "title" : "Structures"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/JXHost\/documentation\/JXHost\/HubVersionManager"
+      ],
+      "title" : "Type Aliases"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/jxhost"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://JXHost/documentation/JXHost": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "JXHost",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost"
+},
+"doc://JXHost/documentation/JXHost/HubModuleSource": {
+  "abstract" : [
+    {
+      "text" : "A module source that uses a git repository’s tags and zipball archive URL for checking versions.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "HubModuleSource"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "HubModuleSource"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "HubModuleSource",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/hubmodulesource"
+},
+"doc://JXHost/documentation/JXHost/HubVersionManager": {
+  "abstract" : [
+    {
+      "text" : "A ",
+      "type" : "text"
+    },
+    {
+      "code" : "ModuleManager",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " backed by a ",
+      "type" : "text"
+    },
+    {
+      "code" : "HubModuleSource",
+      "type" : "codeVoice"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "typealias"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "HubVersionManager"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubVersionManager",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "HubVersionManager"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "HubVersionManager",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/hubversionmanager"
+},
+"doc://JXHost/documentation/JXHost/JXHost": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "JXHost"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/JXHost",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "JXHost"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "JXHost",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/jxhost"
+},
+"doc://JXHost/documentation/JXHost/ModuleManager": {
+  "abstract" : [
+    {
+      "text" : "The manager for a local cache of individual refs (e.g. tags and branches for a ",
+      "type" : "text"
+    },
+    {
+      "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource",
+      "isActive" : true,
+      "type" : "reference"
+    },
+    {
+      "text" : ") of a certain repository.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "class"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "ModuleManager"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleManager",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "ModuleManager"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "ModuleManager",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/modulemanager"
+},
+"doc://JXHost/documentation/JXHost/ModuleVersionsListView": {
+  "abstract" : [
+    {
+      "text" : "A view that displays a sectioned list of navigation links to individual versions of a module.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "ModuleVersionsListView"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "ModuleVersionsListView"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "ModuleVersionsListView",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/moduleversionslistview"
+},
+"doc://JXHost/documentation/JXHost/MonitoringScriptLoader": {
+  "abstract" : [
+    {
+      "text" : "Script loader that attempts to locate source files for loaded JavaScript and monitor those files for changes.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "class"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "MonitoringScriptLoader"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/MonitoringScriptLoader",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "MonitoringScriptLoader"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "MonitoringScriptLoader",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/monitoringscriptloader"
+}
+}
+}

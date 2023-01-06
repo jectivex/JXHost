@@ -1,0 +1,688 @@
+{
+  "abstract" : [
+    {
+      "text" : "Inherited from ",
+      "type" : "text"
+    },
+    {
+      "code" : "JXDynamicModuleSource.Ref",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : ".",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/JXHost\/documentation\/JXHost",
+        "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/Ref"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:6JXHost15HubModuleSourceV3RefO",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "enum"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "Ref"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "JXHost"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "Ref"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Enumeration",
+    "symbolKind" : "enum",
+    "title" : "HubModuleSource.Ref"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "enum"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "Ref"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "relationshipsSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/JXHost\/5JXPod8NamedRefP",
+        "doc:\/\/JXHost\/SQ",
+        "doc:\/\/JXHost\/SH"
+      ],
+      "kind" : "relationships",
+      "title" : "Conforms To",
+      "type" : "conformsTo"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/Ref\/branch(_:)",
+        "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/Ref\/tag(_:)"
+      ],
+      "title" : "Enumeration Cases"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/Ref\/init(kind:name:)",
+        "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/Ref\/init(type:name:)"
+      ],
+      "title" : "Initializers"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/Ref\/kind-swift.property",
+        "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/Ref\/name",
+        "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/Ref\/semver-4g23l",
+        "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/Ref\/type"
+      ],
+      "title" : "Instance Properties"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/Ref\/Kind-swift.enum"
+      ],
+      "title" : "Enumerations"
+    },
+    {
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/Ref\/Equatable-Implementations",
+        "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/Ref\/NamedRef-Implementations"
+      ],
+      "title" : "Default Implementations"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/jxhost\/hubmodulesource\/ref"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://JXHost/5JXPod8NamedRefP": {
+  "identifier" : "doc:\/\/JXHost\/5JXPod8NamedRefP",
+  "title" : "JXPod.NamedRef",
+  "type" : "unresolvable"
+},
+"doc://JXHost/SH": {
+  "identifier" : "doc:\/\/JXHost\/SH",
+  "title" : "Swift.Hashable",
+  "type" : "unresolvable"
+},
+"doc://JXHost/SQ": {
+  "identifier" : "doc:\/\/JXHost\/SQ",
+  "title" : "Swift.Equatable",
+  "type" : "unresolvable"
+},
+"doc://JXHost/documentation/JXHost": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "JXHost",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost"
+},
+"doc://JXHost/documentation/JXHost/HubModuleSource": {
+  "abstract" : [
+    {
+      "text" : "A module source that uses a git repository’s tags and zipball archive URL for checking versions.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "HubModuleSource"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "HubModuleSource"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "HubModuleSource",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/hubmodulesource"
+},
+"doc://JXHost/documentation/JXHost/HubModuleSource/Ref": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "enum"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Ref"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/Ref",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Ref"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "HubModuleSource.Ref",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/hubmodulesource\/ref"
+},
+"doc://JXHost/documentation/JXHost/HubModuleSource/Ref/Equatable-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/Ref\/Equatable-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "Equatable Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/hubmodulesource\/ref\/equatable-implementations"
+},
+"doc://JXHost/documentation/JXHost/HubModuleSource/Ref/Kind-swift.enum": {
+  "abstract" : [
+    {
+      "text" : "The ref kind",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "enum"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Kind"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/Ref\/Kind-swift.enum",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Kind"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "HubModuleSource.Ref.Kind",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/hubmodulesource\/ref\/kind-swift.enum"
+},
+"doc://JXHost/documentation/JXHost/HubModuleSource/Ref/NamedRef-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/Ref\/NamedRef-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "NamedRef Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/hubmodulesource\/ref\/namedref-implementations"
+},
+"doc://JXHost/documentation/JXHost/HubModuleSource/Ref/branch(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "branch"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/Ref\/branch(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "HubModuleSource.Ref.branch(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/hubmodulesource\/ref\/branch(_:)"
+},
+"doc://JXHost/documentation/JXHost/HubModuleSource/Ref/init(kind:name:)": {
+  "abstract" : [
+    {
+      "text" : "Initialize with the given ref kind.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "kind"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:6JXHost15HubModuleSourceV",
+      "text" : "HubModuleSource"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:6JXHost15HubModuleSourceV3RefO",
+      "text" : "Ref"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:6JXHost15HubModuleSourceV3RefO4KindO",
+      "text" : "Kind"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "name"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/Ref\/init(kind:name:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(kind:name:)",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/hubmodulesource\/ref\/init(kind:name:)"
+},
+"doc://JXHost/documentation/JXHost/HubModuleSource/Ref/init(type:name:)": {
+  "abstract" : [
+    {
+      "text" : "NamedRef initializer",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "?("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "type"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "name"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/Ref\/init(type:name:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(type:name:)",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/hubmodulesource\/ref\/init(type:name:)"
+},
+"doc://JXHost/documentation/JXHost/HubModuleSource/Ref/kind-swift.property": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "kind"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:6JXHost15HubModuleSourceV",
+      "text" : "HubModuleSource"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:6JXHost15HubModuleSourceV3RefO",
+      "text" : "Ref"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:6JXHost15HubModuleSourceV3RefO4KindO",
+      "text" : "Kind"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/Ref\/kind-swift.property",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "kind",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/hubmodulesource\/ref\/kind-swift.property"
+},
+"doc://JXHost/documentation/JXHost/HubModuleSource/Ref/name": {
+  "abstract" : [
+    {
+      "text" : "Returns the tag or branch name",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "name"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/Ref\/name",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "name",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/hubmodulesource\/ref\/name"
+},
+"doc://JXHost/documentation/JXHost/HubModuleSource/Ref/semver-4g23l": {
+  "abstract" : [
+    {
+      "text" : "If this is a tag and the string is a semantic version (e.g., 1.2.3), then return it.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "semver"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8FairCore6SemVerV",
+      "text" : "SemVer"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/Ref\/semver-4g23l",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "semver",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/hubmodulesource\/ref\/semver-4g23l"
+},
+"doc://JXHost/documentation/JXHost/HubModuleSource/Ref/tag(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "tag"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/Ref\/tag(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "HubModuleSource.Ref.tag(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/hubmodulesource\/ref\/tag(_:)"
+},
+"doc://JXHost/documentation/JXHost/HubModuleSource/Ref/type": {
+  "abstract" : [
+    {
+      "text" : "Returns the tag or branch name",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "type"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/Ref\/type",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "type",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/hubmodulesource\/ref\/type"
+}
+}
+}
