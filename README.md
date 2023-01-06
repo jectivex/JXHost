@@ -11,7 +11,8 @@ flowchart TB
     JXPod -.-> FilePod
     JXPod -.-> NetPod
     JXPod -.-> LocationPod
-    HostApp -.-> AnimalFarmModule
+    HostApp -.-> AboutMeModule
+    HostApp -.-> DatePlannerModule
     AnimalFarmModule --> JXBridge
     JXSwiftUI --> JXBridge
     JXBridge --> JXKit
