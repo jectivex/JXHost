@@ -2,7 +2,7 @@
 
 ```mermaid
 flowchart TB
-    HostApp[Host App] -.-> PetStoreModule(Pet Store)
+    HostApp((Host App)) -.-> PetStoreModule(Pet Store)
     HostApp -.-> AboutMeModule(About Me)
     HostApp -.-> DatePlannerModule(Date Planner)
     
@@ -29,7 +29,7 @@ flowchart TB
     
     JXKit --> JavaScriptCore[JavaScriptCore]
 
-classDef HostApp fill:steelblue,stroke:#333,stroke-width:0.5px
+classDef HostApp fill:white,stroke:#333,stroke-width:4px
 class HostApp HostApp
 
 classDef gray fill:lightgray,stroke:#333,stroke-width:0.5px
