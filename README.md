@@ -12,9 +12,12 @@ flowchart TB
     JXHost --> JXSwiftUI
     JXHost --> JXPod
     JXPod --> JXBridge
-    JXPod -.-> FilePod[(FilePod)]
-    JXPod -.-> NetPod[(NetPod)]
-    JXPod -.-> OtherPod[(OtherPod)]
+    HostApp -.-> FilePod[(FilePod)]
+    HostApp -.-> NetPod[(NetPod)]
+    HostApp -.-> OtherPod[(OtherPod)]
+    FilePod --> JXPod
+    OtherPod --> JXPod
+    FilePod --> JXPod
     JXSwiftUI --> JXBridge
     JXBridge --> JXKit
     JXKit --> JavaScriptCore[JavaScriptCore]
