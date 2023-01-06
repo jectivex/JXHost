@@ -13,7 +13,8 @@ flowchart TB
     JXPod -.-> LocationPod
     HostApp -.-> AboutMeModule
     HostApp -.-> DatePlannerModule
-    AnimalFarmModule --> JXBridge
+    AboutMeModule --> JXBridge
+    DatePlannerModule --> JXBridge
     JXSwiftUI --> JXBridge
     JXBridge --> JXKit
     JXKit --> JavaScriptCore
