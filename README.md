@@ -8,10 +8,16 @@ flowchart TB
     
     HostApp --> JXHost
     
+    subgraph Modules
+      PetStoreModule
+      AboutMeModule
+      DatePlannerModule
+    end
+
     PetStoreModule --> JXSwiftUI
     AboutMeModule --> JXSwiftUI
     DatePlannerModule --> JXSwiftUI
-    
+
     JXHost --> JXSwiftUI
     JXHost --> JXPod
     JXPod --> JXBridge
@@ -20,10 +26,16 @@ flowchart TB
     HostApp -.-> NetPod[(NetPod)]
     HostApp -.-> OtherPod[(OtherPod)]
     
+    subgraph Pods
+      FilePod
+      NetPod
+      OtherPod
+    end
+
     FilePod --> JXPod
     NetPod --> JXPod
     OtherPod --> JXPod
-    
+
     JXSwiftUI --> JXBridge
     JXBridge --> JXKit
     
@@ -62,10 +74,16 @@ flowchart TB
     
     HostApp --> JXHost
     
+    subgraph Modules
+      PetStoreModule
+      AboutMeModule
+      DatePlannerModule
+    end
+
     PetStoreModule --> JXBridge
     AboutMeModule --> JXBridge
     DatePlannerModule --> JXBridge
-    
+
     JXHost --> JXPod
     JXPod --> JXBridge
     
@@ -74,11 +92,18 @@ flowchart TB
     HostApp -.-> SwiftUIPod[(SwiftUIPod)]
     HostApp -.-> OtherPod[(OtherPod)]
     
+    subgraph Pods
+      FilePod
+      NetPod
+      SwiftUIPod
+      OtherPod
+    end
+
     FilePod --> JXPod
     NetPod --> JXPod
     SwiftUIPod --> JXPod
     OtherPod --> JXPod
-    
+
     JXBridge --> JXKit
     
     JXKit --> JavaScriptCore[JavaScriptCore]
