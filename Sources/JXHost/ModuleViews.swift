@@ -8,13 +8,13 @@ import FairCore
 public struct ModuleVersionsListView<V: View>: View {
     public typealias Source = HubModuleSource // TODO: make generic
     @State var allVersionsExpanded = false
-    let appName: String
-    let branches: [String]
-    let developmentMode: Bool
-    let strictMode: Bool
-    let errorHandler: (Error) -> ()
-    let viewBuilder: (JXContext) -> V
-    let versionManager: ModuleManager<Source>
+    private let appName: String
+    private let branches: [String]
+    private let developmentMode: Bool
+    private let strictMode: Bool
+    private let errorHandler: (Error) -> ()
+    private let viewBuilder: (JXContext) -> V
+    @ObservedObject private var versionManager: ModuleManager<Source>
 
     public init(versionManager: ModuleManager<Source>, appName: String, branches: [String], developmentMode: Bool, strictMode: Bool, errorHandler: @escaping (Error) -> Void, viewBuilder: @escaping (JXContext) -> V) {
         self.versionManager = versionManager
