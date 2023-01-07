@@ -1,7 +1,12 @@
-import SwiftUI
 import JXPod
 import JXBridge
 import FairCore
+import Foundation
+#if canImport(Combine)
+import Combine
+#else
+import OpenCombine
+#endif
 
 /// The manager for a local cache of individual refs (e.g. tags and branches for a ``HubModuleSource``) of a certain repository.
 @MainActor public class ModuleManager<Source: JXDynamicModuleSource> : ObservableObject where Source.Ref : NamedRef {
