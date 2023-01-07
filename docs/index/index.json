@@ -483,15 +483,6 @@
                 "path" : "\/documentation\/jxhost\/jxhost\/init()",
                 "title" : "init()",
                 "type" : "init"
-              },
-              {
-                "title" : "Instance Properties",
-                "type" : "groupMarker"
-              },
-              {
-                "path" : "\/documentation\/jxhost\/jxhost\/text",
-                "title" : "var text: String",
-                "type" : "property"
               }
             ],
             "path" : "\/documentation\/jxhost\/jxhost",

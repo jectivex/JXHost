@@ -86,12 +86,6 @@
         "doc:\/\/JXHost\/documentation\/JXHost\/JXHost\/init()"
       ],
       "title" : "Initializers"
-    },
-    {
-      "identifiers" : [
-        "doc:\/\/JXHost\/documentation\/JXHost\/JXHost\/text"
-      ],
-      "title" : "Instance Properties"
     }
   ],
   "variants" : [
@@ -170,40 +164,6 @@
   "title" : "init()",
   "type" : "topic",
   "url" : "\/documentation\/jxhost\/jxhost\/init()"
-},
-"doc://JXHost/documentation/JXHost/JXHost/text": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "var"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "text"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:SS",
-      "text" : "String"
-    }
-  ],
-  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/JXHost\/text",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "text",
-  "type" : "topic",
-  "url" : "\/documentation\/jxhost\/jxhost\/text"
 }
 }
 }

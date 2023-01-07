@@ -2,10 +2,9 @@ import XCTest
 @testable import JXHost
 
 final class JXHostTests: XCTestCase {
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-        XCTAssertEqual(JXHost().text, "Hello, World!")
+    func testHosting() async throws {
+        let source = HubModuleSource(repository: URL(string: "https://github.com/Magic-Loupe/PetStore.git")!)
+        let refs = try await source.refs
+        XCTAssertGreaterThanOrEqual(refs.count, 10)
     }
 }
