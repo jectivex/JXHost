@@ -133,6 +133,8 @@
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/allowsHitTesting(_:)",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/allowsTightening(_:)",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/anchorPreference(key:value:transform:)",
+        "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/animatingVectorBackground(for:alignment:content:)",
+        "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/animatingVectorOverlay(for:alignment:content:)",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/animation(_:)",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/animation(_:value:)",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/aspectRatio(_:contentMode:)-3bk5p",
@@ -159,6 +161,7 @@
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/bold(_:)",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/border(_:width:)",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/brightness(_:)",
+        "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/button(action:)",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/buttonBorderShape(_:)",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/buttonStyle(_:)-2to1w",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/buttonStyle(_:)-6e9i4",
@@ -246,6 +249,7 @@
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/cornerRadius(_:antialiased:)",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/cuttable(for:action:)",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/datePickerStyle(_:)",
+        "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/debuggingViewChanges()",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/defaultAppStorage(_:)",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/defaultFocus(_:_:priority:)",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/deleteDisabled(_:)",
@@ -317,12 +321,14 @@
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/hidden()",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/highPriorityGesture(_:including:)",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/horizontalRadioGroupLayout()",
+        "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/hoverSymbol(activeVariant:inactiveVariant:animation:)",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/hueRotation(_:)",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/id(_:)",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/ignoresSafeArea(_:edges:)",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/imageScale(_:)",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/importableFromServices(for:action:)",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/importsItemProviders(_:onImport:)",
+        "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/initialViewSize(_:)",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/interactionActivityTrackingTag(_:)",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/interactiveDismissDisabled(_:)",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/italic(_:)",
@@ -344,6 +350,7 @@
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/lineLimit(_:)-dydm",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/lineLimit(_:reservesSpace:)",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/lineSpacing(_:)",
+        "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/link(to:embedded:)",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/listItemTint(_:)-6zjny",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/listItemTint(_:)-nae",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/listRowBackground(_:)",
@@ -367,6 +374,7 @@
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/monospacedDigit()",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/moveDisabled(_:)",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/multilineTextAlignment(_:)",
+        "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/navigation(title:subtitle:)",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/navigationBarBackButtonHidden(_:)",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/navigationBarHidden(_:)",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/navigationBarTitle(_:)-4kaga",
@@ -397,6 +405,7 @@
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/offset(_:)",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/offset(x:y:)",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/onAppear(perform:)",
+        "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/onChange(of:debounce:priority:perform:)",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/onChange(of:perform:)",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/onCommand(_:perform:)",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/onContinueUserActivity(_:perform:)",
@@ -443,8 +452,10 @@
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/padding(_:_:)",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/pageCommand(value:in:step:)",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/pasteDestination(for:action:validator:)",
+        "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/pdf(inWindow:bounds:normalize:drawHierarchy:)",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/persistentSystemOverlays(_:)",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/pickerStyle(_:)",
+        "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/png(inWindow:bounds:normalize:drawHierarchy:scale:)",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/popover(isPresented:attachmentAnchor:arrowEdge:content:)",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/popover(item:attachmentAnchor:arrowEdge:content:)",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/position(_:)",
@@ -467,6 +478,7 @@
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/projectionEffect(_:)",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/redacted(reason:)",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/refreshable(action:)",
+        "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/refreshingEveryMinute()",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/renameAction(_:)-3ra4k",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/renameAction(_:)-52sdo",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/rotation3DEffect(_:axis:anchor:anchorZ:perspective:)",
@@ -552,6 +564,10 @@
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/unredacted()",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/userActivity(_:element:_:)",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/userActivity(_:isActive:_:)",
+        "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/viewWrapper()",
+        "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/windowToolbarUnified(compact:showsTitle:)",
+        "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/withAppearanceSetting()",
+        "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/withLocaleSetting()",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/zIndex(_:)"
       ],
       "title" : "Instance Methods"
@@ -9437,6 +9453,236 @@
   "type" : "topic",
   "url" : "\/documentation\/jxhost\/moduleversionslistview\/anchorpreference(key:value:transform:)"
 },
+"doc://JXHost/documentation/JXHost/ModuleVersionsListView/animatingVectorBackground(for:alignment:content:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "animatingVectorBackground"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "N"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "V"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "for"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "N"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "alignment"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI9AlignmentV",
+      "text" : "Alignment"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "content"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "N"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "V"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/animatingVectorBackground(for:alignment:content:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "animatingVectorBackground(for:alignment:content:)",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/moduleversionslistview\/animatingvectorbackground(for:alignment:content:)"
+},
+"doc://JXHost/documentation/JXHost/ModuleVersionsListView/animatingVectorOverlay(for:alignment:content:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "animatingVectorOverlay"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "N"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "V"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "for"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "N"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "alignment"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI9AlignmentV",
+      "text" : "Alignment"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "content"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "N"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "V"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/animatingVectorOverlay(for:alignment:content:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "animatingVectorOverlay(for:alignment:content:)",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/moduleversionslistview\/animatingvectoroverlay(for:alignment:content:)"
+},
 "doc://JXHost/documentation/JXHost/ModuleVersionsListView/animation(_:)": {
   "abstract" : [
 
@@ -11246,6 +11492,60 @@
   "title" : "brightness(_:)",
   "type" : "topic",
   "url" : "\/documentation\/jxhost\/moduleversionslistview\/brightness(_:)"
+},
+"doc://JXHost/documentation/JXHost/ModuleVersionsListView/button(action:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "button"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "action"
+    },
+    {
+      "kind" : "text",
+      "text" : ": () -> ()) -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI6ButtonV",
+      "text" : "Button"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/button(action:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "button(action:)",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/moduleversionslistview\/button(action:)"
 },
 "doc://JXHost/documentation/JXHost/ModuleVersionsListView/buttonBorderShape(_:)": {
   "abstract" : [
@@ -18822,6 +19122,35 @@
   "type" : "topic",
   "url" : "\/documentation\/jxhost\/moduleversionslistview\/datepickerstyle(_:)"
 },
+"doc://JXHost/documentation/JXHost/ModuleVersionsListView/debuggingViewChanges()": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "debuggingViewChanges"
+    },
+    {
+      "kind" : "text",
+      "text" : "()"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/debuggingViewChanges()",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "debuggingViewChanges()",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/moduleversionslistview\/debuggingviewchanges()"
+},
 "doc://JXHost/documentation/JXHost/ModuleVersionsListView/defaultAppStorage(_:)": {
   "abstract" : [
 
@@ -24178,6 +24507,112 @@
   "type" : "topic",
   "url" : "\/documentation\/jxhost\/moduleversionslistview\/horizontalradiogrouplayout()"
 },
+"doc://JXHost/documentation/JXHost/ModuleVersionsListView/hoverSymbol(activeVariant:inactiveVariant:animation:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "hoverSymbol"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "activeVariant"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI14SymbolVariantsV",
+      "text" : "SymbolVariants"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "inactiveVariant"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI14SymbolVariantsV",
+      "text" : "SymbolVariants"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "animation"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI9AnimationV",
+      "text" : "Animation"
+    },
+    {
+      "kind" : "text",
+      "text" : "?) -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ModifiedContentV",
+      "text" : "ModifiedContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7FairApp19HoverSymbolModifierV",
+      "text" : "HoverSymbolModifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/hoverSymbol(activeVariant:inactiveVariant:animation:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "hoverSymbol(activeVariant:inactiveVariant:animation:)",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/moduleversionslistview\/hoversymbol(activevariant:inactivevariant:animation:)"
+},
 "doc://JXHost/documentation/JXHost/ModuleVersionsListView/hueRotation(_:)": {
   "abstract" : [
 
@@ -24591,6 +25026,70 @@
   "title" : "importsItemProviders(_:onImport:)",
   "type" : "topic",
   "url" : "\/documentation\/jxhost\/moduleversionslistview\/importsitemproviders(_:onimport:)"
+},
+"doc://JXHost/documentation/JXHost/ModuleVersionsListView/initialViewSize(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "initialViewSize"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "c:@S@CGSize",
+      "text" : "CGSize"
+    },
+    {
+      "kind" : "text",
+      "text" : "?) -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ModifiedContentV",
+      "text" : "ModifiedContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7FairApp23InitialSizeViewModifierV",
+      "text" : "InitialSizeViewModifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/initialViewSize(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "initialViewSize(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/moduleversionslistview\/initialviewsize(_:)"
 },
 "doc://JXHost/documentation/JXHost/ModuleVersionsListView/interactionActivityTrackingTag(_:)": {
   "abstract" : [
@@ -25845,6 +26344,82 @@
   "title" : "lineSpacing(_:)",
   "type" : "topic",
   "url" : "\/documentation\/jxhost\/moduleversionslistview\/linespacing(_:)"
+},
+"doc://JXHost/documentation/JXHost/ModuleVersionsListView/link(to:embedded:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "link"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "to"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation3URLV",
+      "text" : "URL"
+    },
+    {
+      "kind" : "text",
+      "text" : "?, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "embedded"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/link(to:embedded:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "link(to:embedded:)",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/moduleversionslistview\/link(to:embedded:)"
 },
 "doc://JXHost/documentation/JXHost/ModuleVersionsListView/listItemTint(_:)-6zjny": {
   "abstract" : [
@@ -27276,6 +27851,82 @@
   "title" : "multilineTextAlignment(_:)",
   "type" : "topic",
   "url" : "\/documentation\/jxhost\/moduleversionslistview\/multilinetextalignment(_:)"
+},
+"doc://JXHost/documentation/JXHost/ModuleVersionsListView/navigation(title:subtitle:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "navigation"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "title"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4TextV",
+      "text" : "Text"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "subtitle"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4TextV",
+      "text" : "Text"
+    },
+    {
+      "kind" : "text",
+      "text" : "?) -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/navigation(title:subtitle:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "navigation(title:subtitle:)",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/moduleversionslistview\/navigation(title:subtitle:)"
 },
 "doc://JXHost/documentation/JXHost/ModuleVersionsListView/navigationBarBackButtonHidden(_:)": {
   "abstract" : [
@@ -29309,6 +29960,130 @@
   "title" : "onAppear(perform:)",
   "type" : "topic",
   "url" : "\/documentation\/jxhost\/moduleversionslistview\/onappear(perform:)"
+},
+"doc://JXHost/documentation/JXHost/ModuleVersionsListView/onChange(of:debounce:priority:perform:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "onChange"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "of"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "debounce"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "c:@T@NSTimeInterval",
+      "text" : "TimeInterval"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "priority"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:ScP",
+      "text" : "TaskPriority"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "perform"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> ()) -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/onChange(of:debounce:priority:perform:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "onChange(of:debounce:priority:perform:)",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/moduleversionslistview\/onchange(of:debounce:priority:perform:)"
 },
 "doc://JXHost/documentation/JXHost/ModuleVersionsListView/onChange(of:perform:)": {
   "abstract" : [
@@ -33184,6 +33959,112 @@
   "type" : "topic",
   "url" : "\/documentation\/jxhost\/moduleversionslistview\/pastedestination(for:action:validator:)"
 },
+"doc://JXHost/documentation/JXHost/ModuleVersionsListView/pdf(inWindow:bounds:normalize:drawHierarchy:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "pdf"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "inWindow"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7FairApp8UXWindowa",
+      "text" : "UXWindow"
+    },
+    {
+      "kind" : "text",
+      "text" : "?, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "bounds"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "c:@S@CGRect",
+      "text" : "CGRect"
+    },
+    {
+      "kind" : "text",
+      "text" : "?, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "normalize"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "drawHierarchy"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation4DataV",
+      "text" : "Data"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/pdf(inWindow:bounds:normalize:drawHierarchy:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "pdf(inWindow:bounds:normalize:drawHierarchy:)",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/moduleversionslistview\/pdf(inwindow:bounds:normalize:drawhierarchy:)"
+},
 "doc://JXHost/documentation/JXHost/ModuleVersionsListView/persistentSystemOverlays(_:)": {
   "abstract" : [
 
@@ -33292,6 +34173,129 @@
   "title" : "pickerStyle(_:)",
   "type" : "topic",
   "url" : "\/documentation\/jxhost\/moduleversionslistview\/pickerstyle(_:)"
+},
+"doc://JXHost/documentation/JXHost/ModuleVersionsListView/png(inWindow:bounds:normalize:drawHierarchy:scale:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "png"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "inWindow"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7FairApp8UXWindowa",
+      "text" : "UXWindow"
+    },
+    {
+      "kind" : "text",
+      "text" : "?, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "bounds"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "c:@S@CGRect",
+      "text" : "CGRect"
+    },
+    {
+      "kind" : "text",
+      "text" : "?, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "normalize"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "drawHierarchy"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "scale"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sd",
+      "text" : "Double"
+    },
+    {
+      "kind" : "text",
+      "text" : "?) -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation4DataV",
+      "text" : "Data"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/png(inWindow:bounds:normalize:drawHierarchy:scale:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "png(inWindow:bounds:normalize:drawHierarchy:scale:)",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/moduleversionslistview\/png(inwindow:bounds:normalize:drawhierarchy:scale:)"
 },
 "doc://JXHost/documentation/JXHost/ModuleVersionsListView/popover(isPresented:attachmentAnchor:arrowEdge:content:)": {
   "abstract" : [
@@ -34765,6 +35769,48 @@
   "title" : "refreshable(action:)",
   "type" : "topic",
   "url" : "\/documentation\/jxhost\/moduleversionslistview\/refreshable(action:)"
+},
+"doc://JXHost/documentation/JXHost/ModuleVersionsListView/refreshingEveryMinute()": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "refreshingEveryMinute"
+    },
+    {
+      "kind" : "text",
+      "text" : "() -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/refreshingEveryMinute()",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "refreshingEveryMinute()",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/moduleversionslistview\/refreshingeveryminute()"
 },
 "doc://JXHost/documentation/JXHost/ModuleVersionsListView/renameAction(_:)-3ra4k": {
   "abstract" : [
@@ -41740,6 +42786,200 @@
   "title" : "userActivity(_:isActive:_:)",
   "type" : "topic",
   "url" : "\/documentation\/jxhost\/moduleversionslistview\/useractivity(_:isactive:_:)"
+},
+"doc://JXHost/documentation/JXHost/ModuleVersionsListView/viewWrapper()": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "viewWrapper"
+    },
+    {
+      "kind" : "text",
+      "text" : "() -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7FairApp6UXViewa",
+      "text" : "UXView"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/viewWrapper()",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "viewWrapper()",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/moduleversionslistview\/viewwrapper()"
+},
+"doc://JXHost/documentation/JXHost/ModuleVersionsListView/windowToolbarUnified(compact:showsTitle:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "windowToolbarUnified"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "compact"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "showsTitle"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/windowToolbarUnified(compact:showsTitle:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "windowToolbarUnified(compact:showsTitle:)",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/moduleversionslistview\/windowtoolbarunified(compact:showstitle:)"
+},
+"doc://JXHost/documentation/JXHost/ModuleVersionsListView/withAppearanceSetting()": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "withAppearanceSetting"
+    },
+    {
+      "kind" : "text",
+      "text" : "() -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/withAppearanceSetting()",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "withAppearanceSetting()",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/moduleversionslistview\/withappearancesetting()"
+},
+"doc://JXHost/documentation/JXHost/ModuleVersionsListView/withLocaleSetting()": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "withLocaleSetting"
+    },
+    {
+      "kind" : "text",
+      "text" : "() -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/withLocaleSetting()",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "withLocaleSetting()",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/moduleversionslistview\/withlocalesetting()"
 },
 "doc://JXHost/documentation/JXHost/ModuleVersionsListView/zIndex(_:)": {
   "abstract" : [

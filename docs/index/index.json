@@ -1043,6 +1043,16 @@
                     "type" : "method"
                   },
                   {
+                    "path" : "\/documentation\/jxhost\/moduleversionslistview\/animatingvectorbackground(for:alignment:content:)",
+                    "title" : "func animatingVectorBackground<N, V>(for: N, alignment: Alignment, content: (N) -> V) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/jxhost\/moduleversionslistview\/animatingvectoroverlay(for:alignment:content:)",
+                    "title" : "func animatingVectorOverlay<N, V>(for: N, alignment: Alignment, content: (N) -> V) -> some View",
+                    "type" : "method"
+                  },
+                  {
                     "deprecated" : true,
                     "path" : "\/documentation\/jxhost\/moduleversionslistview\/animation(_:)",
                     "title" : "func animation(Animation?) -> some View",
@@ -1172,6 +1182,11 @@
                   {
                     "path" : "\/documentation\/jxhost\/moduleversionslistview\/brightness(_:)",
                     "title" : "func brightness(Double) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/jxhost\/moduleversionslistview\/button(action:)",
+                    "title" : "func button(action: () -> ()) -> Button<Self>",
                     "type" : "method"
                   },
                   {
@@ -1613,6 +1628,11 @@
                     "type" : "method"
                   },
                   {
+                    "path" : "\/documentation\/jxhost\/moduleversionslistview\/debuggingviewchanges()",
+                    "title" : "func debuggingViewChanges()",
+                    "type" : "method"
+                  },
+                  {
                     "path" : "\/documentation\/jxhost\/moduleversionslistview\/defaultappstorage(_:)",
                     "title" : "func defaultAppStorage(UserDefaults) -> some View",
                     "type" : "method"
@@ -1971,6 +1991,11 @@
                     "type" : "method"
                   },
                   {
+                    "path" : "\/documentation\/jxhost\/moduleversionslistview\/hoversymbol(activevariant:inactivevariant:animation:)",
+                    "title" : "func hoverSymbol(activeVariant: SymbolVariants, inactiveVariant: SymbolVariants, animation: Animation?) -> ModifiedContent<Self, HoverSymbolModifier>",
+                    "type" : "method"
+                  },
+                  {
                     "path" : "\/documentation\/jxhost\/moduleversionslistview\/huerotation(_:)",
                     "title" : "func hueRotation(Angle) -> some View",
                     "type" : "method"
@@ -1998,6 +2023,11 @@
                   {
                     "path" : "\/documentation\/jxhost\/moduleversionslistview\/importsitemproviders(_:onimport:)",
                     "title" : "func importsItemProviders([UTType], onImport: ([NSItemProvider]) -> Bool) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/jxhost\/moduleversionslistview\/initialviewsize(_:)",
+                    "title" : "func initialViewSize(CGSize?) -> ModifiedContent<Self, InitialSizeViewModifier>",
                     "type" : "method"
                   },
                   {
@@ -2103,6 +2133,11 @@
                   {
                     "path" : "\/documentation\/jxhost\/moduleversionslistview\/linespacing(_:)",
                     "title" : "func lineSpacing(CGFloat) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/jxhost\/moduleversionslistview\/link(to:embedded:)",
+                    "title" : "func link(to: URL?, embedded: Bool) -> some View",
                     "type" : "method"
                   },
                   {
@@ -2220,6 +2255,11 @@
                   {
                     "path" : "\/documentation\/jxhost\/moduleversionslistview\/multilinetextalignment(_:)",
                     "title" : "func multilineTextAlignment(TextAlignment) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/jxhost\/moduleversionslistview\/navigation(title:subtitle:)",
+                    "title" : "func navigation(title: Text, subtitle: Text?) -> some View",
                     "type" : "method"
                   },
                   {
@@ -2378,6 +2418,11 @@
                   {
                     "path" : "\/documentation\/jxhost\/moduleversionslistview\/onappear(perform:)",
                     "title" : "func onAppear(perform: (() -> Void)?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/jxhost\/moduleversionslistview\/onchange(of:debounce:priority:perform:)",
+                    "title" : "func onChange<T>(of: T, debounce: TimeInterval, priority: TaskPriority, perform: (T) async -> ()) -> some View",
                     "type" : "method"
                   },
                   {
@@ -2619,6 +2664,11 @@
                     "type" : "method"
                   },
                   {
+                    "path" : "\/documentation\/jxhost\/moduleversionslistview\/pdf(inwindow:bounds:normalize:drawhierarchy:)",
+                    "title" : "func pdf(inWindow: UXWindow?, bounds: CGRect?, normalize: Bool, drawHierarchy: Bool) -> Data?",
+                    "type" : "method"
+                  },
+                  {
                     "path" : "\/documentation\/jxhost\/moduleversionslistview\/persistentsystemoverlays(_:)",
                     "title" : "func persistentSystemOverlays(Visibility) -> some View",
                     "type" : "method"
@@ -2626,6 +2676,11 @@
                   {
                     "path" : "\/documentation\/jxhost\/moduleversionslistview\/pickerstyle(_:)",
                     "title" : "func pickerStyle<S>(S) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/jxhost\/moduleversionslistview\/png(inwindow:bounds:normalize:drawhierarchy:scale:)",
+                    "title" : "func png(inWindow: UXWindow?, bounds: CGRect?, normalize: Bool, drawHierarchy: Bool, scale: Double?) -> Data?",
                     "type" : "method"
                   },
                   {
@@ -2736,6 +2791,11 @@
                   {
                     "path" : "\/documentation\/jxhost\/moduleversionslistview\/refreshable(action:)",
                     "title" : "func refreshable(action: () async -> Void) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/jxhost\/moduleversionslistview\/refreshingeveryminute()",
+                    "title" : "func refreshingEveryMinute() -> some View",
                     "type" : "method"
                   },
                   {
@@ -3164,6 +3224,26 @@
                   {
                     "path" : "\/documentation\/jxhost\/moduleversionslistview\/useractivity(_:isactive:_:)",
                     "title" : "func userActivity(String, isActive: Bool, (NSUserActivity) -> ()) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/jxhost\/moduleversionslistview\/viewwrapper()",
+                    "title" : "func viewWrapper() -> UXView",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/jxhost\/moduleversionslistview\/windowtoolbarunified(compact:showstitle:)",
+                    "title" : "func windowToolbarUnified(compact: Bool, showsTitle: Bool) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/jxhost\/moduleversionslistview\/withappearancesetting()",
+                    "title" : "func withAppearanceSetting() -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/jxhost\/moduleversionslistview\/withlocalesetting()",
+                    "title" : "func withLocaleSetting() -> some View",
                     "type" : "method"
                   },
                   {
