@@ -13,7 +13,7 @@
   },
   "kind" : "symbol",
   "metadata" : {
-    "externalID" : "s:6JXHost13ModuleManagerC04scanB6FolderyyF",
+    "externalID" : "s:6JXHost13ModuleManagerC04scanB6FolderyyKF",
     "fragments" : [
       {
         "kind" : "keyword",
@@ -29,7 +29,11 @@
       },
       {
         "kind" : "text",
-        "text" : "()"
+        "text" : "() "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "throws"
       }
     ],
     "modules" : [
@@ -67,7 +71,11 @@
             },
             {
               "kind" : "text",
-              "text" : "()"
+              "text" : "() "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "throws"
             }
           ]
         }
@@ -204,7 +212,11 @@
     },
     {
       "kind" : "text",
-      "text" : "()"
+      "text" : "() "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
     }
   ],
   "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleManager\/scanModuleFolder()",

@@ -1,8 +1,38 @@
+///
+/// Conditionl UI elements for selecting individual module versions
+///
 #if canImport(SwiftUI)
 import SwiftUI
 import JXPod
 import JXBridge
 import FairCore
+
+extension JXDynamicModule {
+    /// Creates a navigation link to a ``ModuleVersionsListView`` that will list all the available versions of a module.
+    @MainActor @ViewBuilder public static func entryLink<V: View>(host: Bundle, name: String, symbol: String, branches: [String], developmentMode: Bool, strictMode: Bool, errorHandler: @escaping (Error) -> (), view: @escaping (JXContext) -> V) -> some View {
+        let version = host.packageVersion(for: self.remoteURL.baseURL)
+        let source = Self.hubSource
+        NavigationLink {
+            ModuleVersionsListView(versionManager: source.versionManager(for: self, refName: version), appName: name, branches: branches, developmentMode: developmentMode, strictMode: strictMode, errorHandler: errorHandler) { ctx in
+                view(ctx) // the root view that will be shown
+            }
+        } label: {
+            HStack {
+                Label {
+                    Text(name)
+                } icon: {
+                    Image(systemName: symbol)
+                }
+                Spacer()
+                if let version = version {
+                    Text(version)
+                        .font(.caption.monospacedDigit())
+                        .frame(alignment: .trailing)
+                }
+            }
+        }
+    }
+}
 
 /// A view that displays a sectioned list of navigation links to individual versions of a module.
 public struct ModuleVersionsListView<V: View>: View {
@@ -68,13 +98,16 @@ public struct ModuleVersionsListView<V: View>: View {
             }
         }
         .navigationTitle(appName)
-        .refreshable {
-            versionManager.scanModuleFolder()
+        .refreshable { await refreshModules() }
+        .task { await refreshModules() }
+    }
+
+    func refreshModules() async {
+        do {
+            try versionManager.scanModuleFolder()
             await versionManager.refreshModules()
-        }
-        .task {
-            versionManager.scanModuleFolder()
-            await versionManager.refreshModules()
+        } catch {
+            errorHandler(error)
         }
     }
 
@@ -120,7 +153,12 @@ public struct ModuleVersionsListView<V: View>: View {
             if let ref = ref {
                 if versionManager.localRootPathExists(for: ref) {
                     Button() {
-                        versionManager.removeLocalFolder(for: ref)
+                        do {
+                            try versionManager.removeLocalFolder(for: ref)
+                        } catch {
+                            dbg("error removing local folder for:", ref, error)
+                            errorHandler(error)
+                        }
                     } label: {
                         Label {
                             Text("Remove", bundle: .module, comment: "button text for action to remove a downloaded ref")

@@ -93,12 +93,12 @@
               },
               {
                 "path" : "\/documentation\/jxhost\/modulemanager\/removelocalfolder(for:)",
-                "title" : "func removeLocalFolder(for: Source.Ref) -> Bool",
+                "title" : "func removeLocalFolder(for: Source.Ref) throws",
                 "type" : "method"
               },
               {
                 "path" : "\/documentation\/jxhost\/modulemanager\/scanmodulefolder()",
-                "title" : "func scanModuleFolder()",
+                "title" : "func scanModuleFolder() throws",
                 "type" : "method"
               },
               {
@@ -471,22 +471,6 @@
             ],
             "path" : "\/documentation\/jxhost\/hubmodulesource",
             "title" : "HubModuleSource",
-            "type" : "struct"
-          },
-          {
-            "children" : [
-              {
-                "title" : "Initializers",
-                "type" : "groupMarker"
-              },
-              {
-                "path" : "\/documentation\/jxhost\/jxhost\/init()",
-                "title" : "init()",
-                "type" : "init"
-              }
-            ],
-            "path" : "\/documentation\/jxhost\/jxhost",
-            "title" : "JXHost",
             "type" : "struct"
           },
           {
@@ -2048,11 +2032,6 @@
                   {
                     "path" : "\/documentation\/jxhost\/moduleversionslistview\/itemprovider(_:)",
                     "title" : "func itemProvider(Optional<() -> NSItemProvider?>) -> some View",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/jxhost\/moduleversionslistview\/jxenvironment(_:errorhandler:)",
-                    "title" : "func jxEnvironment(JXContext?, errorHandler: ((Error) -> Void)?) -> some View",
                     "type" : "method"
                   },
                   {
