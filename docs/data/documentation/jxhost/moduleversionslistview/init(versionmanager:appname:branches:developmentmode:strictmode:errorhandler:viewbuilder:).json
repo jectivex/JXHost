@@ -9,11 +9,11 @@
   },
   "identifier" : {
     "interfaceLanguage" : "swift",
-    "url" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/init(appName:branches:developmentMode:strictMode:errorHandler:viewBuilder:)"
+    "url" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/init(versionManager:appName:branches:developmentMode:strictMode:errorHandler:viewBuilder:)"
   },
   "kind" : "symbol",
   "metadata" : {
-    "externalID" : "s:6JXHost22ModuleVersionsListViewV7appName8branches15developmentMode06strictJ012errorHandler11viewBuilderACyxGSS_SaySSGS2bys5Error_pcx5JXKit9JXContextCctcfc",
+    "externalID" : "s:6JXHost22ModuleVersionsListViewV14versionManager7appName8branches15developmentMode06strictL012errorHandler11viewBuilderACyxGAA0bG0CyAA03HubB6SourceVG_SSSaySSGS2bys5Error_pcx5JXKit9JXContextCctcfc",
     "fragments" : [
       {
         "kind" : "identifier",
@@ -22,6 +22,49 @@
       {
         "kind" : "text",
         "text" : "("
+      },
+      {
+        "kind" : "externalParam",
+        "text" : "versionManager"
+      },
+      {
+        "kind" : "text",
+        "text" : ": "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:6JXHost13ModuleManagerC",
+        "text" : "ModuleManager"
+      },
+      {
+        "kind" : "text",
+        "text" : "<"
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:6JXHost22ModuleVersionsListViewV",
+        "text" : "ModuleVersionsListView"
+      },
+      {
+        "kind" : "text",
+        "text" : "<"
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "V"
+      },
+      {
+        "kind" : "text",
+        "text" : ">."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:6JXHost22ModuleVersionsListViewV6Sourcea",
+        "text" : "Source"
+      },
+      {
+        "kind" : "text",
+        "text" : ">, "
       },
       {
         "kind" : "externalParam",
@@ -151,7 +194,7 @@
     "role" : "symbol",
     "roleHeading" : "Initializer",
     "symbolKind" : "init",
-    "title" : "init(appName:branches:developmentMode:strictMode:errorHandler:viewBuilder:)"
+    "title" : "init(versionManager:appName:branches:developmentMode:strictMode:errorHandler:viewBuilder:)"
   },
   "primaryContentSections" : [
     {
@@ -171,6 +214,52 @@
             {
               "kind" : "text",
               "text" : "("
+            },
+            {
+              "kind" : "externalParam",
+              "text" : "versionManager"
+            },
+            {
+              "kind" : "text",
+              "text" : ": "
+            },
+            {
+              "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleManager",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:6JXHost13ModuleManagerC",
+              "text" : "ModuleManager"
+            },
+            {
+              "kind" : "text",
+              "text" : "<"
+            },
+            {
+              "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:6JXHost22ModuleVersionsListViewV",
+              "text" : "ModuleVersionsListView"
+            },
+            {
+              "kind" : "text",
+              "text" : "<"
+            },
+            {
+              "kind" : "typeIdentifier",
+              "text" : "V"
+            },
+            {
+              "kind" : "text",
+              "text" : ">."
+            },
+            {
+              "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/Source",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:6JXHost22ModuleVersionsListViewV6Sourcea",
+              "text" : "Source"
+            },
+            {
+              "kind" : "text",
+              "text" : ">, "
             },
             {
               "kind" : "externalParam",
@@ -324,7 +413,7 @@
   "variants" : [
     {
       "paths" : [
-        "\/documentation\/jxhost\/moduleversionslistview\/init(appname:branches:developmentmode:strictmode:errorhandler:viewbuilder:)"
+        "\/documentation\/jxhost\/moduleversionslistview\/init(versionmanager:appname:branches:developmentmode:strictmode:errorhandler:viewbuilder:)"
       ],
       "traits" : [
         {
@@ -345,6 +434,83 @@
   "title" : "JXHost",
   "type" : "topic",
   "url" : "\/documentation\/jxhost"
+},
+"doc://JXHost/documentation/JXHost/HubModuleSource": {
+  "abstract" : [
+    {
+      "text" : "A module source that uses a git repository’s tags and zipball archive URL for checking versions.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "HubModuleSource"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "HubModuleSource"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "HubModuleSource",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/hubmodulesource"
+},
+"doc://JXHost/documentation/JXHost/ModuleManager": {
+  "abstract" : [
+    {
+      "text" : "The manager for a local cache of individual refs (e.g. tags and branches for a ",
+      "type" : "text"
+    },
+    {
+      "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource",
+      "isActive" : true,
+      "type" : "reference"
+    },
+    {
+      "text" : ") of a certain repository.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "class"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "ModuleManager"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleManager",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "ModuleManager"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "ModuleManager",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/modulemanager"
 },
 "doc://JXHost/documentation/JXHost/ModuleVersionsListView": {
   "abstract" : [
@@ -380,7 +546,38 @@
   "type" : "topic",
   "url" : "\/documentation\/jxhost\/moduleversionslistview"
 },
-"doc://JXHost/documentation/JXHost/ModuleVersionsListView/init(appName:branches:developmentMode:strictMode:errorHandler:viewBuilder:)": {
+"doc://JXHost/documentation/JXHost/ModuleVersionsListView/Source": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "typealias"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Source"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/Source",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Source"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "ModuleVersionsListView.Source",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/moduleversionslistview\/source"
+},
+"doc://JXHost/documentation/JXHost/ModuleVersionsListView/init(versionManager:appName:branches:developmentMode:strictMode:errorHandler:viewBuilder:)": {
   "abstract" : [
 
   ],
@@ -392,6 +589,49 @@
     {
       "kind" : "text",
       "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "versionManager"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:6JXHost13ModuleManagerC",
+      "text" : "ModuleManager"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:6JXHost22ModuleVersionsListViewV",
+      "text" : "ModuleVersionsListView"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "V"
+    },
+    {
+      "kind" : "text",
+      "text" : ">."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:6JXHost22ModuleVersionsListViewV6Sourcea",
+      "text" : "Source"
+    },
+    {
+      "kind" : "text",
+      "text" : ">, "
     },
     {
       "kind" : "externalParam",
@@ -513,12 +753,12 @@
       "text" : ")"
     }
   ],
-  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/init(appName:branches:developmentMode:strictMode:errorHandler:viewBuilder:)",
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/init(versionManager:appName:branches:developmentMode:strictMode:errorHandler:viewBuilder:)",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "init(appName:branches:developmentMode:strictMode:errorHandler:viewBuilder:)",
+  "title" : "init(versionManager:appName:branches:developmentMode:strictMode:errorHandler:viewBuilder:)",
   "type" : "topic",
-  "url" : "\/documentation\/jxhost\/moduleversionslistview\/init(appname:branches:developmentmode:strictmode:errorhandler:viewbuilder:)"
+  "url" : "\/documentation\/jxhost\/moduleversionslistview\/init(versionmanager:appname:branches:developmentmode:strictmode:errorhandler:viewbuilder:)"
 }
 }
 }

@@ -132,7 +132,7 @@
   "topicSections" : [
     {
       "identifiers" : [
-        "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/init(appName:branches:developmentMode:strictMode:errorHandler:viewBuilder:)"
+        "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/init(versionManager:appName:branches:developmentMode:strictMode:errorHandler:viewBuilder:)"
       ],
       "title" : "Initializers"
     },
@@ -141,6 +141,12 @@
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/body"
       ],
       "title" : "Instance Properties"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/Source"
+      ],
+      "title" : "Type Aliases"
     },
     {
       "generated" : true,
@@ -214,6 +220,37 @@
   "type" : "topic",
   "url" : "\/documentation\/jxhost\/moduleversionslistview"
 },
+"doc://JXHost/documentation/JXHost/ModuleVersionsListView/Source": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "typealias"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Source"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/Source",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Source"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "ModuleVersionsListView.Source",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/moduleversionslistview\/source"
+},
 "doc://JXHost/documentation/JXHost/ModuleVersionsListView/View-Implementations": {
   "abstract" : [
 
@@ -267,7 +304,7 @@
   "type" : "topic",
   "url" : "\/documentation\/jxhost\/moduleversionslistview\/body"
 },
-"doc://JXHost/documentation/JXHost/ModuleVersionsListView/init(appName:branches:developmentMode:strictMode:errorHandler:viewBuilder:)": {
+"doc://JXHost/documentation/JXHost/ModuleVersionsListView/init(versionManager:appName:branches:developmentMode:strictMode:errorHandler:viewBuilder:)": {
   "abstract" : [
 
   ],
@@ -279,6 +316,49 @@
     {
       "kind" : "text",
       "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "versionManager"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:6JXHost13ModuleManagerC",
+      "text" : "ModuleManager"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:6JXHost22ModuleVersionsListViewV",
+      "text" : "ModuleVersionsListView"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "V"
+    },
+    {
+      "kind" : "text",
+      "text" : ">."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:6JXHost22ModuleVersionsListViewV6Sourcea",
+      "text" : "Source"
+    },
+    {
+      "kind" : "text",
+      "text" : ">, "
     },
     {
       "kind" : "externalParam",
@@ -400,12 +480,12 @@
       "text" : ")"
     }
   ],
-  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/init(appName:branches:developmentMode:strictMode:errorHandler:viewBuilder:)",
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView\/init(versionManager:appName:branches:developmentMode:strictMode:errorHandler:viewBuilder:)",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "init(appName:branches:developmentMode:strictMode:errorHandler:viewBuilder:)",
+  "title" : "init(versionManager:appName:branches:developmentMode:strictMode:errorHandler:viewBuilder:)",
   "type" : "topic",
-  "url" : "\/documentation\/jxhost\/moduleversionslistview\/init(appname:branches:developmentmode:strictmode:errorhandler:viewbuilder:)"
+  "url" : "\/documentation\/jxhost\/moduleversionslistview\/init(versionmanager:appname:branches:developmentmode:strictmode:errorhandler:viewbuilder:)"
 }
 }
 }

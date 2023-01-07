@@ -496,8 +496,8 @@
                 "type" : "groupMarker"
               },
               {
-                "path" : "\/documentation\/jxhost\/moduleversionslistview\/init(appname:branches:developmentmode:strictmode:errorhandler:viewbuilder:)",
-                "title" : "init(appName: String, branches: [String], developmentMode: Bool, strictMode: Bool, errorHandler: (Error) -> Void, viewBuilder: (JXContext) -> V)",
+                "path" : "\/documentation\/jxhost\/moduleversionslistview\/init(versionmanager:appname:branches:developmentmode:strictmode:errorhandler:viewbuilder:)",
+                "title" : "init(versionManager: ModuleManager<ModuleVersionsListView<V>.Source>, appName: String, branches: [String], developmentMode: Bool, strictMode: Bool, errorHandler: (Error) -> Void, viewBuilder: (JXContext) -> V)",
                 "type" : "init"
               },
               {
@@ -508,6 +508,15 @@
                 "path" : "\/documentation\/jxhost\/moduleversionslistview\/body",
                 "title" : "var body: some View",
                 "type" : "property"
+              },
+              {
+                "title" : "Type Aliases",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/jxhost\/moduleversionslistview\/source",
+                "title" : "ModuleVersionsListView.Source",
+                "type" : "typealias"
               },
               {
                 "title" : "Default Implementations",
