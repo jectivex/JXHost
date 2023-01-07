@@ -69,3 +69,16 @@ class JavaScriptCore JavaScriptCore
 class di orange
 
 ```
+
+## Dependencies
+
+- [JXKit][]: Cross-platform JavaScript engine
+- [JXBridge][]: Bridge native types to JavaScript
+- [JXPod][]: Native functionality
+- [JavaScriptCore][]: JavaScript runtime (included on Darwin platforms)
+
+
+[JXKit]: https://github.com/jectivex/JXKit
+[JXBridge]: https://github.com/jectivex/JXBridge
+[JXPod]: https://github.com/jectivex/JXPod
+[JavaScriptCore]: https://trac.webkit.org/wiki/JavaScriptCore

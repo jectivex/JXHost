@@ -81,7 +81,7 @@ import OpenCombine
         }
 
         // regardless of whether we succeed, always re-scan the local versions
-        defer { scanModuleFolder() }
+        defer { try? scanModuleFolder() }
 
         let url = self.source.archiveURL(for: ref)
         dbg("loading ref:", ref, url)
@@ -94,18 +94,12 @@ import OpenCombine
     }
 
     /// Remove the local cached folder for the given ref.
-    @discardableResult public func removeLocalFolder(for ref: Source.Ref) -> Bool {
-        defer { scanModuleFolder() } // re-scan after removing any items
+    public func removeLocalFolder(for ref: Source.Ref) throws {
         let path = localRootPath(for: ref)
-
-        do {
-            dbg("removing folder:", path.path)
-            try fileManager.removeItem(at: path)
-            return true
-        } catch {
-            dbg("error removing folder at:", path, error)
-            return false
-        }
+        dbg("removing folder:", path.path)
+        try fileManager.removeItem(at: path)
+        self.localVersions[ref] = nil
+        // try scanModuleFolder() // no need to re-scan, since we updated the only ref that would have changed
     }
 
     public func localRootPathExists(for ref: Source.Ref) -> Bool {
@@ -116,7 +110,7 @@ import OpenCombine
         URL(string: self.relativePath ?? "", relativeTo: localRootPath(for: ref))
     }
 
-    public func scanModuleFolder() {
+    public func scanModuleFolder() throws {
         // remove existing cached folders
         var versions: [Source.Ref: URL] = [:]
         defer {
@@ -126,26 +120,27 @@ import OpenCombine
             }
         }
 
-        do {
-            let dir = { try self.fileManager.contentsOfDirectory(at: $0, includingPropertiesForKeys: [.isDirectoryKey], options: [.skipsHiddenFiles]) }
+        if self.fileManager.isDirectory(url: localPath) != true {
+            return dbg("no folder at:", localPath.path)
+        }
 
-            for base in try dir(localPath) {
-                for sub in try dir(base) {
-                    // the sub-folder will be the ref name: e.g., for "tag": "1.1.2", "2.3.4" and for "branch": "main", "develop", etc.
-                    let name = sub.lastPathComponent
-                    // we expect the top-level folders to be named for the `Kind` of ref: "branch" or "tag"
-                    if let ref = Source.Ref(type: base.lastPathComponent, name: name) {
-                        //dbg("creating ref:", ref, "to:", sub)
-                        versions[ref] = sub
-                    }
+        let dir = { url in
+            try self.fileManager.contentsOfDirectory(at: url, includingPropertiesForKeys: [.isDirectoryKey], options: [.skipsHiddenFiles])
+        }
+
+        for base in try dir(localPath) {
+            for sub in try dir(base) {
+                // the sub-folder will be the ref name: e.g., for "tag": "1.1.2", "2.3.4" and for "branch": "main", "develop", etc.
+                let name = sub.lastPathComponent
+                // we expect the top-level folders to be named for the `Kind` of ref: "branch" or "tag"
+                if let ref = Source.Ref(type: base.lastPathComponent, name: name) {
+                    //dbg("creating ref:", ref, "to:", sub)
+                    versions[ref] = sub
                 }
             }
-        } catch {
-            dbg("error:", error)
         }
     }
 }
-
 
 /// A `ModuleManager` backed by a `HubModuleSource`
 public typealias HubVersionManager = ModuleManager<HubModuleSource>
@@ -165,7 +160,7 @@ extension HubModuleSource {
         let repoURL = self.repository
         let base = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first ?? URL(fileURLWithPath: NSTemporaryDirectory())
         return base
-            .appendingPathComponent("jxmodules", isDirectory: true)
+            .appendingPathComponent(dump("jxmodules"), isDirectory: true)
             .appendingPathComponent(repoURL.host ?? "host", isDirectory: true)
             .appendingPathComponent(repoURL.path, isDirectory: true)
     }
