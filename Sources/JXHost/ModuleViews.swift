@@ -6,22 +6,18 @@ import FairCore
 
 /// A view that displays a sectioned list of navigation links to individual versions of a module.
 public struct ModuleVersionsListView<V: View>: View {
+    public typealias Source = HubModuleSource // TODO: make generic
     @State var allVersionsExpanded = false
-
     let appName: String
-    /// The branches that should be shown
     let branches: [String]
-
     let developmentMode: Bool
-
     let strictMode: Bool
-
     let errorHandler: (Error) -> ()
-
-    @EnvironmentObject var versionManager: HubVersionManager
     let viewBuilder: (JXContext) -> V
+    let versionManager: ModuleManager<Source>
 
-    public init(appName: String, branches: [String], developmentMode: Bool, strictMode: Bool, errorHandler: @escaping (Error) -> Void, viewBuilder: @escaping (JXContext) -> V) {
+    public init(versionManager: ModuleManager<Source>, appName: String, branches: [String], developmentMode: Bool, strictMode: Bool, errorHandler: @escaping (Error) -> Void, viewBuilder: @escaping (JXContext) -> V) {
+        self.versionManager = versionManager
         self.appName = appName
         self.branches = branches
         self.developmentMode = developmentMode
@@ -103,7 +99,7 @@ public struct ModuleVersionsListView<V: View>: View {
         }
     }
 
-    func createContext(for ref: HubModuleSource.Ref?) -> JXContext {
+    @MainActor func createContext(for ref: Source.Ref?) -> JXContext {
         let loader: JXScriptLoader
         if let ref = ref, let baseURL = versionManager.localDynamicPath(for: ref) {
             loader = LocalScriptLoader(baseURL: baseURL)
@@ -114,7 +110,7 @@ public struct ModuleVersionsListView<V: View>: View {
         return context
     }
 
-    func moduleVersionLink(ref: HubModuleSource.Ref?, date: Date?, latest: Bool = false) -> some View {
+    @MainActor func moduleVersionLink(ref: Source.Ref?, date: Date?, latest: Bool = false) -> some View {
         let compatible = ref?.semver?.minorCompatible(with: versionManager.installedVersion ?? .max)
         return ModuleRefPresenterView(appName: appName, ref: ref, date: date, versionManager: versionManager, compatible: compatible, errorHandler: errorHandler) {
             viewBuilder(createContext(for: ref))
