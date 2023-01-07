@@ -104,9 +104,9 @@ public struct ModuleVersionsListView<V: View>: View {
         if let ref = ref, let baseURL = versionManager.localDynamicPath(for: ref) {
             loader = LocalScriptLoader(baseURL: baseURL)
         } else {
-            loader = MonitoringScriptLoader(log: self.log)
+            loader = MonitoringScriptLoader(log: { self.log($0) })
         }
-        let context = JXContext(configuration: .init(strict: self.strictMode, scriptLoader: loader, log: self.log))
+        let context = JXContext(configuration: .init(strict: self.strictMode, scriptLoader: loader, log: { self.log($0) }))
         return context
     }
 
@@ -122,7 +122,11 @@ public struct ModuleVersionsListView<V: View>: View {
                     Button() {
                         versionManager.removeLocalFolder(for: ref)
                     } label: {
-                        Label("Remove", systemImage: "trash")
+                        Label {
+                            Text("Remove", bundle: .module, comment: "button text for action to remove a downloaded ref")
+                        } icon: {
+                            Image(systemName: "trash")
+                        }
                     }
                     .tint(.red)
                 } else {
@@ -136,7 +140,11 @@ public struct ModuleVersionsListView<V: View>: View {
                             }
                         }
                     } label: {
-                        Label("Download", systemImage: "square.and.arrow.down.fill")
+                        Label {
+                            Text("Download", bundle: .module, comment: "button text for action to download a ref")
+                        } icon: {
+                            Image(systemName: "square.and.arrow.down.fill")
+                        }
                     }
                     .tint(.yellow)
                 }
