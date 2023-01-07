@@ -20,7 +20,7 @@ let package = Package(
                 .product(name: "JXPod", package: "JXPod"),
                 .product(name: "JXBridge", package: "JXBridge"),
                 .product(name: "JXSwiftUI", package: "JXSwiftUI", condition: .when(platforms: [.iOS, .macOS, .macCatalyst, .tvOS])),
-                .product(name: "FairCore", package: "Fair"),
+                .product(name: "FairApp", package: "Fair"),
             ],
             resources: [.process("Resources")]),
         .testTarget(

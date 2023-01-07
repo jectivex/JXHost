@@ -190,7 +190,6 @@ struct ModuleRefPresenterView<V: View>: View {
             } icon: {
                 iconView()
             }
-            //.labelStyle(CentreAlignedLabelStyle())
             .frame(alignment: .center)
         }
         .sheet(isPresented: $isPresented) {
