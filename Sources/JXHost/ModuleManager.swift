@@ -127,7 +127,7 @@ import OpenCombine
         }
 
         do {
-            let dir = { try self.fileManager.contentsOfDirectory(at: $0, includingPropertiesForKeys: [.isDirectoryKey], options: [.producesRelativePathURLs, .skipsHiddenFiles]) }
+            let dir = { try self.fileManager.contentsOfDirectory(at: $0, includingPropertiesForKeys: [.isDirectoryKey], options: [.skipsHiddenFiles]) }
 
             for base in try dir(localPath) {
                 for sub in try dir(base) {
