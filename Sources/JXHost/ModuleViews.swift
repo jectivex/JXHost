@@ -1,3 +1,4 @@
+#if canImport(SwiftUI)
 import SwiftUI
 import JXPod
 import JXBridge
@@ -246,3 +247,5 @@ struct ModuleRefView<Content: View> : View {
         }
     }
 }
+#endif
+
