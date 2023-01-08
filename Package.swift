@@ -9,7 +9,6 @@ let package = Package(
         .library(name: "JXHostUI", targets: ["JXHostUI"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/jectivex/JXPod.git", from: "0.3.6"),
         .package(url: "https://github.com/jectivex/JXBridge.git", from: "0.1.14"),
         .package(url: "https://github.com/fair-ground/Fair.git", from: "0.8.26"),
     ],
@@ -17,7 +16,6 @@ let package = Package(
         .target(
             name: "JXHost",
             dependencies: [
-                .product(name: "JXPod", package: "JXPod"),
                 .product(name: "JXBridge", package: "JXBridge"),
                 .product(name: "FairApp", package: "Fair"),
             ],

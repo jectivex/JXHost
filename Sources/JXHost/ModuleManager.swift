@@ -1,4 +1,3 @@
-import JXPod
 import JXBridge
 import FairApp
 import Foundation
@@ -266,9 +265,6 @@ public struct HubModuleSource : JXDynamicModuleSource {
 
     public let repository: URL // e.g., https://github.com/Magic-Loupe/PetStore.git
 
-    /// The host bundle, which will be used to return the `Package.resolved`
-    public let host: Bundle
-
     /// The resolved packages of the host environment, used for matching modules with their repositories
     public let resolvedPackages: ResolvedPackage
 
@@ -327,9 +323,12 @@ public struct HubModuleSource : JXDynamicModuleSource {
     }
 
     public init(repository: URL, host: Bundle) throws {
+        self.init(repository: repository, packages: try host.resolvedPackages().get())
+    }
+
+    public init(repository: URL, packages: ResolvedPackage) {
         self.repository = repository
-        self.host = host
-        self.resolvedPackages = try host.resolvedPackages().get()
+        self.resolvedPackages = packages
     }
 
     func url(_ relativeTo: String) -> URL {

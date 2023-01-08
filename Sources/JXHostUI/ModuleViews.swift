@@ -3,7 +3,6 @@
 ///
 #if canImport(SwiftUI)
 import SwiftUI
-import JXPod
 import JXBridge
 import FairCore
 @_exported import JXHost
