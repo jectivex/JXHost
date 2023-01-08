@@ -32,9 +32,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Test (Debug)
-        run: xcodebuild clean test -configuration Debug -scheme "JXHost" -sdk "iphonesimulator" -destination "platform=iOS Simulator,name=iPhone 14 Pro"
+        run: xcodebuild clean test -configuration Debug -scheme "JXHost-Package" -sdk "iphonesimulator" -destination "platform=iOS Simulator,name=iPhone 14 Pro"
       #- name: Test (Release)
-        #run: xcodebuild clean test -configuration Release -scheme "JXHost" -sdk "iphonesimulator" -destination "platform=iOS Simulator,name=iPhone 14 Pro"
+        #run: xcodebuild clean test -configuration Release -scheme "JXHost-Package" -sdk "iphonesimulator" -destination "platform=iOS Simulator,name=iPhone 14 Pro"
 
   tvos:
     if: false
@@ -42,9 +42,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Test (Debug)
-        run: xcodebuild clean test -configuration Debug -scheme "JXHost" -sdk "appletvsimulator" -destination "platform=tvOS Simulator,name=Apple TV" 
+        run: xcodebuild clean test -configuration Debug -scheme "JXHost-Package" -sdk "appletvsimulator" -destination "platform=tvOS Simulator,name=Apple TV" 
       #- name: Test (Release)
-        #run: xcodebuild clean test -configuration Release -scheme "JXHost" -sdk "appletvsimulator" -destination "platform=tvOS Simulator,name=Apple TV" 
+        #run: xcodebuild clean test -configuration Release -scheme "JXHost-Package" -sdk "appletvsimulator" -destination "platform=tvOS Simulator,name=Apple TV" 
 
   macos:
     runs-on: macos-12
