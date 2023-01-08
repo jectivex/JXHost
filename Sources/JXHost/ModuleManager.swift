@@ -1,6 +1,5 @@
-import JXPod
 import JXBridge
-import FairCore
+import FairApp
 import Foundation
 #if canImport(Combine)
 import Combine
@@ -68,6 +67,11 @@ import OpenCombine
             .appendingPathComponent(ref.name, isDirectory: true)
     }
 
+    /// Downloads the archive for the given ref and extracts it, returning the URL root of the extracted file system.
+    /// - Parameters:
+    ///   - ref: the ref to download
+    ///   - overwrite: whether to overwrite an existing folder
+    /// - Returns: the local file URL to the extracted root folder
     @discardableResult public func downloadArchive(for ref: Source.Ref, overwrite: Bool) async throws -> URL {
         let localExpandURL = localRootPath(for: ref)
         if fileManager.fileExists(atPath: localExpandURL.path) == true {
@@ -107,7 +111,7 @@ import OpenCombine
     }
 
     public func localDynamicPath(for ref: Source.Ref) -> URL? {
-        URL(string: self.relativePath ?? "", relativeTo: localRootPath(for: ref))
+        self.relativePath.flatMap({ URL(string: $0, relativeTo: localRootPath(for: ref)) })
     }
 
     public func scanModuleFolder() throws {
@@ -160,21 +164,83 @@ extension HubModuleSource {
         let repoURL = self.repository
         let base = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first ?? URL(fileURLWithPath: NSTemporaryDirectory())
         return base
-            .appendingPathComponent(dump("jxmodules"), isDirectory: true)
+            .appendingPathComponent("jxmodules", isDirectory: true)
             .appendingPathComponent(repoURL.host ?? "host", isDirectory: true)
             .appendingPathComponent(repoURL.path, isDirectory: true)
     }
 
-    @MainActor public func versionManager<Module : JXDynamicModule>(for module: Module.Type, refName: String?) -> ModuleManager<Self> {
-        HubVersionManager(source: self, relativePath: Module.remoteURL.relativePath, installedVersion: refName.flatMap(SemVer.init(string:)), localPath: self.localPath)
+    @MainActor public func versionManager<Module : JXDynamicModule>(for module: Module.Type, host: Bundle, refName: String?) -> ModuleManager<Self> {
+        HubVersionManager(source: self, relativePath: Module.moduleRelativePath(for: host), installedVersion: refName.flatMap(SemVer.init(string:)), localPath: self.localPath)
     }
 }
 
 extension JXDynamicModule {
-    /// Returns a HubSource for this module. The `remoteURL` is expected to logically separate the `baseURL` and `relativePath` in a way the host container can resolve, which may involve deriving ``Ref``-specific URLs based on those components.
-    public static var hubSource: HubModuleSource {
-        HubModuleSource(repository: remoteURL.baseURL ?? remoteURL)
+    private static func package(for host: Bundle) throws -> ResolvedPackage.Package? {
+        let resolved = try host.resolvedPackages().get()
+        for package in resolved.packages {
+            if Self.namespace.string == package.identity {
+                return package
+            }
+        }
+        return nil
     }
+
+    /// This will take the module named "petstore", find the identifier in `Package.resolved` as https://github.com/Magic-Loupe/PetStore.git, then create `Sources/PetStore/jx/petstore`.
+    ///
+    /// ```
+    /// {
+    ///   "identity" : "petstore",
+    ///   "kind" : "remoteSourceControl",
+    ///   "location" : "https://github.com/Magic-Loupe/PetStore",
+    ///   "state" : {
+    ///     "revision" : "05e37741cec16db4ade85aea341b7b1b7002fd6e",
+    ///     "version" : "0.4.0"
+    ///   }
+    /// }
+    /// ```
+    static func moduleRelativePath(for host: Bundle) -> String? {
+        // TODO: need to cache the Package.resolved somewhere so we don't re-load/re-parse it every time the view is reloaded
+        guard let package = try? package(for: host) else {
+            return nil
+        }
+
+        guard let url = URL(string: package.location) else {
+            return nil
+        }
+
+        let repoName = url.deletingPathExtension().lastPathComponent // turn "https://github.com/Magic-Loupe/PetStore.git" into "Sources/PetStore/jx/petstore"
+        return "Sources/" + repoName + "/" + Self.moduleRootPath + "/" + (package.identity ?? "")
+    }
+
+    public static func remoteModuleBaseURL(for host: Bundle) -> URL? {
+        try? (package(for: host)?.location).flatMap(URL.init(string:))
+    }
+}
+
+extension JXDynamicModule {
+    /// Returns a HubSource for this module. The `remoteModuleSource` is expected to logically separate the `baseURL` and `relativePath` in a way the host container can resolve, which may involve deriving ``Ref``-specific URLs based on those components.
+    ///
+    /// If the module itself specifies a remote URL, then that will be used. Otherwise, the module name will be matched with the package identifier in the host bundle's `Package.resolved` and the repository URL foir that package will be used.
+    public static func remoteHubSource(for bundle: Bundle) throws -> HubModuleSource {
+        // if the module explicitly specifies its remote URL, then use that
+        if let remoteURL = Self.remoteModuleBaseURL(for: bundle) {
+            return try HubModuleSource(repository: remoteURL, host: bundle)
+        }
+
+        // guess the remote URL based on the Package.resolved of the host environment.
+        guard let package = try? Self.package(for: bundle),
+            let packageURL = URL(string: package.location) else {
+            dbg("unable to find namespace:", Self.namespace.string)
+            throw NoModuleFoundError(identifier: Self.namespace.string)
+        }
+
+        return try HubModuleSource(repository: packageURL, host: bundle)
+    }
+
+}
+
+struct NoModuleFoundError : Error {
+    let identifier: String
 }
 
 /// A module source that uses a git repository's tags and zipball archive URL for checking versions.
@@ -198,6 +264,9 @@ public struct HubModuleSource : JXDynamicModuleSource {
     //  download: https://gitlab.com/ORG/REPO/-/archive/TAG/REPO-TAG.zip
 
     public let repository: URL // e.g., https://github.com/Magic-Loupe/PetStore.git
+
+    /// The resolved packages of the host environment, used for matching modules with their repositories
+    public let resolvedPackages: ResolvedPackage
 
     public enum Ref : NamedRef {
         case tag(String)
@@ -253,8 +322,13 @@ public struct HubModuleSource : JXDynamicModuleSource {
         }
     }
 
-    public init(repository: URL) {
+    public init(repository: URL, host: Bundle) throws {
+        self.init(repository: repository, packages: try host.resolvedPackages().get())
+    }
+
+    public init(repository: URL, packages: ResolvedPackage) {
         self.repository = repository
+        self.resolvedPackages = packages
     }
 
     func url(_ relativeTo: String) -> URL {

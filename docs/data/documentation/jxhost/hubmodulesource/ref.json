@@ -90,7 +90,7 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
-        "doc:\/\/JXHost\/5JXPod8NamedRefP",
+        "doc:\/\/JXHost\/documentation\/JXHost\/NamedRef",
         "doc:\/\/JXHost\/SQ",
         "doc:\/\/JXHost\/SH"
       ],
@@ -160,11 +160,6 @@
   ]
 , 
 "references": {
-"doc://JXHost/5JXPod8NamedRefP": {
-  "identifier" : "doc:\/\/JXHost\/5JXPod8NamedRefP",
-  "title" : "JXPod.NamedRef",
-  "type" : "unresolvable"
-},
 "doc://JXHost/SH": {
   "identifier" : "doc:\/\/JXHost\/SH",
   "title" : "Swift.Hashable",
@@ -683,6 +678,40 @@
   "title" : "type",
   "type" : "topic",
   "url" : "\/documentation\/jxhost\/hubmodulesource\/ref\/type"
+},
+"doc://JXHost/documentation/JXHost/NamedRef": {
+  "abstract" : [
+    {
+      "text" : "A Ref that has a name and type that can be converted into a String",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "protocol"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "NamedRef"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/NamedRef",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "NamedRef"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "NamedRef",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/namedref"
 }
 }
 }

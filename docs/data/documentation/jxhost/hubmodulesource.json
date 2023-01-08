@@ -81,7 +81,7 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
-        "doc:\/\/JXHost\/5JXPod21JXDynamicModuleSourceP"
+        "doc:\/\/JXHost\/documentation\/JXHost\/JXDynamicModuleSource"
       ],
       "kind" : "relationships",
       "title" : "Conforms To",
@@ -99,7 +99,8 @@
   "topicSections" : [
     {
       "identifiers" : [
-        "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/init(repository:)"
+        "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/init(repository:host:)",
+        "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/init(repository:packages:)"
       ],
       "title" : "Initializers"
     },
@@ -108,6 +109,7 @@
         "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/localPath",
         "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/refs",
         "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/repository",
+        "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/resolvedPackages",
         "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/tagVersions"
       ],
       "title" : "Instance Properties"
@@ -115,7 +117,7 @@
     {
       "identifiers" : [
         "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/archiveURL(for:)",
-        "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/versionManager(for:refName:)"
+        "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/versionManager(for:host:refName:)"
       ],
       "title" : "Instance Methods"
     },
@@ -140,11 +142,6 @@
   ]
 , 
 "references": {
-"doc://JXHost/5JXPod21JXDynamicModuleSourceP": {
-  "identifier" : "doc:\/\/JXHost\/5JXPod21JXDynamicModuleSourceP",
-  "title" : "JXPod.JXDynamicModuleSource",
-  "type" : "unresolvable"
-},
 "doc://JXHost/documentation/JXHost": {
   "abstract" : [
 
@@ -284,7 +281,7 @@
   "type" : "topic",
   "url" : "\/documentation\/jxhost\/hubmodulesource\/archiveurl(for:)"
 },
-"doc://JXHost/documentation/JXHost/HubModuleSource/init(repository:)": {
+"doc://JXHost/documentation/JXHost/HubModuleSource/init(repository:host:)": {
   "abstract" : [
 
   ],
@@ -312,15 +309,91 @@
     },
     {
       "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "host"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "c:objc(cs)NSBundle",
+      "text" : "Bundle"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/init(repository:host:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(repository:host:)",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/hubmodulesource\/init(repository:host:)"
+},
+"doc://JXHost/documentation/JXHost/HubModuleSource/init(repository:packages:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "repository"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation3URLV",
+      "text" : "URL"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "packages"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7FairApp15ResolvedPackageV",
+      "text" : "ResolvedPackage"
+    },
+    {
+      "kind" : "text",
       "text" : ")"
     }
   ],
-  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/init(repository:)",
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/init(repository:packages:)",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "init(repository:)",
+  "title" : "init(repository:packages:)",
   "type" : "topic",
-  "url" : "\/documentation\/jxhost\/hubmodulesource\/init(repository:)"
+  "url" : "\/documentation\/jxhost\/hubmodulesource\/init(repository:packages:)"
 },
 "doc://JXHost/documentation/JXHost/HubModuleSource/localPath": {
   "abstract" : [
@@ -391,7 +464,7 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:5JXPod21JXDynamicModuleSourceP7RefInfoa",
+      "preciseIdentifier" : "s:6JXHost21JXDynamicModuleSourceP7RefInfoa",
       "text" : "RefInfo"
     },
     {
@@ -439,6 +512,43 @@
   "title" : "repository",
   "type" : "topic",
   "url" : "\/documentation\/jxhost\/hubmodulesource\/repository"
+},
+"doc://JXHost/documentation/JXHost/HubModuleSource/resolvedPackages": {
+  "abstract" : [
+    {
+      "text" : "The resolved packages of the host environment, used for matching modules with their repositories",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "resolvedPackages"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7FairApp15ResolvedPackageV",
+      "text" : "ResolvedPackage"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/resolvedPackages",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "resolvedPackages",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/hubmodulesource\/resolvedpackages"
 },
 "doc://JXHost/documentation/JXHost/HubModuleSource/tagVersions": {
   "abstract" : [
@@ -489,7 +599,7 @@
   "type" : "topic",
   "url" : "\/documentation\/jxhost\/hubmodulesource\/tagversions"
 },
-"doc://JXHost/documentation/JXHost/HubModuleSource/versionManager(for:refName:)": {
+"doc://JXHost/documentation/JXHost/HubModuleSource/versionManager(for:host:refName:)": {
   "abstract" : [
 
   ],
@@ -536,6 +646,23 @@
     },
     {
       "kind" : "externalParam",
+      "text" : "host"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "c:objc(cs)NSBundle",
+      "text" : "Bundle"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
       "text" : "refName"
     },
     {
@@ -570,12 +697,46 @@
       "text" : ">"
     }
   ],
-  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/versionManager(for:refName:)",
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/versionManager(for:host:refName:)",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "versionManager(for:refName:)",
+  "title" : "versionManager(for:host:refName:)",
   "type" : "topic",
-  "url" : "\/documentation\/jxhost\/hubmodulesource\/versionmanager(for:refname:)"
+  "url" : "\/documentation\/jxhost\/hubmodulesource\/versionmanager(for:host:refname:)"
+},
+"doc://JXHost/documentation/JXHost/JXDynamicModuleSource": {
+  "abstract" : [
+    {
+      "text" : "The source repository that hosts the tagged versions of the dynamic module source.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "protocol"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "JXDynamicModuleSource"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/JXDynamicModuleSource",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "JXDynamicModuleSource"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "JXDynamicModuleSource",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/jxdynamicmodulesource"
 }
 }
 }

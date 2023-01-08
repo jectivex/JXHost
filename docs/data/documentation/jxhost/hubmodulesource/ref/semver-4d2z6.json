@@ -1,15 +1,15 @@
 {
   "abstract" : [
     {
-      "text" : "Inherited from ",
+      "text" : "Attempts to parse the name as a semantic version (e.g., ",
       "type" : "text"
     },
     {
-      "code" : "JXDynamicModuleSource.refs",
+      "code" : "1.2.3",
       "type" : "codeVoice"
     },
     {
-      "text" : ".",
+      "text" : ").",
       "type" : "text"
     }
   ],
@@ -17,17 +17,20 @@
     "paths" : [
       [
         "doc:\/\/JXHost\/documentation\/JXHost",
-        "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource"
+        "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource",
+        "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/Ref",
+        "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/Ref\/NamedRef-Implementations"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "swift",
-    "url" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/refs"
+    "url" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/Ref\/semver-4d2z6"
   },
   "kind" : "symbol",
   "metadata" : {
-    "externalID" : "s:6JXHost15HubModuleSourceV4refsSayAC3RefO3ref_10Foundation4DateV4datetGvp",
+    "extendedModule" : "JXHost",
+    "externalID" : "s:6JXHost8NamedRefPAAE6semver8FairCore6SemVerVSgvp::SYNTHESIZED::s:6JXHost15HubModuleSourceV3RefO",
     "fragments" : [
       {
         "kind" : "keyword",
@@ -39,29 +42,20 @@
       },
       {
         "kind" : "identifier",
-        "text" : "refs"
+        "text" : "semver"
       },
       {
         "kind" : "text",
-        "text" : ": ["
+        "text" : ": "
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:6JXHost15HubModuleSourceV",
-        "text" : "HubModuleSource"
+        "preciseIdentifier" : "s:8FairCore6SemVerV",
+        "text" : "SemVer"
       },
       {
         "kind" : "text",
-        "text" : "."
-      },
-      {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:6JXHost21JXDynamicModuleSourceP7RefInfoa",
-        "text" : "RefInfo"
-      },
-      {
-        "kind" : "text",
-        "text" : "]"
+        "text" : "?"
       }
     ],
     "modules" : [
@@ -72,7 +66,7 @@
     "role" : "symbol",
     "roleHeading" : "Instance Property",
     "symbolKind" : "property",
-    "title" : "refs"
+    "title" : "semver"
   },
   "primaryContentSections" : [
     {
@@ -95,51 +89,24 @@
             },
             {
               "kind" : "identifier",
-              "text" : "refs"
+              "text" : "semver"
             },
             {
               "kind" : "text",
-              "text" : ": ["
+              "text" : ": "
             },
             {
-              "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource",
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:6JXHost15HubModuleSourceV",
-              "text" : "HubModuleSource"
+              "preciseIdentifier" : "s:8FairCore6SemVerV",
+              "text" : "SemVer"
             },
             {
               "kind" : "text",
-              "text" : "."
-            },
-            {
-              "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/JXDynamicModuleSource\/RefInfo",
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:6JXHost21JXDynamicModuleSourceP7RefInfoa",
-              "text" : "RefInfo"
-            },
-            {
-              "kind" : "text",
-              "text" : "] { "
+              "text" : "? { "
             },
             {
               "kind" : "keyword",
               "text" : "get"
-            },
-            {
-              "kind" : "text",
-              "text" : " "
-            },
-            {
-              "kind" : "keyword",
-              "text" : "async"
-            },
-            {
-              "kind" : "text",
-              "text" : " "
-            },
-            {
-              "kind" : "keyword",
-              "text" : "throws"
             },
             {
               "kind" : "text",
@@ -162,7 +129,7 @@
   "variants" : [
     {
       "paths" : [
-        "\/documentation\/jxhost\/hubmodulesource\/refs"
+        "\/documentation\/jxhost\/hubmodulesource\/ref\/semver-4d2z6"
       ],
       "traits" : [
         {
@@ -218,9 +185,62 @@
   "type" : "topic",
   "url" : "\/documentation\/jxhost\/hubmodulesource"
 },
-"doc://JXHost/documentation/JXHost/HubModuleSource/refs": {
+"doc://JXHost/documentation/JXHost/HubModuleSource/Ref": {
   "abstract" : [
 
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "enum"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Ref"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/Ref",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Ref"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "HubModuleSource.Ref",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/hubmodulesource\/ref"
+},
+"doc://JXHost/documentation/JXHost/HubModuleSource/Ref/NamedRef-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/Ref\/NamedRef-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "NamedRef Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/hubmodulesource\/ref\/namedref-implementations"
+},
+"doc://JXHost/documentation/JXHost/HubModuleSource/Ref/semver-4d2z6": {
+  "abstract" : [
+    {
+      "text" : "Attempts to parse the name as a semantic version (e.g., ",
+      "type" : "text"
+    },
+    {
+      "code" : "1.2.3",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : ").",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -233,71 +253,28 @@
     },
     {
       "kind" : "identifier",
-      "text" : "refs"
+      "text" : "semver"
     },
     {
       "kind" : "text",
-      "text" : ": ["
+      "text" : ": "
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:6JXHost15HubModuleSourceV",
-      "text" : "HubModuleSource"
+      "preciseIdentifier" : "s:8FairCore6SemVerV",
+      "text" : "SemVer"
     },
     {
       "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:6JXHost21JXDynamicModuleSourceP7RefInfoa",
-      "text" : "RefInfo"
-    },
-    {
-      "kind" : "text",
-      "text" : "]"
+      "text" : "?"
     }
   ],
-  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/refs",
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/Ref\/semver-4d2z6",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "refs",
+  "title" : "semver",
   "type" : "topic",
-  "url" : "\/documentation\/jxhost\/hubmodulesource\/refs"
-},
-"doc://JXHost/documentation/JXHost/JXDynamicModuleSource/RefInfo": {
-  "abstract" : [
-    {
-      "text" : "Information about the tags for the given module source",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "typealias"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "RefInfo"
-    }
-  ],
-  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/JXDynamicModuleSource\/RefInfo",
-  "kind" : "symbol",
-  "navigatorTitle" : [
-    {
-      "kind" : "identifier",
-      "text" : "RefInfo"
-    }
-  ],
-  "role" : "symbol",
-  "title" : "JXDynamicModuleSource.RefInfo",
-  "type" : "topic",
-  "url" : "\/documentation\/jxhost\/jxdynamicmodulesource\/refinfo"
+  "url" : "\/documentation\/jxhost\/hubmodulesource\/ref\/semver-4d2z6"
 }
 }
 }

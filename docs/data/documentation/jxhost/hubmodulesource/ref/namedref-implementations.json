@@ -34,7 +34,7 @@
     {
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/Ref\/semver-9soko"
+        "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/Ref\/semver-4d2z6"
       ],
       "title" : "Instance Properties"
     }
@@ -129,9 +129,20 @@
   "type" : "topic",
   "url" : "\/documentation\/jxhost\/hubmodulesource\/ref"
 },
-"doc://JXHost/documentation/JXHost/HubModuleSource/Ref/semver-9soko": {
+"doc://JXHost/documentation/JXHost/HubModuleSource/Ref/semver-4d2z6": {
   "abstract" : [
-
+    {
+      "text" : "Attempts to parse the name as a semantic version (e.g., ",
+      "type" : "text"
+    },
+    {
+      "code" : "1.2.3",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : ").",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -160,12 +171,12 @@
       "text" : "?"
     }
   ],
-  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/Ref\/semver-9soko",
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/Ref\/semver-4d2z6",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "semver",
   "type" : "topic",
-  "url" : "\/documentation\/jxhost\/hubmodulesource\/ref\/semver-9soko"
+  "url" : "\/documentation\/jxhost\/hubmodulesource\/ref\/semver-4d2z6"
 }
 }
 }

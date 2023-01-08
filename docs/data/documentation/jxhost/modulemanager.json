@@ -110,8 +110,9 @@
               "text" : " : "
             },
             {
+              "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/JXDynamicModuleSource",
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:5JXPod21JXDynamicModuleSourceP",
+              "preciseIdentifier" : "s:6JXHost21JXDynamicModuleSourceP",
               "text" : "JXDynamicModuleSource"
             },
             {
@@ -135,8 +136,9 @@
               "text" : " : "
             },
             {
+              "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/NamedRef",
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:5JXPod8NamedRefP",
+              "preciseIdentifier" : "s:6JXHost8NamedRefP",
               "text" : "NamedRef"
             }
           ]
@@ -268,6 +270,40 @@
   "type" : "topic",
   "url" : "\/documentation\/jxhost\/hubmodulesource"
 },
+"doc://JXHost/documentation/JXHost/JXDynamicModuleSource": {
+  "abstract" : [
+    {
+      "text" : "The source repository that hosts the tagged versions of the dynamic module source.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "protocol"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "JXDynamicModuleSource"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/JXDynamicModuleSource",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "JXDynamicModuleSource"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "JXDynamicModuleSource",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/jxdynamicmodulesource"
+},
 "doc://JXHost/documentation/JXHost/ModuleManager": {
   "abstract" : [
     {
@@ -324,7 +360,10 @@
 },
 "doc://JXHost/documentation/JXHost/ModuleManager/downloadArchive(for:overwrite:)": {
   "abstract" : [
-
+    {
+      "text" : "Downloads the archive for the given ref and extracts it, returning the URL root of the extracted file system.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -638,7 +677,7 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:5JXPod21JXDynamicModuleSourceP7RefInfoa",
+      "preciseIdentifier" : "s:6JXHost21JXDynamicModuleSourceP7RefInfoa",
       "text" : "RefInfo"
     },
     {
@@ -1003,7 +1042,7 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:5JXPod21JXDynamicModuleSourceP7RefInfoa",
+      "preciseIdentifier" : "s:6JXHost21JXDynamicModuleSourceP7RefInfoa",
       "text" : "RefInfo"
     },
     {
@@ -1187,6 +1226,40 @@
   "title" : "source",
   "type" : "topic",
   "url" : "\/documentation\/jxhost\/modulemanager\/source"
+},
+"doc://JXHost/documentation/JXHost/NamedRef": {
+  "abstract" : [
+    {
+      "text" : "A Ref that has a name and type that can be converted into a String",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "protocol"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "NamedRef"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/NamedRef",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "NamedRef"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "NamedRef",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/namedref"
 },
 "doc://JXHost/s8SendableP": {
   "identifier" : "doc:\/\/JXHost\/s8SendableP",

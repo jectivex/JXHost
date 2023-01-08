@@ -41,8 +41,14 @@
     },
     {
       "identifiers" : [
-        "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource",
-        "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView"
+        "doc:\/\/JXHost\/documentation\/JXHost\/JXDynamicModuleSource",
+        "doc:\/\/JXHost\/documentation\/JXHost\/NamedRef"
+      ],
+      "title" : "Protocols"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource"
       ],
       "title" : "Structures"
     },
@@ -158,6 +164,40 @@
   "type" : "topic",
   "url" : "\/documentation\/jxhost\/hubversionmanager"
 },
+"doc://JXHost/documentation/JXHost/JXDynamicModuleSource": {
+  "abstract" : [
+    {
+      "text" : "The source repository that hosts the tagged versions of the dynamic module source.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "protocol"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "JXDynamicModuleSource"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/JXDynamicModuleSource",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "JXDynamicModuleSource"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "JXDynamicModuleSource",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/jxdynamicmodulesource"
+},
 "doc://JXHost/documentation/JXHost/ModuleManager": {
   "abstract" : [
     {
@@ -201,40 +241,6 @@
   "type" : "topic",
   "url" : "\/documentation\/jxhost\/modulemanager"
 },
-"doc://JXHost/documentation/JXHost/ModuleVersionsListView": {
-  "abstract" : [
-    {
-      "text" : "A view that displays a sectioned list of navigation links to individual versions of a module.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "struct"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "ModuleVersionsListView"
-    }
-  ],
-  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleVersionsListView",
-  "kind" : "symbol",
-  "navigatorTitle" : [
-    {
-      "kind" : "identifier",
-      "text" : "ModuleVersionsListView"
-    }
-  ],
-  "role" : "symbol",
-  "title" : "ModuleVersionsListView",
-  "type" : "topic",
-  "url" : "\/documentation\/jxhost\/moduleversionslistview"
-},
 "doc://JXHost/documentation/JXHost/MonitoringScriptLoader": {
   "abstract" : [
     {
@@ -268,6 +274,40 @@
   "title" : "MonitoringScriptLoader",
   "type" : "topic",
   "url" : "\/documentation\/jxhost\/monitoringscriptloader"
+},
+"doc://JXHost/documentation/JXHost/NamedRef": {
+  "abstract" : [
+    {
+      "text" : "A Ref that has a name and type that can be converted into a String",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "protocol"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "NamedRef"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/NamedRef",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "NamedRef"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "NamedRef",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/namedref"
 }
 }
 }

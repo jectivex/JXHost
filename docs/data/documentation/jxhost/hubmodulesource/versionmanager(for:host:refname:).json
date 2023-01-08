@@ -1,25 +1,20 @@
 {
-  "abstract" : [
-    {
-      "text" : "Downloads the archive for the given ref and extracts it, returning the URL root of the extracted file system.",
-      "type" : "text"
-    }
-  ],
   "hierarchy" : {
     "paths" : [
       [
         "doc:\/\/JXHost\/documentation\/JXHost",
-        "doc:\/\/JXHost\/documentation\/JXHost\/ModuleManager"
+        "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "swift",
-    "url" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleManager\/downloadArchive(for:overwrite:)"
+    "url" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/versionManager(for:host:refName:)"
   },
   "kind" : "symbol",
   "metadata" : {
-    "externalID" : "s:6JXHost13ModuleManagerC15downloadArchive3for9overwrite10Foundation3URLV3RefQz_SbtYaKF",
+    "extendedModule" : "JXHost",
+    "externalID" : "s:6JXHost15HubModuleSourceV14versionManager3for4host7refNameAA0cF0CyACGxm_So8NSBundleCSSSgt8JXBridge09JXDynamicC0RzlF",
     "fragments" : [
       {
         "kind" : "keyword",
@@ -31,11 +26,19 @@
       },
       {
         "kind" : "identifier",
-        "text" : "downloadArchive"
+        "text" : "versionManager"
       },
       {
         "kind" : "text",
-        "text" : "("
+        "text" : "<"
+      },
+      {
+        "kind" : "genericParameter",
+        "text" : "Module"
+      },
+      {
+        "kind" : "text",
+        "text" : ">("
       },
       {
         "kind" : "externalParam",
@@ -47,23 +50,15 @@
       },
       {
         "kind" : "typeIdentifier",
-        "text" : "Source"
+        "text" : "Module"
       },
       {
         "kind" : "text",
-        "text" : "."
-      },
-      {
-        "kind" : "typeIdentifier",
-        "text" : "Ref"
-      },
-      {
-        "kind" : "text",
-        "text" : ", "
+        "text" : ".Type, "
       },
       {
         "kind" : "externalParam",
-        "text" : "overwrite"
+        "text" : "host"
       },
       {
         "kind" : "text",
@@ -71,33 +66,47 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:Sb",
-        "text" : "Bool"
+        "preciseIdentifier" : "c:objc(cs)NSBundle",
+        "text" : "Bundle"
       },
       {
         "kind" : "text",
-        "text" : ") "
+        "text" : ", "
       },
       {
-        "kind" : "keyword",
-        "text" : "async"
-      },
-      {
-        "kind" : "text",
-        "text" : " "
-      },
-      {
-        "kind" : "keyword",
-        "text" : "throws"
+        "kind" : "externalParam",
+        "text" : "refName"
       },
       {
         "kind" : "text",
-        "text" : " -> "
+        "text" : ": "
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:10Foundation3URLV",
-        "text" : "URL"
+        "preciseIdentifier" : "s:SS",
+        "text" : "String"
+      },
+      {
+        "kind" : "text",
+        "text" : "?) -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:6JXHost13ModuleManagerC",
+        "text" : "ModuleManager"
+      },
+      {
+        "kind" : "text",
+        "text" : "<"
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:6JXHost15HubModuleSourceV",
+        "text" : "HubModuleSource"
+      },
+      {
+        "kind" : "text",
+        "text" : ">"
       }
     ],
     "modules" : [
@@ -108,7 +117,7 @@
     "role" : "symbol",
     "roleHeading" : "Instance Method",
     "symbolKind" : "method",
-    "title" : "downloadArchive(for:overwrite:)"
+    "title" : "versionManager(for:host:refName:)"
   },
   "primaryContentSections" : [
     {
@@ -122,14 +131,6 @@
           ],
           "tokens" : [
             {
-              "kind" : "attribute",
-              "text" : "@discardableResult"
-            },
-            {
-              "kind" : "text",
-              "text" : " "
-            },
-            {
               "kind" : "keyword",
               "text" : "func"
             },
@@ -139,11 +140,19 @@
             },
             {
               "kind" : "identifier",
-              "text" : "downloadArchive"
+              "text" : "versionManager"
             },
             {
               "kind" : "text",
-              "text" : "("
+              "text" : "<"
+            },
+            {
+              "kind" : "genericParameter",
+              "text" : "Module"
+            },
+            {
+              "kind" : "text",
+              "text" : ">("
             },
             {
               "kind" : "externalParam",
@@ -155,7 +164,7 @@
             },
             {
               "kind" : "internalParam",
-              "text" : "ref"
+              "text" : "module"
             },
             {
               "kind" : "text",
@@ -163,15 +172,24 @@
             },
             {
               "kind" : "typeIdentifier",
-              "text" : "Source"
+              "text" : "Module"
             },
             {
               "kind" : "text",
-              "text" : "."
+              "text" : ".Type, "
+            },
+            {
+              "kind" : "externalParam",
+              "text" : "host"
+            },
+            {
+              "kind" : "text",
+              "text" : ": "
             },
             {
               "kind" : "typeIdentifier",
-              "text" : "Ref"
+              "preciseIdentifier" : "c:objc(cs)NSBundle",
+              "text" : "Bundle"
             },
             {
               "kind" : "text",
@@ -179,7 +197,7 @@
             },
             {
               "kind" : "externalParam",
-              "text" : "overwrite"
+              "text" : "refName"
             },
             {
               "kind" : "text",
@@ -187,91 +205,58 @@
             },
             {
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:Sb",
-              "text" : "Bool"
+              "preciseIdentifier" : "s:SS",
+              "text" : "String"
             },
             {
               "kind" : "text",
-              "text" : ") "
+              "text" : "?) -> "
+            },
+            {
+              "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleManager",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:6JXHost13ModuleManagerC",
+              "text" : "ModuleManager"
+            },
+            {
+              "kind" : "text",
+              "text" : "<"
+            },
+            {
+              "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:6JXHost15HubModuleSourceV",
+              "text" : "HubModuleSource"
+            },
+            {
+              "kind" : "text",
+              "text" : "> "
             },
             {
               "kind" : "keyword",
-              "text" : "async"
+              "text" : "where"
             },
             {
               "kind" : "text",
               "text" : " "
             },
             {
-              "kind" : "keyword",
-              "text" : "throws"
+              "kind" : "typeIdentifier",
+              "text" : "Module"
             },
             {
               "kind" : "text",
-              "text" : " -> "
+              "text" : " : "
             },
             {
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:10Foundation3URLV",
-              "text" : "URL"
+              "preciseIdentifier" : "s:8JXBridge15JXDynamicModuleP",
+              "text" : "JXDynamicModule"
             }
           ]
         }
       ],
       "kind" : "declarations"
-    },
-    {
-      "content" : [
-        {
-          "anchor" : "return-value",
-          "level" : 2,
-          "text" : "Return Value",
-          "type" : "heading"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "the local file URL to the extracted root folder",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        }
-      ],
-      "kind" : "content"
-    },
-    {
-      "kind" : "parameters",
-      "parameters" : [
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "the ref to download",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "ref"
-        },
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "whether to overwrite an existing folder",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "overwrite"
-        }
-      ]
     }
   ],
   "schemaVersion" : {
@@ -285,7 +270,7 @@
   "variants" : [
     {
       "paths" : [
-        "\/documentation\/jxhost\/modulemanager\/downloadarchive(for:overwrite:)"
+        "\/documentation\/jxhost\/hubmodulesource\/versionmanager(for:host:refname:)"
       ],
       "traits" : [
         {
@@ -341,6 +326,111 @@
   "type" : "topic",
   "url" : "\/documentation\/jxhost\/hubmodulesource"
 },
+"doc://JXHost/documentation/JXHost/HubModuleSource/versionManager(for:host:refName:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "versionManager"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "Module"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "for"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Module"
+    },
+    {
+      "kind" : "text",
+      "text" : ".Type, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "host"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "c:objc(cs)NSBundle",
+      "text" : "Bundle"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "refName"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : "?) -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:6JXHost13ModuleManagerC",
+      "text" : "ModuleManager"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:6JXHost15HubModuleSourceV",
+      "text" : "HubModuleSource"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/versionManager(for:host:refName:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "versionManager(for:host:refName:)",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/hubmodulesource\/versionmanager(for:host:refname:)"
+},
 "doc://JXHost/documentation/JXHost/ModuleManager": {
   "abstract" : [
     {
@@ -383,100 +473,6 @@
   "title" : "ModuleManager",
   "type" : "topic",
   "url" : "\/documentation\/jxhost\/modulemanager"
-},
-"doc://JXHost/documentation/JXHost/ModuleManager/downloadArchive(for:overwrite:)": {
-  "abstract" : [
-    {
-      "text" : "Downloads the archive for the given ref and extracts it, returning the URL root of the extracted file system.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "downloadArchive"
-    },
-    {
-      "kind" : "text",
-      "text" : "("
-    },
-    {
-      "kind" : "externalParam",
-      "text" : "for"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Source"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Ref"
-    },
-    {
-      "kind" : "text",
-      "text" : ", "
-    },
-    {
-      "kind" : "externalParam",
-      "text" : "overwrite"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:Sb",
-      "text" : "Bool"
-    },
-    {
-      "kind" : "text",
-      "text" : ") "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "async"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "throws"
-    },
-    {
-      "kind" : "text",
-      "text" : " -> "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:10Foundation3URLV",
-      "text" : "URL"
-    }
-  ],
-  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleManager\/downloadArchive(for:overwrite:)",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "downloadArchive(for:overwrite:)",
-  "type" : "topic",
-  "url" : "\/documentation\/jxhost\/modulemanager\/downloadarchive(for:overwrite:)"
 }
 }
 }
