@@ -6,30 +6,34 @@ import SwiftUI
 import JXPod
 import JXBridge
 import FairCore
+@_exported import JXHost
 
 extension JXDynamicModule {
     /// Creates a navigation link to a ``ModuleVersionsListView`` that will list all the available versions of a module.
     @MainActor @ViewBuilder public static func entryLink<V: View>(host: Bundle, name: String, symbol: String, branches: [String], developmentMode: Bool, strictMode: Bool, errorHandler: @escaping (Error) -> (), view: @escaping (JXContext) -> V) -> some View {
-        let version = host.packageVersion(for: self.remoteURL.baseURL)
-        let source = Self.hubSource
-        NavigationLink {
-            ModuleVersionsListView(versionManager: source.versionManager(for: self, refName: version), appName: name, branches: branches, developmentMode: developmentMode, strictMode: strictMode, errorHandler: errorHandler) { ctx in
-                view(ctx) // the root view that will be shown
-            }
-        } label: {
-            HStack {
-                Label {
-                    Text(name)
-                } icon: {
-                    Image(systemName: symbol)
+        let version = host.packageVersion(for: self.remoteModuleBaseURL(for: host))
+        if let versionManager = (try? Self.remoteHubSource(for: host))?.versionManager(for: self, host: host, refName: version) {
+            NavigationLink {
+                ModuleVersionsListView(versionManager: versionManager, appName: name, branches: branches, developmentMode: developmentMode, strictMode: strictMode, errorHandler: errorHandler) { ctx in
+                    view(ctx) // the root view that will be shown
                 }
-                Spacer()
-                if let version = version {
-                    Text(version)
-                        .font(.caption.monospacedDigit())
-                        .frame(alignment: .trailing)
+            } label: {
+                HStack {
+                    Label {
+                        Text(name)
+                    } icon: {
+                        Image(systemName: symbol)
+                    }
+                    Spacer()
+                    if let version = version {
+                        Text(version)
+                            .font(.caption.monospacedDigit())
+                            .frame(alignment: .trailing)
+                    }
                 }
             }
+        } else {
+            Text("Unsupported hub source", bundle: .module, comment: "error marker for an unknown or unsupported source")
         }
     }
 }
@@ -113,6 +117,7 @@ public struct ModuleVersionsListView<V: View>: View {
 
     func log(_ value: String) {
         dbg(value)
+        // errorHandler(NSError(domain: "JS", code: 0, userInfo: [NSLocalizedDescriptionKey: value])) // enters loop
     }
 
     struct LocalScriptLoader : JXScriptLoader {
