@@ -1,25 +1,20 @@
 {
-  "abstract" : [
-    {
-      "text" : "Returns the URL for the zipball of the repository at the given tag or branch.",
-      "type" : "text"
-    }
-  ],
   "hierarchy" : {
     "paths" : [
       [
         "doc:\/\/JXHost\/documentation\/JXHost",
-        "doc:\/\/JXHost\/documentation\/JXHost\/JXDynamicModuleSource"
+        "doc:\/\/JXHost\/documentation\/JXHost\/JXHostBundle"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "swift",
-    "url" : "doc:\/\/JXHost\/documentation\/JXHost\/JXDynamicModuleSource\/archiveURL(for:)"
+    "url" : "doc:\/\/JXHost\/documentation\/JXHost\/JXHostBundle\/packageLocationURL(for:)"
   },
   "kind" : "symbol",
   "metadata" : {
-    "externalID" : "s:6JXHost21JXDynamicModuleSourceP10archiveURL3for10Foundation0F0V3RefQz_tF",
+    "extendedModule" : "JXHost",
+    "externalID" : "s:6JXHost0A6BundleC18packageLocationURL3for10Foundation0E0VSg8JXBridge11JXNamespaceV_tF",
     "fragments" : [
       {
         "kind" : "keyword",
@@ -31,7 +26,7 @@
       },
       {
         "kind" : "identifier",
-        "text" : "archiveURL"
+        "text" : "packageLocationURL"
       },
       {
         "kind" : "text",
@@ -47,15 +42,8 @@
       },
       {
         "kind" : "typeIdentifier",
-        "text" : "Self"
-      },
-      {
-        "kind" : "text",
-        "text" : "."
-      },
-      {
-        "kind" : "typeIdentifier",
-        "text" : "Ref"
+        "preciseIdentifier" : "s:8JXBridge11JXNamespaceV",
+        "text" : "JXNamespace"
       },
       {
         "kind" : "text",
@@ -65,6 +53,10 @@
         "kind" : "typeIdentifier",
         "preciseIdentifier" : "s:10Foundation3URLV",
         "text" : "URL"
+      },
+      {
+        "kind" : "text",
+        "text" : "?"
       }
     ],
     "modules" : [
@@ -72,11 +64,10 @@
         "name" : "JXHost"
       }
     ],
-    "required" : true,
     "role" : "symbol",
     "roleHeading" : "Instance Method",
     "symbolKind" : "method",
-    "title" : "archiveURL(for:)"
+    "title" : "packageLocationURL(for:)"
   },
   "primaryContentSections" : [
     {
@@ -99,7 +90,7 @@
             },
             {
               "kind" : "identifier",
-              "text" : "archiveURL"
+              "text" : "packageLocationURL"
             },
             {
               "kind" : "text",
@@ -115,7 +106,7 @@
             },
             {
               "kind" : "internalParam",
-              "text" : "ref"
+              "text" : "namespace"
             },
             {
               "kind" : "text",
@@ -123,15 +114,8 @@
             },
             {
               "kind" : "typeIdentifier",
-              "text" : "Self"
-            },
-            {
-              "kind" : "text",
-              "text" : "."
-            },
-            {
-              "kind" : "typeIdentifier",
-              "text" : "Ref"
+              "preciseIdentifier" : "s:8JXBridge11JXNamespaceV",
+              "text" : "JXNamespace"
             },
             {
               "kind" : "text",
@@ -141,50 +125,15 @@
               "kind" : "typeIdentifier",
               "preciseIdentifier" : "s:10Foundation3URLV",
               "text" : "URL"
+            },
+            {
+              "kind" : "text",
+              "text" : "?"
             }
           ]
         }
       ],
       "kind" : "declarations"
-    },
-    {
-      "content" : [
-        {
-          "anchor" : "return-value",
-          "level" : 2,
-          "text" : "Return Value",
-          "type" : "heading"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "the archive URL for the given named ref",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        }
-      ],
-      "kind" : "content"
-    },
-    {
-      "kind" : "parameters",
-      "parameters" : [
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "the ref for the archive",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "ref"
-        }
-      ]
     }
   ],
   "schemaVersion" : {
@@ -198,7 +147,7 @@
   "variants" : [
     {
       "paths" : [
-        "\/documentation\/jxhost\/jxdynamicmodulesource\/archiveurl(for:)"
+        "\/documentation\/jxhost\/jxhostbundle\/packagelocationurl(for:)"
       ],
       "traits" : [
         {
@@ -220,17 +169,17 @@
   "type" : "topic",
   "url" : "\/documentation\/jxhost"
 },
-"doc://JXHost/documentation/JXHost/JXDynamicModuleSource": {
+"doc://JXHost/documentation/JXHost/JXHostBundle": {
   "abstract" : [
     {
-      "text" : "The source repository that hosts the tagged versions of the dynamic module source.",
+      "text" : "A host environment for a JXModule, which contains about the Bundle environment as well as the resolved packages for the bundle.",
       "type" : "text"
     }
   ],
   "fragments" : [
     {
       "kind" : "keyword",
-      "text" : "protocol"
+      "text" : "class"
     },
     {
       "kind" : "text",
@@ -238,28 +187,25 @@
     },
     {
       "kind" : "identifier",
-      "text" : "JXDynamicModuleSource"
+      "text" : "JXHostBundle"
     }
   ],
-  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/JXDynamicModuleSource",
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/JXHostBundle",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
       "kind" : "identifier",
-      "text" : "JXDynamicModuleSource"
+      "text" : "JXHostBundle"
     }
   ],
   "role" : "symbol",
-  "title" : "JXDynamicModuleSource",
+  "title" : "JXHostBundle",
   "type" : "topic",
-  "url" : "\/documentation\/jxhost\/jxdynamicmodulesource"
+  "url" : "\/documentation\/jxhost\/jxhostbundle"
 },
-"doc://JXHost/documentation/JXHost/JXDynamicModuleSource/archiveURL(for:)": {
+"doc://JXHost/documentation/JXHost/JXHostBundle/packageLocationURL(for:)": {
   "abstract" : [
-    {
-      "text" : "Returns the URL for the zipball of the repository at the given tag or branch.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -272,7 +218,7 @@
     },
     {
       "kind" : "identifier",
-      "text" : "archiveURL"
+      "text" : "packageLocationURL"
     },
     {
       "kind" : "text",
@@ -288,15 +234,8 @@
     },
     {
       "kind" : "typeIdentifier",
-      "text" : "Self"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Ref"
+      "preciseIdentifier" : "s:8JXBridge11JXNamespaceV",
+      "text" : "JXNamespace"
     },
     {
       "kind" : "text",
@@ -306,15 +245,18 @@
       "kind" : "typeIdentifier",
       "preciseIdentifier" : "s:10Foundation3URLV",
       "text" : "URL"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
     }
   ],
-  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/JXDynamicModuleSource\/archiveURL(for:)",
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/JXHostBundle\/packageLocationURL(for:)",
   "kind" : "symbol",
-  "required" : true,
   "role" : "symbol",
-  "title" : "archiveURL(for:)",
+  "title" : "packageLocationURL(for:)",
   "type" : "topic",
-  "url" : "\/documentation\/jxhost\/jxdynamicmodulesource\/archiveurl(for:)"
+  "url" : "\/documentation\/jxhost\/jxhostbundle\/packagelocationurl(for:)"
 }
 }
 }

@@ -14,8 +14,57 @@
                 "type" : "groupMarker"
               },
               {
-                "path" : "\/documentation\/jxhost\/modulemanager\/init(source:relativepath:installedversion:filemanager:localpath:)",
-                "title" : "init(source: Source, relativePath: String?, installedVersion: SemVer?, fileManager: FileManager, localPath: URL)",
+                "path" : "\/documentation\/jxhost\/jxhostbundle\/init(bundle:)",
+                "title" : "init(bundle: Bundle) throws",
+                "type" : "init"
+              },
+              {
+                "path" : "\/documentation\/jxhost\/jxhostbundle\/init(bundle:packages:)",
+                "title" : "init(bundle: Bundle, packages: ResolvedPackage)",
+                "type" : "init"
+              },
+              {
+                "title" : "Instance Properties",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/jxhost\/jxhostbundle\/bundle",
+                "title" : "let bundle: Bundle",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/jxhost\/jxhostbundle\/resolved",
+                "title" : "let resolved: ResolvedPackage",
+                "type" : "property"
+              },
+              {
+                "title" : "Instance Methods",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/jxhost\/jxhostbundle\/packagelocationurl(for:)",
+                "title" : "func packageLocationURL(for: JXNamespace) -> URL?",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/jxhost\/jxhostbundle\/packageversion(for:)",
+                "title" : "func packageVersion(for: JXNamespace) -> String?",
+                "type" : "method"
+              }
+            ],
+            "path" : "\/documentation\/jxhost\/jxhostbundle",
+            "title" : "JXHostBundle",
+            "type" : "class"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Initializers",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/jxhost\/modulemanager\/init(source:relativepath:installedversion:localpath:)",
+                "title" : "init(source: Source, relativePath: String?, installedVersion: SemVer?, localPath: URL)",
                 "type" : "init"
               },
               {
@@ -220,7 +269,7 @@
                 "type" : "groupMarker"
               },
               {
-                "path" : "\/documentation\/jxhost\/jxdynamicmodulesource\/ref",
+                "path" : "\/documentation\/jxhost\/modulesource\/ref",
                 "title" : "Ref",
                 "type" : "associatedtype"
               },
@@ -229,7 +278,7 @@
                 "type" : "groupMarker"
               },
               {
-                "path" : "\/documentation\/jxhost\/jxdynamicmodulesource\/refs",
+                "path" : "\/documentation\/jxhost\/modulesource\/refs",
                 "title" : "var refs: [Self.RefInfo]",
                 "type" : "property"
               },
@@ -238,7 +287,7 @@
                 "type" : "groupMarker"
               },
               {
-                "path" : "\/documentation\/jxhost\/jxdynamicmodulesource\/archiveurl(for:)",
+                "path" : "\/documentation\/jxhost\/modulesource\/archiveurl(for:)",
                 "title" : "func archiveURL(for: Self.Ref) -> URL",
                 "type" : "method"
               },
@@ -247,13 +296,13 @@
                 "type" : "groupMarker"
               },
               {
-                "path" : "\/documentation\/jxhost\/jxdynamicmodulesource\/refinfo",
-                "title" : "JXDynamicModuleSource.RefInfo",
+                "path" : "\/documentation\/jxhost\/modulesource\/refinfo",
+                "title" : "ModuleSource.RefInfo",
                 "type" : "typealias"
               }
             ],
-            "path" : "\/documentation\/jxhost\/jxdynamicmodulesource",
-            "title" : "JXDynamicModuleSource",
+            "path" : "\/documentation\/jxhost\/modulesource",
+            "title" : "ModuleSource",
             "type" : "protocol"
           },
           {
@@ -303,12 +352,7 @@
               },
               {
                 "path" : "\/documentation\/jxhost\/hubmodulesource\/init(repository:host:)",
-                "title" : "init(repository: URL, host: Bundle) throws",
-                "type" : "init"
-              },
-              {
-                "path" : "\/documentation\/jxhost\/hubmodulesource\/init(repository:packages:)",
-                "title" : "init(repository: URL, packages: ResolvedPackage)",
+                "title" : "init(repository: URL, host: JXHostBundle)",
                 "type" : "init"
               },
               {
@@ -351,7 +395,7 @@
               },
               {
                 "path" : "\/documentation\/jxhost\/hubmodulesource\/versionmanager(for:host:refname:)",
-                "title" : "func versionManager<Module>(for: Module.Type, host: Bundle, refName: String?) -> ModuleManager<HubModuleSource>",
+                "title" : "func versionManager<Module>(for: Module.Type, host: JXHostBundle, refName: String?) -> ModuleManager<HubModuleSource>",
                 "type" : "method"
               },
               {

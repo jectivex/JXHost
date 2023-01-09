@@ -14,7 +14,7 @@
   "kind" : "symbol",
   "metadata" : {
     "extendedModule" : "JXHost",
-    "externalID" : "s:6JXHost15HubModuleSourceV14versionManager3for4host7refNameAA0cF0CyACGxm_So8NSBundleCSSSgt8JXBridge09JXDynamicC0RzlF",
+    "externalID" : "s:6JXHost15HubModuleSourceV14versionManager3for4host7refNameAA0cF0CyACGxm_AA0A6BundleCSSSgt8JXBridge09JXDynamicC0RzlF",
     "fragments" : [
       {
         "kind" : "keyword",
@@ -66,8 +66,8 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "c:objc(cs)NSBundle",
-        "text" : "Bundle"
+        "preciseIdentifier" : "s:6JXHost0A6BundleC",
+        "text" : "JXHostBundle"
       },
       {
         "kind" : "text",
@@ -187,9 +187,10 @@
               "text" : ": "
             },
             {
+              "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/JXHostBundle",
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "c:objc(cs)NSBundle",
-              "text" : "Bundle"
+              "preciseIdentifier" : "s:6JXHost0A6BundleC",
+              "text" : "JXHostBundle"
             },
             {
               "kind" : "text",
@@ -381,8 +382,8 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "c:objc(cs)NSBundle",
-      "text" : "Bundle"
+      "preciseIdentifier" : "s:6JXHost0A6BundleC",
+      "text" : "JXHostBundle"
     },
     {
       "kind" : "text",
@@ -430,6 +431,40 @@
   "title" : "versionManager(for:host:refName:)",
   "type" : "topic",
   "url" : "\/documentation\/jxhost\/hubmodulesource\/versionmanager(for:host:refname:)"
+},
+"doc://JXHost/documentation/JXHost/JXHostBundle": {
+  "abstract" : [
+    {
+      "text" : "A host environment for a JXModule, which contains about the Bundle environment as well as the resolved packages for the bundle.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "class"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "JXHostBundle"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/JXHostBundle",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "JXHostBundle"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "JXHostBundle",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/jxhostbundle"
 },
 "doc://JXHost/documentation/JXHost/ModuleManager": {
   "abstract" : [

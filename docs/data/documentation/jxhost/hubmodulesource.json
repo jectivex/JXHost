@@ -81,7 +81,7 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
-        "doc:\/\/JXHost\/documentation\/JXHost\/JXDynamicModuleSource"
+        "doc:\/\/JXHost\/documentation\/JXHost\/ModuleSource"
       ],
       "kind" : "relationships",
       "title" : "Conforms To",
@@ -99,8 +99,7 @@
   "topicSections" : [
     {
       "identifiers" : [
-        "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/init(repository:host:)",
-        "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/init(repository:packages:)"
+        "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/init(repository:host:)"
       ],
       "title" : "Initializers"
     },
@@ -321,16 +320,12 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "c:objc(cs)NSBundle",
-      "text" : "Bundle"
+      "preciseIdentifier" : "s:6JXHost0A6BundleC",
+      "text" : "JXHostBundle"
     },
     {
       "kind" : "text",
-      "text" : ") "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "throws"
+      "text" : ")"
     }
   ],
   "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/init(repository:host:)",
@@ -339,61 +334,6 @@
   "title" : "init(repository:host:)",
   "type" : "topic",
   "url" : "\/documentation\/jxhost\/hubmodulesource\/init(repository:host:)"
-},
-"doc://JXHost/documentation/JXHost/HubModuleSource/init(repository:packages:)": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "identifier",
-      "text" : "init"
-    },
-    {
-      "kind" : "text",
-      "text" : "("
-    },
-    {
-      "kind" : "externalParam",
-      "text" : "repository"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:10Foundation3URLV",
-      "text" : "URL"
-    },
-    {
-      "kind" : "text",
-      "text" : ", "
-    },
-    {
-      "kind" : "externalParam",
-      "text" : "packages"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:7FairApp15ResolvedPackageV",
-      "text" : "ResolvedPackage"
-    },
-    {
-      "kind" : "text",
-      "text" : ")"
-    }
-  ],
-  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/init(repository:packages:)",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "init(repository:packages:)",
-  "type" : "topic",
-  "url" : "\/documentation\/jxhost\/hubmodulesource\/init(repository:packages:)"
 },
 "doc://JXHost/documentation/JXHost/HubModuleSource/localPath": {
   "abstract" : [
@@ -464,7 +404,7 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:6JXHost21JXDynamicModuleSourceP7RefInfoa",
+      "preciseIdentifier" : "s:6JXHost12ModuleSourceP7RefInfoa",
       "text" : "RefInfo"
     },
     {
@@ -539,7 +479,7 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:7FairApp15ResolvedPackageV",
+      "preciseIdentifier" : "s:8FairCore15ResolvedPackageV",
       "text" : "ResolvedPackage"
     }
   ],
@@ -654,8 +594,8 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "c:objc(cs)NSBundle",
-      "text" : "Bundle"
+      "preciseIdentifier" : "s:6JXHost0A6BundleC",
+      "text" : "JXHostBundle"
     },
     {
       "kind" : "text",
@@ -704,7 +644,7 @@
   "type" : "topic",
   "url" : "\/documentation\/jxhost\/hubmodulesource\/versionmanager(for:host:refname:)"
 },
-"doc://JXHost/documentation/JXHost/JXDynamicModuleSource": {
+"doc://JXHost/documentation/JXHost/ModuleSource": {
   "abstract" : [
     {
       "text" : "The source repository that hosts the tagged versions of the dynamic module source.",
@@ -722,21 +662,21 @@
     },
     {
       "kind" : "identifier",
-      "text" : "JXDynamicModuleSource"
+      "text" : "ModuleSource"
     }
   ],
-  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/JXDynamicModuleSource",
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleSource",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
       "kind" : "identifier",
-      "text" : "JXDynamicModuleSource"
+      "text" : "ModuleSource"
     }
   ],
   "role" : "symbol",
-  "title" : "JXDynamicModuleSource",
+  "title" : "ModuleSource",
   "type" : "topic",
-  "url" : "\/documentation\/jxhost\/jxdynamicmodulesource"
+  "url" : "\/documentation\/jxhost\/modulesource"
 }
 }
 }

@@ -1,0 +1,271 @@
+{
+  "abstract" : [
+    {
+      "text" : "Returns the version of the package from the “Package.resolved” that is bundled with this app.",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/JXHost\/documentation\/JXHost",
+        "doc:\/\/JXHost\/documentation\/JXHost\/JXHostBundle"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/JXHost\/documentation\/JXHost\/JXHostBundle\/packageVersion(for:)"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "extendedModule" : "JXHost",
+    "externalID" : "s:6JXHost0A6BundleC14packageVersion3forSSSg8JXBridge11JXNamespaceV_tF",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "func"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "packageVersion"
+      },
+      {
+        "kind" : "text",
+        "text" : "("
+      },
+      {
+        "kind" : "externalParam",
+        "text" : "for"
+      },
+      {
+        "kind" : "text",
+        "text" : ": "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:8JXBridge11JXNamespaceV",
+        "text" : "JXNamespace"
+      },
+      {
+        "kind" : "text",
+        "text" : ") -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:SS",
+        "text" : "String"
+      },
+      {
+        "kind" : "text",
+        "text" : "?"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "JXHost"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Instance Method",
+    "symbolKind" : "method",
+    "title" : "packageVersion(for:)"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "func"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "packageVersion"
+            },
+            {
+              "kind" : "text",
+              "text" : "("
+            },
+            {
+              "kind" : "externalParam",
+              "text" : "for"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "internalParam",
+              "text" : "namespace"
+            },
+            {
+              "kind" : "text",
+              "text" : ": "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:8JXBridge11JXNamespaceV",
+              "text" : "JXNamespace"
+            },
+            {
+              "kind" : "text",
+              "text" : ") -> "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:SS",
+              "text" : "String"
+            },
+            {
+              "kind" : "text",
+              "text" : "?"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/jxhost\/jxhostbundle\/packageversion(for:)"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://JXHost/documentation/JXHost": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "JXHost",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost"
+},
+"doc://JXHost/documentation/JXHost/JXHostBundle": {
+  "abstract" : [
+    {
+      "text" : "A host environment for a JXModule, which contains about the Bundle environment as well as the resolved packages for the bundle.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "class"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "JXHostBundle"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/JXHostBundle",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "JXHostBundle"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "JXHostBundle",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/jxhostbundle"
+},
+"doc://JXHost/documentation/JXHost/JXHostBundle/packageVersion(for:)": {
+  "abstract" : [
+    {
+      "text" : "Returns the version of the package from the “Package.resolved” that is bundled with this app.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "packageVersion"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "for"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8JXBridge11JXNamespaceV",
+      "text" : "JXNamespace"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/JXHostBundle\/packageVersion(for:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "packageVersion(for:)",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/jxhostbundle\/packageversion(for:)"
+}
+}
+}

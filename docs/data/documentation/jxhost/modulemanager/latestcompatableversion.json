@@ -47,7 +47,7 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:6JXHost21JXDynamicModuleSourceP7RefInfoa",
+        "preciseIdentifier" : "s:6JXHost12ModuleSourceP7RefInfoa",
         "text" : "RefInfo"
       },
       {
@@ -101,9 +101,9 @@
               "text" : "."
             },
             {
-              "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/JXDynamicModuleSource\/RefInfo",
+              "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleSource\/RefInfo",
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:6JXHost21JXDynamicModuleSourceP7RefInfoa",
+              "preciseIdentifier" : "s:6JXHost12ModuleSourceP7RefInfoa",
               "text" : "RefInfo"
             },
             {
@@ -191,40 +191,6 @@
   "type" : "topic",
   "url" : "\/documentation\/jxhost\/hubmodulesource"
 },
-"doc://JXHost/documentation/JXHost/JXDynamicModuleSource/RefInfo": {
-  "abstract" : [
-    {
-      "text" : "Information about the tags for the given module source",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "typealias"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "RefInfo"
-    }
-  ],
-  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/JXDynamicModuleSource\/RefInfo",
-  "kind" : "symbol",
-  "navigatorTitle" : [
-    {
-      "kind" : "identifier",
-      "text" : "RefInfo"
-    }
-  ],
-  "role" : "symbol",
-  "title" : "JXDynamicModuleSource.RefInfo",
-  "type" : "topic",
-  "url" : "\/documentation\/jxhost\/jxdynamicmodulesource\/refinfo"
-},
 "doc://JXHost/documentation/JXHost/ModuleManager": {
   "abstract" : [
     {
@@ -302,7 +268,7 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:6JXHost21JXDynamicModuleSourceP7RefInfoa",
+      "preciseIdentifier" : "s:6JXHost12ModuleSourceP7RefInfoa",
       "text" : "RefInfo"
     },
     {
@@ -316,6 +282,40 @@
   "title" : "latestCompatableVersion",
   "type" : "topic",
   "url" : "\/documentation\/jxhost\/modulemanager\/latestcompatableversion"
+},
+"doc://JXHost/documentation/JXHost/ModuleSource/RefInfo": {
+  "abstract" : [
+    {
+      "text" : "Information about the tags for the given module source",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "typealias"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "RefInfo"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleSource\/RefInfo",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "RefInfo"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "ModuleSource.RefInfo",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/modulesource\/refinfo"
 }
 }
 }

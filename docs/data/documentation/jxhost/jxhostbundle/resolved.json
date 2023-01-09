@@ -1,25 +1,19 @@
 {
-  "abstract" : [
-    {
-      "text" : "The resolved packages of the host environment, used for matching modules with their repositories",
-      "type" : "text"
-    }
-  ],
   "hierarchy" : {
     "paths" : [
       [
         "doc:\/\/JXHost\/documentation\/JXHost",
-        "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource"
+        "doc:\/\/JXHost\/documentation\/JXHost\/JXHostBundle"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "swift",
-    "url" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/resolvedPackages"
+    "url" : "doc:\/\/JXHost\/documentation\/JXHost\/JXHostBundle\/resolved"
   },
   "kind" : "symbol",
   "metadata" : {
-    "externalID" : "s:6JXHost15HubModuleSourceV16resolvedPackages8FairCore15ResolvedPackageVvp",
+    "externalID" : "s:6JXHost0A6BundleC8resolved8FairCore15ResolvedPackageVvp",
     "fragments" : [
       {
         "kind" : "keyword",
@@ -31,7 +25,7 @@
       },
       {
         "kind" : "identifier",
-        "text" : "resolvedPackages"
+        "text" : "resolved"
       },
       {
         "kind" : "text",
@@ -51,7 +45,7 @@
     "role" : "symbol",
     "roleHeading" : "Instance Property",
     "symbolKind" : "property",
-    "title" : "resolvedPackages"
+    "title" : "resolved"
   },
   "primaryContentSections" : [
     {
@@ -74,7 +68,7 @@
             },
             {
               "kind" : "identifier",
-              "text" : "resolvedPackages"
+              "text" : "resolved"
             },
             {
               "kind" : "text",
@@ -102,7 +96,7 @@
   "variants" : [
     {
       "paths" : [
-        "\/documentation\/jxhost\/hubmodulesource\/resolvedpackages"
+        "\/documentation\/jxhost\/jxhostbundle\/resolved"
       ],
       "traits" : [
         {
@@ -124,17 +118,17 @@
   "type" : "topic",
   "url" : "\/documentation\/jxhost"
 },
-"doc://JXHost/documentation/JXHost/HubModuleSource": {
+"doc://JXHost/documentation/JXHost/JXHostBundle": {
   "abstract" : [
     {
-      "text" : "A module source that uses a git repository’s tags and zipball archive URL for checking versions.",
+      "text" : "A host environment for a JXModule, which contains about the Bundle environment as well as the resolved packages for the bundle.",
       "type" : "text"
     }
   ],
   "fragments" : [
     {
       "kind" : "keyword",
-      "text" : "struct"
+      "text" : "class"
     },
     {
       "kind" : "text",
@@ -142,28 +136,25 @@
     },
     {
       "kind" : "identifier",
-      "text" : "HubModuleSource"
+      "text" : "JXHostBundle"
     }
   ],
-  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource",
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/JXHostBundle",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
       "kind" : "identifier",
-      "text" : "HubModuleSource"
+      "text" : "JXHostBundle"
     }
   ],
   "role" : "symbol",
-  "title" : "HubModuleSource",
+  "title" : "JXHostBundle",
   "type" : "topic",
-  "url" : "\/documentation\/jxhost\/hubmodulesource"
+  "url" : "\/documentation\/jxhost\/jxhostbundle"
 },
-"doc://JXHost/documentation/JXHost/HubModuleSource/resolvedPackages": {
+"doc://JXHost/documentation/JXHost/JXHostBundle/resolved": {
   "abstract" : [
-    {
-      "text" : "The resolved packages of the host environment, used for matching modules with their repositories",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -176,7 +167,7 @@
     },
     {
       "kind" : "identifier",
-      "text" : "resolvedPackages"
+      "text" : "resolved"
     },
     {
       "kind" : "text",
@@ -188,12 +179,12 @@
       "text" : "ResolvedPackage"
     }
   ],
-  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/resolvedPackages",
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/JXHostBundle\/resolved",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "resolvedPackages",
+  "title" : "resolved",
   "type" : "topic",
-  "url" : "\/documentation\/jxhost\/hubmodulesource\/resolvedpackages"
+  "url" : "\/documentation\/jxhost\/jxhostbundle\/resolved"
 }
 }
 }

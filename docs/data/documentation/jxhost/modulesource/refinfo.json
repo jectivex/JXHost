@@ -9,17 +9,17 @@
     "paths" : [
       [
         "doc:\/\/JXHost\/documentation\/JXHost",
-        "doc:\/\/JXHost\/documentation\/JXHost\/JXDynamicModuleSource"
+        "doc:\/\/JXHost\/documentation\/JXHost\/ModuleSource"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "swift",
-    "url" : "doc:\/\/JXHost\/documentation\/JXHost\/JXDynamicModuleSource\/RefInfo"
+    "url" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleSource\/RefInfo"
   },
   "kind" : "symbol",
   "metadata" : {
-    "externalID" : "s:6JXHost21JXDynamicModuleSourceP7RefInfoa",
+    "externalID" : "s:6JXHost12ModuleSourceP7RefInfoa",
     "fragments" : [
       {
         "kind" : "keyword",
@@ -48,7 +48,7 @@
     "role" : "symbol",
     "roleHeading" : "Type Alias",
     "symbolKind" : "typealias",
-    "title" : "JXDynamicModuleSource.RefInfo"
+    "title" : "ModuleSource.RefInfo"
   },
   "primaryContentSections" : [
     {
@@ -127,7 +127,7 @@
   "variants" : [
     {
       "paths" : [
-        "\/documentation\/jxhost\/jxdynamicmodulesource\/refinfo"
+        "\/documentation\/jxhost\/modulesource\/refinfo"
       ],
       "traits" : [
         {
@@ -149,7 +149,7 @@
   "type" : "topic",
   "url" : "\/documentation\/jxhost"
 },
-"doc://JXHost/documentation/JXHost/JXDynamicModuleSource": {
+"doc://JXHost/documentation/JXHost/ModuleSource": {
   "abstract" : [
     {
       "text" : "The source repository that hosts the tagged versions of the dynamic module source.",
@@ -167,23 +167,23 @@
     },
     {
       "kind" : "identifier",
-      "text" : "JXDynamicModuleSource"
+      "text" : "ModuleSource"
     }
   ],
-  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/JXDynamicModuleSource",
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleSource",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
       "kind" : "identifier",
-      "text" : "JXDynamicModuleSource"
+      "text" : "ModuleSource"
     }
   ],
   "role" : "symbol",
-  "title" : "JXDynamicModuleSource",
+  "title" : "ModuleSource",
   "type" : "topic",
-  "url" : "\/documentation\/jxhost\/jxdynamicmodulesource"
+  "url" : "\/documentation\/jxhost\/modulesource"
 },
-"doc://JXHost/documentation/JXHost/JXDynamicModuleSource/RefInfo": {
+"doc://JXHost/documentation/JXHost/ModuleSource/RefInfo": {
   "abstract" : [
     {
       "text" : "Information about the tags for the given module source",
@@ -204,7 +204,7 @@
       "text" : "RefInfo"
     }
   ],
-  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/JXDynamicModuleSource\/RefInfo",
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleSource\/RefInfo",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -213,9 +213,9 @@
     }
   ],
   "role" : "symbol",
-  "title" : "JXDynamicModuleSource.RefInfo",
+  "title" : "ModuleSource.RefInfo",
   "type" : "topic",
-  "url" : "\/documentation\/jxhost\/jxdynamicmodulesource\/refinfo"
+  "url" : "\/documentation\/jxhost\/modulesource\/refinfo"
 }
 }
 }

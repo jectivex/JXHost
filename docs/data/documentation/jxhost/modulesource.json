@@ -14,11 +14,11 @@
   },
   "identifier" : {
     "interfaceLanguage" : "swift",
-    "url" : "doc:\/\/JXHost\/documentation\/JXHost\/JXDynamicModuleSource"
+    "url" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleSource"
   },
   "kind" : "symbol",
   "metadata" : {
-    "externalID" : "s:6JXHost21JXDynamicModuleSourceP",
+    "externalID" : "s:6JXHost12ModuleSourceP",
     "fragments" : [
       {
         "kind" : "keyword",
@@ -30,7 +30,7 @@
       },
       {
         "kind" : "identifier",
-        "text" : "JXDynamicModuleSource"
+        "text" : "ModuleSource"
       }
     ],
     "modules" : [
@@ -41,13 +41,13 @@
     "navigatorTitle" : [
       {
         "kind" : "identifier",
-        "text" : "JXDynamicModuleSource"
+        "text" : "ModuleSource"
       }
     ],
     "role" : "symbol",
     "roleHeading" : "Protocol",
     "symbolKind" : "protocol",
-    "title" : "JXDynamicModuleSource"
+    "title" : "ModuleSource"
   },
   "primaryContentSections" : [
     {
@@ -70,7 +70,7 @@
             },
             {
               "kind" : "identifier",
-              "text" : "JXDynamicModuleSource"
+              "text" : "ModuleSource"
             }
           ]
         }
@@ -99,25 +99,25 @@
   "topicSections" : [
     {
       "identifiers" : [
-        "doc:\/\/JXHost\/documentation\/JXHost\/JXDynamicModuleSource\/Ref"
+        "doc:\/\/JXHost\/documentation\/JXHost\/ModuleSource\/Ref"
       ],
       "title" : "Associated Types"
     },
     {
       "identifiers" : [
-        "doc:\/\/JXHost\/documentation\/JXHost\/JXDynamicModuleSource\/refs"
+        "doc:\/\/JXHost\/documentation\/JXHost\/ModuleSource\/refs"
       ],
       "title" : "Instance Properties"
     },
     {
       "identifiers" : [
-        "doc:\/\/JXHost\/documentation\/JXHost\/JXDynamicModuleSource\/archiveURL(for:)"
+        "doc:\/\/JXHost\/documentation\/JXHost\/ModuleSource\/archiveURL(for:)"
       ],
       "title" : "Instance Methods"
     },
     {
       "identifiers" : [
-        "doc:\/\/JXHost\/documentation\/JXHost\/JXDynamicModuleSource\/RefInfo"
+        "doc:\/\/JXHost\/documentation\/JXHost\/ModuleSource\/RefInfo"
       ],
       "title" : "Type Aliases"
     }
@@ -125,7 +125,7 @@
   "variants" : [
     {
       "paths" : [
-        "\/documentation\/jxhost\/jxdynamicmodulesource"
+        "\/documentation\/jxhost\/modulesource"
       ],
       "traits" : [
         {
@@ -181,7 +181,7 @@
   "type" : "topic",
   "url" : "\/documentation\/jxhost\/hubmodulesource"
 },
-"doc://JXHost/documentation/JXHost/JXDynamicModuleSource": {
+"doc://JXHost/documentation/JXHost/ModuleSource": {
   "abstract" : [
     {
       "text" : "The source repository that hosts the tagged versions of the dynamic module source.",
@@ -199,23 +199,23 @@
     },
     {
       "kind" : "identifier",
-      "text" : "JXDynamicModuleSource"
+      "text" : "ModuleSource"
     }
   ],
-  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/JXDynamicModuleSource",
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleSource",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
       "kind" : "identifier",
-      "text" : "JXDynamicModuleSource"
+      "text" : "ModuleSource"
     }
   ],
   "role" : "symbol",
-  "title" : "JXDynamicModuleSource",
+  "title" : "ModuleSource",
   "type" : "topic",
-  "url" : "\/documentation\/jxhost\/jxdynamicmodulesource"
+  "url" : "\/documentation\/jxhost\/modulesource"
 },
-"doc://JXHost/documentation/JXHost/JXDynamicModuleSource/Ref": {
+"doc://JXHost/documentation/JXHost/ModuleSource/Ref": {
   "abstract" : [
     {
       "text" : "A reference to a version of the module, which can then be converted into an archive URL",
@@ -236,15 +236,15 @@
       "text" : "Ref"
     }
   ],
-  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/JXDynamicModuleSource\/Ref",
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleSource\/Ref",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "Ref",
   "type" : "topic",
-  "url" : "\/documentation\/jxhost\/jxdynamicmodulesource\/ref"
+  "url" : "\/documentation\/jxhost\/modulesource\/ref"
 },
-"doc://JXHost/documentation/JXHost/JXDynamicModuleSource/RefInfo": {
+"doc://JXHost/documentation/JXHost/ModuleSource/RefInfo": {
   "abstract" : [
     {
       "text" : "Information about the tags for the given module source",
@@ -265,7 +265,7 @@
       "text" : "RefInfo"
     }
   ],
-  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/JXDynamicModuleSource\/RefInfo",
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleSource\/RefInfo",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -274,11 +274,11 @@
     }
   ],
   "role" : "symbol",
-  "title" : "JXDynamicModuleSource.RefInfo",
+  "title" : "ModuleSource.RefInfo",
   "type" : "topic",
-  "url" : "\/documentation\/jxhost\/jxdynamicmodulesource\/refinfo"
+  "url" : "\/documentation\/jxhost\/modulesource\/refinfo"
 },
-"doc://JXHost/documentation/JXHost/JXDynamicModuleSource/archiveURL(for:)": {
+"doc://JXHost/documentation/JXHost/ModuleSource/archiveURL(for:)": {
   "abstract" : [
     {
       "text" : "Returns the URL for the zipball of the repository at the given tag or branch.",
@@ -332,15 +332,15 @@
       "text" : "URL"
     }
   ],
-  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/JXDynamicModuleSource\/archiveURL(for:)",
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleSource\/archiveURL(for:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "archiveURL(for:)",
   "type" : "topic",
-  "url" : "\/documentation\/jxhost\/jxdynamicmodulesource\/archiveurl(for:)"
+  "url" : "\/documentation\/jxhost\/modulesource\/archiveurl(for:)"
 },
-"doc://JXHost/documentation/JXHost/JXDynamicModuleSource/refs": {
+"doc://JXHost/documentation/JXHost/ModuleSource/refs": {
   "abstract" : [
     {
       "text" : "The available refs for this module source",
@@ -374,7 +374,7 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:6JXHost21JXDynamicModuleSourceP7RefInfoa",
+      "preciseIdentifier" : "s:6JXHost12ModuleSourceP7RefInfoa",
       "text" : "RefInfo"
     },
     {
@@ -382,13 +382,13 @@
       "text" : "]"
     }
   ],
-  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/JXDynamicModuleSource\/refs",
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleSource\/refs",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "refs",
   "type" : "topic",
-  "url" : "\/documentation\/jxhost\/jxdynamicmodulesource\/refs"
+  "url" : "\/documentation\/jxhost\/modulesource\/refs"
 }
 }
 }

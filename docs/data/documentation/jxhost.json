@@ -34,6 +34,7 @@
   "topicSections" : [
     {
       "identifiers" : [
+        "doc:\/\/JXHost\/documentation\/JXHost\/JXHostBundle",
         "doc:\/\/JXHost\/documentation\/JXHost\/ModuleManager",
         "doc:\/\/JXHost\/documentation\/JXHost\/MonitoringScriptLoader"
       ],
@@ -41,7 +42,7 @@
     },
     {
       "identifiers" : [
-        "doc:\/\/JXHost\/documentation\/JXHost\/JXDynamicModuleSource",
+        "doc:\/\/JXHost\/documentation\/JXHost\/ModuleSource",
         "doc:\/\/JXHost\/documentation\/JXHost\/NamedRef"
       ],
       "title" : "Protocols"
@@ -164,17 +165,17 @@
   "type" : "topic",
   "url" : "\/documentation\/jxhost\/hubversionmanager"
 },
-"doc://JXHost/documentation/JXHost/JXDynamicModuleSource": {
+"doc://JXHost/documentation/JXHost/JXHostBundle": {
   "abstract" : [
     {
-      "text" : "The source repository that hosts the tagged versions of the dynamic module source.",
+      "text" : "A host environment for a JXModule, which contains about the Bundle environment as well as the resolved packages for the bundle.",
       "type" : "text"
     }
   ],
   "fragments" : [
     {
       "kind" : "keyword",
-      "text" : "protocol"
+      "text" : "class"
     },
     {
       "kind" : "text",
@@ -182,21 +183,21 @@
     },
     {
       "kind" : "identifier",
-      "text" : "JXDynamicModuleSource"
+      "text" : "JXHostBundle"
     }
   ],
-  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/JXDynamicModuleSource",
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/JXHostBundle",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
       "kind" : "identifier",
-      "text" : "JXDynamicModuleSource"
+      "text" : "JXHostBundle"
     }
   ],
   "role" : "symbol",
-  "title" : "JXDynamicModuleSource",
+  "title" : "JXHostBundle",
   "type" : "topic",
-  "url" : "\/documentation\/jxhost\/jxdynamicmodulesource"
+  "url" : "\/documentation\/jxhost\/jxhostbundle"
 },
 "doc://JXHost/documentation/JXHost/ModuleManager": {
   "abstract" : [
@@ -240,6 +241,40 @@
   "title" : "ModuleManager",
   "type" : "topic",
   "url" : "\/documentation\/jxhost\/modulemanager"
+},
+"doc://JXHost/documentation/JXHost/ModuleSource": {
+  "abstract" : [
+    {
+      "text" : "The source repository that hosts the tagged versions of the dynamic module source.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "protocol"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "ModuleSource"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleSource",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "ModuleSource"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "ModuleSource",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/modulesource"
 },
 "doc://JXHost/documentation/JXHost/MonitoringScriptLoader": {
   "abstract" : [

@@ -1,4 +1,4 @@
-#if !os(Linux) && !os(Android) && !os(Windows)
+#if !os(Linux) && !os(Android) && !os(Windows) // DispatchSourceFileSystemObject only available on Darwin
 import Foundation
 import JXKit
 import FairCore

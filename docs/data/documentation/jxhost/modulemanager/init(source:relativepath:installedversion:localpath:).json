@@ -9,11 +9,11 @@
   },
   "identifier" : {
     "interfaceLanguage" : "swift",
-    "url" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleManager\/init(source:relativePath:installedVersion:fileManager:localPath:)"
+    "url" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleManager\/init(source:relativePath:installedVersion:localPath:)"
   },
   "kind" : "symbol",
   "metadata" : {
-    "externalID" : "s:6JXHost13ModuleManagerC6source12relativePath16installedVersion04fileC005localF0ACyxGx_SSSg8FairCore6SemVerVSgSo06NSFileC0C10Foundation3URLVtcfc",
+    "externalID" : "s:6JXHost13ModuleManagerC6source12relativePath16installedVersion05localF0ACyxGx_SSSg8FairCore6SemVerVSg10Foundation3URLVtcfc",
     "fragments" : [
       {
         "kind" : "identifier",
@@ -75,23 +75,6 @@
       },
       {
         "kind" : "externalParam",
-        "text" : "fileManager"
-      },
-      {
-        "kind" : "text",
-        "text" : ": "
-      },
-      {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "c:objc(cs)NSFileManager",
-        "text" : "FileManager"
-      },
-      {
-        "kind" : "text",
-        "text" : ", "
-      },
-      {
-        "kind" : "externalParam",
         "text" : "localPath"
       },
       {
@@ -116,7 +99,7 @@
     "role" : "symbol",
     "roleHeading" : "Initializer",
     "symbolKind" : "init",
-    "title" : "init(source:relativePath:installedVersion:fileManager:localPath:)"
+    "title" : "init(source:relativePath:installedVersion:localPath:)"
   },
   "primaryContentSections" : [
     {
@@ -189,23 +172,6 @@
             },
             {
               "kind" : "externalParam",
-              "text" : "fileManager"
-            },
-            {
-              "kind" : "text",
-              "text" : ": "
-            },
-            {
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "c:objc(cs)NSFileManager",
-              "text" : "FileManager"
-            },
-            {
-              "kind" : "text",
-              "text" : " = .default, "
-            },
-            {
-              "kind" : "externalParam",
               "text" : "localPath"
             },
             {
@@ -238,7 +204,7 @@
   "variants" : [
     {
       "paths" : [
-        "\/documentation\/jxhost\/modulemanager\/init(source:relativepath:installedversion:filemanager:localpath:)"
+        "\/documentation\/jxhost\/modulemanager\/init(source:relativepath:installedversion:localpath:)"
       ],
       "traits" : [
         {
@@ -337,7 +303,7 @@
   "type" : "topic",
   "url" : "\/documentation\/jxhost\/modulemanager"
 },
-"doc://JXHost/documentation/JXHost/ModuleManager/init(source:relativePath:installedVersion:fileManager:localPath:)": {
+"doc://JXHost/documentation/JXHost/ModuleManager/init(source:relativePath:installedVersion:localPath:)": {
   "abstract" : [
 
   ],
@@ -402,23 +368,6 @@
     },
     {
       "kind" : "externalParam",
-      "text" : "fileManager"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "c:objc(cs)NSFileManager",
-      "text" : "FileManager"
-    },
-    {
-      "kind" : "text",
-      "text" : ", "
-    },
-    {
-      "kind" : "externalParam",
       "text" : "localPath"
     },
     {
@@ -435,12 +384,12 @@
       "text" : ")"
     }
   ],
-  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleManager\/init(source:relativePath:installedVersion:fileManager:localPath:)",
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/ModuleManager\/init(source:relativePath:installedVersion:localPath:)",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "init(source:relativePath:installedVersion:fileManager:localPath:)",
+  "title" : "init(source:relativePath:installedVersion:localPath:)",
   "type" : "topic",
-  "url" : "\/documentation\/jxhost\/modulemanager\/init(source:relativepath:installedversion:filemanager:localpath:)"
+  "url" : "\/documentation\/jxhost\/modulemanager\/init(source:relativepath:installedversion:localpath:)"
 }
 }
 }

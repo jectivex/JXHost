@@ -4,7 +4,7 @@ import JXKit
 import FairCore
 
 /// The source repository that hosts the tagged versions of the dynamic module source.
-public protocol JXDynamicModuleSource {
+public protocol ModuleSource {
     /// A reference to a version of the module, which can then be converted into an archive URL
     associatedtype Ref
 

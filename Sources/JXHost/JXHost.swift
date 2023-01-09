@@ -1,34 +1,45 @@
-import FairApp
+import Foundation
+import FairCore
 @_exported import JXKit
 @_exported import JXBridge
 
-extension Bundle {
-    func findVersion(repository: URL?, in resolved: ResolvedPackage) -> ResolvedPackage.Package? {
-        for version in resolved.packages {
-            // note that some repositories have the ".git" extension and some do not; compare them by trimming the extension
-            if version.location == repository?.absoluteString
-                || version.location == repository?.deletingPathExtension().absoluteString {
-                // the package matches, so return the version, which might be a
-                //dbg("package version found for", repository, version)
-                return version
-            }
-        }
 
-        dbg("no package version found for", repository)
-        return nil
+/// A host environment for a JXModule, which contains about the Bundle environment as well as the resolved packages for the bundle.
+public class JXHostBundle {
+    public let bundle: Bundle
+    public let resolved: ResolvedPackage
+
+    public init(bundle: Bundle) throws {
+        self.bundle = bundle
+        self.resolved = try bundle.resolvedPackages().get()
+    }
+
+    public init(bundle: Bundle, packages resolved: ResolvedPackage) {
+        self.bundle = bundle
+        self.resolved = resolved
+    }
+}
+
+extension JXHostBundle {
+    /// Returns the package that matches the give namespace.
+    ///
+    /// This merely compares the namespace against the package's `identifier`, which defaults to the lower-case package name,
+    internal func packages(for namespace: JXNamespace) -> [ResolvedPackage.Package] {
+        resolved.packages.filter({ $0.identity == namespace.string })
     }
 
     /// Returns the version of the package from the "Package.resolved" that is bundled with this app.
-    public func packageVersion(for repository: URL?) -> String? {
-        do {
-            let resolved = try self.resolvedPackages().get()
-            let resolvedVersion = findVersion(repository: repository, in: resolved)
-            dbg(repository, "resolvedVersion:", resolvedVersion)
-            return resolvedVersion?.state.version
-        } catch {
-            dbg("error getting package version for", repository, error)
-            return nil
-        }
+    public func packageVersion(for namespace: JXNamespace) -> String? {
+        packages(for: namespace).first?.state.version
+    }
 
+    public func packageLocationURL(for namespace: JXNamespace) -> URL? {
+        packages(for: namespace).first?.locationURL
+    }
+}
+
+extension ResolvedPackage.Package {
+    var locationURL: URL? {
+        URL(string: location)
     }
 }

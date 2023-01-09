@@ -5,7 +5,7 @@
       "type" : "text"
     },
     {
-      "code" : "JXDynamicModuleSource.Ref",
+      "code" : "ModuleSource.Ref",
       "type" : "codeVoice"
     },
     {

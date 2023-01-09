@@ -13,7 +13,7 @@
   },
   "kind" : "symbol",
   "metadata" : {
-    "externalID" : "s:6JXHost15HubModuleSourceV10repository4hostAC10Foundation3URLV_So8NSBundleCtKcfc",
+    "externalID" : "s:6JXHost15HubModuleSourceV10repository4hostAC10Foundation3URLV_AA0A6BundleCtcfc",
     "fragments" : [
       {
         "kind" : "identifier",
@@ -50,16 +50,12 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "c:objc(cs)NSBundle",
-        "text" : "Bundle"
+        "preciseIdentifier" : "s:6JXHost0A6BundleC",
+        "text" : "JXHostBundle"
       },
       {
         "kind" : "text",
-        "text" : ") "
-      },
-      {
-        "kind" : "keyword",
-        "text" : "throws"
+        "text" : ")"
       }
     ],
     "modules" : [
@@ -117,17 +113,14 @@
               "text" : ": "
             },
             {
+              "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/JXHostBundle",
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "c:objc(cs)NSBundle",
-              "text" : "Bundle"
+              "preciseIdentifier" : "s:6JXHost0A6BundleC",
+              "text" : "JXHostBundle"
             },
             {
               "kind" : "text",
-              "text" : ") "
-            },
-            {
-              "kind" : "keyword",
-              "text" : "throws"
+              "text" : ")"
             }
           ]
         }
@@ -242,16 +235,12 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "c:objc(cs)NSBundle",
-      "text" : "Bundle"
+      "preciseIdentifier" : "s:6JXHost0A6BundleC",
+      "text" : "JXHostBundle"
     },
     {
       "kind" : "text",
-      "text" : ") "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "throws"
+      "text" : ")"
     }
   ],
   "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/init(repository:host:)",
@@ -260,6 +249,40 @@
   "title" : "init(repository:host:)",
   "type" : "topic",
   "url" : "\/documentation\/jxhost\/hubmodulesource\/init(repository:host:)"
+},
+"doc://JXHost/documentation/JXHost/JXHostBundle": {
+  "abstract" : [
+    {
+      "text" : "A host environment for a JXModule, which contains about the Bundle environment as well as the resolved packages for the bundle.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "class"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "JXHostBundle"
+    }
+  ],
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/JXHostBundle",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "JXHostBundle"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "JXHostBundle",
+  "type" : "topic",
+  "url" : "\/documentation\/jxhost\/jxhostbundle"
 }
 }
 }

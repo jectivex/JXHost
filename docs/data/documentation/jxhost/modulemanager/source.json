@@ -1,7 +1,7 @@
 {
   "abstract" : [
     {
-      "text" : "The JXDynamicModuleSource",
+      "text" : "The ModuleSource",
       "type" : "text"
     }
   ],
@@ -202,7 +202,7 @@
 "doc://JXHost/documentation/JXHost/ModuleManager/source": {
   "abstract" : [
     {
-      "text" : "The JXDynamicModuleSource",
+      "text" : "The ModuleSource",
       "type" : "text"
     }
   ],

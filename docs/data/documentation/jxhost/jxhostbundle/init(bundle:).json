@@ -1,37 +1,31 @@
 {
-  "abstract" : [
-    {
-      "text" : "The resolved packages of the host environment, used for matching modules with their repositories",
-      "type" : "text"
-    }
-  ],
   "hierarchy" : {
     "paths" : [
       [
         "doc:\/\/JXHost\/documentation\/JXHost",
-        "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource"
+        "doc:\/\/JXHost\/documentation\/JXHost\/JXHostBundle"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "swift",
-    "url" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/resolvedPackages"
+    "url" : "doc:\/\/JXHost\/documentation\/JXHost\/JXHostBundle\/init(bundle:)"
   },
   "kind" : "symbol",
   "metadata" : {
-    "externalID" : "s:6JXHost15HubModuleSourceV16resolvedPackages8FairCore15ResolvedPackageVvp",
+    "externalID" : "s:6JXHost0A6BundleC6bundleACSo8NSBundleC_tKcfc",
     "fragments" : [
       {
-        "kind" : "keyword",
-        "text" : "let"
+        "kind" : "identifier",
+        "text" : "init"
       },
       {
         "kind" : "text",
-        "text" : " "
+        "text" : "("
       },
       {
-        "kind" : "identifier",
-        "text" : "resolvedPackages"
+        "kind" : "externalParam",
+        "text" : "bundle"
       },
       {
         "kind" : "text",
@@ -39,8 +33,16 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:8FairCore15ResolvedPackageV",
-        "text" : "ResolvedPackage"
+        "preciseIdentifier" : "c:objc(cs)NSBundle",
+        "text" : "Bundle"
+      },
+      {
+        "kind" : "text",
+        "text" : ") "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "throws"
       }
     ],
     "modules" : [
@@ -49,9 +51,9 @@
       }
     ],
     "role" : "symbol",
-    "roleHeading" : "Instance Property",
-    "symbolKind" : "property",
-    "title" : "resolvedPackages"
+    "roleHeading" : "Initializer",
+    "symbolKind" : "init",
+    "title" : "init(bundle:)"
   },
   "primaryContentSections" : [
     {
@@ -66,15 +68,15 @@
           "tokens" : [
             {
               "kind" : "keyword",
-              "text" : "let"
+              "text" : "init"
             },
             {
               "kind" : "text",
-              "text" : " "
+              "text" : "("
             },
             {
-              "kind" : "identifier",
-              "text" : "resolvedPackages"
+              "kind" : "externalParam",
+              "text" : "bundle"
             },
             {
               "kind" : "text",
@@ -82,8 +84,16 @@
             },
             {
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:8FairCore15ResolvedPackageV",
-              "text" : "ResolvedPackage"
+              "preciseIdentifier" : "c:objc(cs)NSBundle",
+              "text" : "Bundle"
+            },
+            {
+              "kind" : "text",
+              "text" : ") "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "throws"
             }
           ]
         }
@@ -102,7 +112,7 @@
   "variants" : [
     {
       "paths" : [
-        "\/documentation\/jxhost\/hubmodulesource\/resolvedpackages"
+        "\/documentation\/jxhost\/jxhostbundle\/init(bundle:)"
       ],
       "traits" : [
         {
@@ -124,17 +134,17 @@
   "type" : "topic",
   "url" : "\/documentation\/jxhost"
 },
-"doc://JXHost/documentation/JXHost/HubModuleSource": {
+"doc://JXHost/documentation/JXHost/JXHostBundle": {
   "abstract" : [
     {
-      "text" : "A module source that uses a git repository’s tags and zipball archive URL for checking versions.",
+      "text" : "A host environment for a JXModule, which contains about the Bundle environment as well as the resolved packages for the bundle.",
       "type" : "text"
     }
   ],
   "fragments" : [
     {
       "kind" : "keyword",
-      "text" : "struct"
+      "text" : "class"
     },
     {
       "kind" : "text",
@@ -142,41 +152,38 @@
     },
     {
       "kind" : "identifier",
-      "text" : "HubModuleSource"
+      "text" : "JXHostBundle"
     }
   ],
-  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource",
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/JXHostBundle",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
       "kind" : "identifier",
-      "text" : "HubModuleSource"
+      "text" : "JXHostBundle"
     }
   ],
   "role" : "symbol",
-  "title" : "HubModuleSource",
+  "title" : "JXHostBundle",
   "type" : "topic",
-  "url" : "\/documentation\/jxhost\/hubmodulesource"
+  "url" : "\/documentation\/jxhost\/jxhostbundle"
 },
-"doc://JXHost/documentation/JXHost/HubModuleSource/resolvedPackages": {
+"doc://JXHost/documentation/JXHost/JXHostBundle/init(bundle:)": {
   "abstract" : [
-    {
-      "text" : "The resolved packages of the host environment, used for matching modules with their repositories",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
-      "kind" : "keyword",
-      "text" : "let"
+      "kind" : "identifier",
+      "text" : "init"
     },
     {
       "kind" : "text",
-      "text" : " "
+      "text" : "("
     },
     {
-      "kind" : "identifier",
-      "text" : "resolvedPackages"
+      "kind" : "externalParam",
+      "text" : "bundle"
     },
     {
       "kind" : "text",
@@ -184,16 +191,24 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:8FairCore15ResolvedPackageV",
-      "text" : "ResolvedPackage"
+      "preciseIdentifier" : "c:objc(cs)NSBundle",
+      "text" : "Bundle"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
     }
   ],
-  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/HubModuleSource\/resolvedPackages",
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/JXHostBundle\/init(bundle:)",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "resolvedPackages",
+  "title" : "init(bundle:)",
   "type" : "topic",
-  "url" : "\/documentation\/jxhost\/hubmodulesource\/resolvedpackages"
+  "url" : "\/documentation\/jxhost\/jxhostbundle\/init(bundle:)"
 }
 }
 }

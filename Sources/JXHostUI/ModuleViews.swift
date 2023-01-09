@@ -9,8 +9,8 @@ import FairCore
 
 extension JXDynamicModule {
     /// Creates a navigation link to a ``ModuleVersionsListView`` that will list all the available versions of a module.
-    @MainActor @ViewBuilder public static func entryLink<V: View>(host: Bundle, name: String, symbol: String, branches: [String], developmentMode: Bool, strictMode: Bool, errorHandler: @escaping (Error) -> (), view: @escaping (JXContext) -> V) -> some View {
-        let version = host.packageVersion(for: self.remoteModuleBaseURL(for: host))
+    @MainActor @ViewBuilder public static func moduleNavigationLink<Content: View>(host: JXHostBundle, name: String, symbol: String, branches: [String], developmentMode: Bool, strictMode: Bool, errorHandler: @escaping (Error) -> (), view: @escaping (JXContext) -> Content) -> some View {
+        let version = host.packageVersion(for: namespace)
         if let versionManager = (try? Self.remoteHubSource(for: host))?.versionManager(for: self, host: host, refName: version) {
             NavigationLink {
                 ModuleVersionsListView(versionManager: versionManager, appName: name, branches: branches, developmentMode: developmentMode, strictMode: strictMode, errorHandler: errorHandler) { ctx in

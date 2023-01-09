@@ -1,29 +1,23 @@
 {
-  "abstract" : [
-    {
-      "text" : "A reference to a version of the module, which can then be converted into an archive URL",
-      "type" : "text"
-    }
-  ],
   "hierarchy" : {
     "paths" : [
       [
         "doc:\/\/JXHost\/documentation\/JXHost",
-        "doc:\/\/JXHost\/documentation\/JXHost\/JXDynamicModuleSource"
+        "doc:\/\/JXHost\/documentation\/JXHost\/JXHostBundle"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "swift",
-    "url" : "doc:\/\/JXHost\/documentation\/JXHost\/JXDynamicModuleSource\/Ref"
+    "url" : "doc:\/\/JXHost\/documentation\/JXHost\/JXHostBundle\/bundle"
   },
   "kind" : "symbol",
   "metadata" : {
-    "externalID" : "s:6JXHost21JXDynamicModuleSourceP3RefQa",
+    "externalID" : "s:6JXHost0A6BundleC6bundleSo8NSBundleCvp",
     "fragments" : [
       {
         "kind" : "keyword",
-        "text" : "associatedtype"
+        "text" : "let"
       },
       {
         "kind" : "text",
@@ -31,7 +25,16 @@
       },
       {
         "kind" : "identifier",
-        "text" : "Ref"
+        "text" : "bundle"
+      },
+      {
+        "kind" : "text",
+        "text" : ": "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "c:objc(cs)NSBundle",
+        "text" : "Bundle"
       }
     ],
     "modules" : [
@@ -39,11 +42,10 @@
         "name" : "JXHost"
       }
     ],
-    "required" : true,
     "role" : "symbol",
-    "roleHeading" : "Associated Type",
-    "symbolKind" : "associatedtype",
-    "title" : "Ref"
+    "roleHeading" : "Instance Property",
+    "symbolKind" : "property",
+    "title" : "bundle"
   },
   "primaryContentSections" : [
     {
@@ -58,7 +60,7 @@
           "tokens" : [
             {
               "kind" : "keyword",
-              "text" : "associatedtype"
+              "text" : "let"
             },
             {
               "kind" : "text",
@@ -66,7 +68,16 @@
             },
             {
               "kind" : "identifier",
-              "text" : "Ref"
+              "text" : "bundle"
+            },
+            {
+              "kind" : "text",
+              "text" : ": "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:objc(cs)NSBundle",
+              "text" : "Bundle"
             }
           ]
         }
@@ -85,7 +96,7 @@
   "variants" : [
     {
       "paths" : [
-        "\/documentation\/jxhost\/jxdynamicmodulesource\/ref"
+        "\/documentation\/jxhost\/jxhostbundle\/bundle"
       ],
       "traits" : [
         {
@@ -107,17 +118,17 @@
   "type" : "topic",
   "url" : "\/documentation\/jxhost"
 },
-"doc://JXHost/documentation/JXHost/JXDynamicModuleSource": {
+"doc://JXHost/documentation/JXHost/JXHostBundle": {
   "abstract" : [
     {
-      "text" : "The source repository that hosts the tagged versions of the dynamic module source.",
+      "text" : "A host environment for a JXModule, which contains about the Bundle environment as well as the resolved packages for the bundle.",
       "type" : "text"
     }
   ],
   "fragments" : [
     {
       "kind" : "keyword",
-      "text" : "protocol"
+      "text" : "class"
     },
     {
       "kind" : "text",
@@ -125,33 +136,30 @@
     },
     {
       "kind" : "identifier",
-      "text" : "JXDynamicModuleSource"
+      "text" : "JXHostBundle"
     }
   ],
-  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/JXDynamicModuleSource",
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/JXHostBundle",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
       "kind" : "identifier",
-      "text" : "JXDynamicModuleSource"
+      "text" : "JXHostBundle"
     }
   ],
   "role" : "symbol",
-  "title" : "JXDynamicModuleSource",
+  "title" : "JXHostBundle",
   "type" : "topic",
-  "url" : "\/documentation\/jxhost\/jxdynamicmodulesource"
+  "url" : "\/documentation\/jxhost\/jxhostbundle"
 },
-"doc://JXHost/documentation/JXHost/JXDynamicModuleSource/Ref": {
+"doc://JXHost/documentation/JXHost/JXHostBundle/bundle": {
   "abstract" : [
-    {
-      "text" : "A reference to a version of the module, which can then be converted into an archive URL",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
       "kind" : "keyword",
-      "text" : "associatedtype"
+      "text" : "let"
     },
     {
       "kind" : "text",
@@ -159,16 +167,24 @@
     },
     {
       "kind" : "identifier",
-      "text" : "Ref"
+      "text" : "bundle"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "c:objc(cs)NSBundle",
+      "text" : "Bundle"
     }
   ],
-  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/JXDynamicModuleSource\/Ref",
+  "identifier" : "doc:\/\/JXHost\/documentation\/JXHost\/JXHostBundle\/bundle",
   "kind" : "symbol",
-  "required" : true,
   "role" : "symbol",
-  "title" : "Ref",
+  "title" : "bundle",
   "type" : "topic",
-  "url" : "\/documentation\/jxhost\/jxdynamicmodulesource\/ref"
+  "url" : "\/documentation\/jxhost\/jxhostbundle\/bundle"
 }
 }
 }
