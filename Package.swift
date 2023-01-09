@@ -17,7 +17,7 @@ let package = Package(
             name: "JXHost",
             dependencies: [
                 .product(name: "JXBridge", package: "JXBridge"),
-                .product(name: "FairApp", package: "Fair"),
+                .product(name: "FairCore", package: "Fair"),
             ],
             resources: [.process("Resources")]),
         .testTarget(

@@ -2,9 +2,12 @@ import XCTest
 @testable import JXHost
 
 final class JXHostTests: XCTestCase {
+    func testAtomFeed() async throws {
+    }
+
     func testHosting() async throws {
         // provide enough of a fake Package.resolved to be able to look up the repo and version
-        let source = try HubModuleSource(repository: URL(string: "https://github.com/Magic-Loupe/PetStore.git")!, packages: .init(json: """
+        let source = try HubModuleSource(repository: URL(string: "https://github.com/Magic-Loupe/PetStore.git")!, host: JXHostBundle(bundle: .module, packages: .init(json: """
         {
           "pins" : [
             {
@@ -19,13 +22,15 @@ final class JXHostTests: XCTestCase {
           ],
           "version" : 2
         }
-        """.utf8Data))
+        """.utf8Data)))
         let refs = try await source.refs
         XCTAssertGreaterThanOrEqual(refs.count, 10)
         let version = try XCTUnwrap(refs.first).ref
         let tmp = URL(fileURLWithPath: UUID().uuidString, relativeTo: URL(fileURLWithPath: NSTemporaryDirectory()))
-        let manager = await HubVersionManager(source: source, relativePath: "XXX", installedVersion: nil, localPath: tmp)
+        let manager = await HubVersionManager(source: source, relativePath: nil, installedVersion: nil, localPath: tmp)
         let downloaded = try await manager.downloadArchive(for: version, overwrite: true)
-
+        print("downloaded:", downloaded)
+        let path = URL(fileURLWithPath: "Sources/PetStore/jx/petstore", relativeTo: downloaded)
+        XCTAssertEqual(true, path.pathIsDirectory)
     }
 }
